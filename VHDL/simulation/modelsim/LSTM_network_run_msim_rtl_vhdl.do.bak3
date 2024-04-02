@@ -1,0 +1,40 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/LSTM_cell.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_wire.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_func.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_wire.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_lib.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fpu.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_lib.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_sgnj.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_rnd.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_max.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_mac.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_fma.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_fdiv.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_ext.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_exe.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_cvt.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_cmp.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_4.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_8.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_16.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_32.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_64.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/lzc_128.vhd}
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/fpu/fp_unit.vhd}
+
+vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/LSTM_test.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs="+acc"  LSTM_test
+
+add wave *
+view structure
+view signals
+run 1 us

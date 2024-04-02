@@ -1,0 +1,2 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0|mult_4dt:auto_generated|mac_mult5,

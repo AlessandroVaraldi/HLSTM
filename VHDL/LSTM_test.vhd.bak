@@ -1,0 +1,49 @@
+library ieee ;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity LSTM_test is
+end LSTM_test;
+
+architecture test of LSTM_test is
+
+signal clock: std_logic := '1';
+
+component LSTM_cell is
+	port
+	(
+		clock			: in  std_logic;
+		reset			: in  std_logic;
+		start			: in  std_logic;
+		input			: in  std_logic_vector (31 downto 0);
+		h_out			: out std_logic_vector (31 downto 0);
+		sdone			: out std_logic
+	);
+end component;
+
+signal reset,start,done: std_logic := '0';
+signal input,h_out: std_logic_vector (31 downto 0) := (others=>'0');
+
+begin
+	
+	clock <= not clock after 5 ns;
+	
+	testing: process
+	begin
+		input <= "00111111100000000000000000000000";
+		
+		wait for 50 ns;
+	end process;
+	
+	u0: LSTM_cell
+		port map (
+			clock			=> clock		,
+			reset			=> reset		,
+			start			=> start		,
+			input			=> input		,
+			h_out			=> h_out		,
+			sdone			=> done		
+		);
+		
+end test;
+		
