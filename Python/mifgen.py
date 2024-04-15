@@ -4,17 +4,20 @@ import struct
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-def mifgen(minvalue,steps):
-    x_values = np.linspace(minvalue,-minvalue,steps)
+def mifgen(value,steps):
+    x_values = np.linspace(0,value-value/steps,steps)
+    print(x_values.shape)
+    print(x_values[129])
 
     sigm_values = sigmoid(x_values)
     tanh_values = np.tanh(x_values)
+    print(tanh_values[129])
 
     with open("sigm_values.mif", "w") as file:
         file.write("DEPTH = 256;\n")
         file.write("WIDTH = 32;\n")
         file.write("ADDRESS_RADIX = HEX;\n")
-        file.write("DATA_RADIX = DEC;\n")
+        file.write("DATA_RADIX = HEX;\n")
         file.write("CONTENT\n")
         file.write("BEGIN\n")
         
@@ -28,7 +31,7 @@ def mifgen(minvalue,steps):
         file.write("DEPTH = 256;\n")
         file.write("WIDTH = 32;\n")
         file.write("ADDRESS_RADIX = HEX;\n")
-        file.write("DATA_RADIX = DEC;\n")
+        file.write("DATA_RADIX = HEX;\n")
         file.write("CONTENT\n")
         file.write("BEGIN\n")
         
@@ -40,4 +43,4 @@ def mifgen(minvalue,steps):
 
     print("File generati con successo.")
 
-mifgen(-8,256)
+mifgen(4,256)

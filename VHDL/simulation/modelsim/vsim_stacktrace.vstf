@@ -1,0 +1,16 @@
+# Current time Tue Apr 09 11:48:34 2024
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+# Signature = 4a3706afe29a2b87def93ebd4f2693fa
+# 0    0x006367e4: '<unknown (@0x6367e4)>'
+# 1    0xff1fe3ac: 'C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd:792'
+# 2    0xff1fe3ac: 'C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd:792'
+# 3    0x0105ec74: '<unknown (@0x105ec74)>'
+# 4    0x0045f0f6: '<unknown (@0x45f0f6)>'
+# End of Stack Trace
+
+

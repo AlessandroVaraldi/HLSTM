@@ -8,26 +8,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/simulation/modelsim
+Z0 dC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/simulation/modelsim
 Ecounter
 Z1 w1711312361
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 3
 R0
-Z4 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/counter.vhd
-Z5 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/counter.vhd
+Z4 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd
+Z5 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd
 l0
 Z6 L43 1
 VGYdE9NWca9Fn8ZEWBQ;PZ1
 !s100 ?SPnh^B?nfNMA065LLB5f3
 Z7 OV;C;2020.1;71
 33
-Z8 !s110 1712061607
+Z8 !s110 1713174996
 !i10b 1
-Z9 !s108 1712061607.000000
-Z10 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/counter.vhd|
-Z11 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/counter.vhd|
+Z9 !s108 1713174996.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd|
+Z11 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd|
 !i113 1
 Z12 o-2008 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -50,17 +50,58 @@ R11
 !i113 1
 R12
 R13
+Ed_flip_flop
+Z14 w1712997096
+R2
+R3
+!i122 10
+R0
+Z15 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd
+Z16 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd
+l0
+L4 1
+VWdFnQ6T41z0?=6>SP4]jR1
+!s100 :^8BaLnnKn:o88FL0PKm`2
+R7
+33
+Z17 !s110 1713174997
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd|
+Z19 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 11 d_flip_flop 0 22 WdFnQ6T41z0?=6>SP4]jR1
+!i122 10
+l12
+L11 11
+V35GeII[fCE9P_RSf]gTTD0
+!s100 g7TD306[a[a^g:aibIQVH1
+R7
+33
+R17
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
 Ef2i_conv
-Z14 w1711535795
-Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z16 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
-Z17 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+Z20 w1712997586
+Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z22 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z23 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
 R2
 R3
 !i122 2
 R0
-Z18 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/f2i_conv.vhd
-Z19 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/f2i_conv.vhd
+Z24 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd
+Z25 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd
 l0
 L6 1
 VTB<Vl]V1he;]iSUZI`o?>1
@@ -70,332 +111,332 @@ R7
 R8
 !i10b 1
 R9
-Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/f2i_conv.vhd|
-Z21 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/f2i_conv.vhd|
+Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd|
+Z27 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd|
 !i113 1
 R12
 R13
 Aarch
-R15
-R16
-R17
+R21
+R22
+R23
 R2
 R3
 DEx4 work 8 f2i_conv 0 22 TB<Vl]V1he;]iSUZI`o?>1
 !i122 2
-l20
-L14 21
-V]P@[bODU;77bJlo[XXHYV0
-!s100 B4lNQnz93?7WlQn;Q5Xid1
+l21
+L14 25
+V2Lkz=SN42hH7ZW4n2cBdW1
+!s100 WW`4?3U[a[o5`3U=K@KUU2
 R7
 33
 R8
 !i10b 1
 R9
-R20
-R21
+R26
+R27
 !i113 1
 R12
 R13
 Efp_cmp
-Z22 w1711461514
-Z23 DPx4 work 7 fp_wire 0 22 _>ZN8]GMiaQXiRhUKZiXQ0
-Z24 DPx4 work 8 lzc_wire 0 22 Aefh9dC5eYdZHzMBjk2_h3
-R15
+Z28 w1711461514
+Z29 DPx4 work 7 fp_wire 0 22 _>ZN8]GMiaQXiRhUKZiXQ0
+Z30 DPx4 work 8 lzc_wire 0 22 Aefh9dC5eYdZHzMBjk2_h3
+R21
 R2
 R3
-!i122 22
+!i122 23
 R0
-Z25 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cmp.vhd
-Z26 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cmp.vhd
+Z31 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd
+Z32 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd
 l0
-Z27 L10 1
+Z33 L10 1
 Vn[HQF5dfNOakalPd3nohl1
 !s100 L1;>i:Vfj]KGOHd:TFHBK1
 R7
 33
-Z28 !s110 1712061610
+Z34 !s110 1713174998
 !i10b 1
-Z29 !s108 1712061610.000000
-Z30 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cmp.vhd|
-Z31 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cmp.vhd|
+Z35 !s108 1713174998.000000
+Z36 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd|
+Z37 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R23
-R24
-R15
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_cmp 0 22 n[HQF5dfNOakalPd3nohl1
-!i122 22
+!i122 23
 l19
 L17 90
 VokaRY7ak?^39XZP:=fOKA2
 !s100 iLz`^BECR1C4moOzh98Vk2
 R7
 33
-R28
+R34
 !i10b 1
-R29
-R30
-R31
+R35
+R36
+R37
 !i113 1
 R12
 R13
 Efp_cvt
-R22
-Z32 DPx4 work 7 fp_func 0 22 >k5@V:P6<`ehXKn4dd6>n0
-R23
-R24
-R15
+R28
+Z38 DPx4 work 7 fp_func 0 22 >k5@V:P6<`ehXKn4dd6>n0
+R29
+R30
+R21
 R2
 R3
-!i122 21
+!i122 22
 R0
-Z33 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cvt.vhd
-Z34 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cvt.vhd
+Z39 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd
+Z40 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd
 l0
-Z35 L11 1
+Z41 L11 1
 VYJzM=?kg8OKB4a:LBHCca1
 !s100 Pf?:f^URRKlcSGC@b?GeX1
 R7
 33
-R28
+R34
 !i10b 1
-R29
-Z36 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cvt.vhd|
-Z37 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_cvt.vhd|
+R35
+Z42 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd|
+Z43 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_cvt 0 22 YJzM=?kg8OKB4a:LBHCca1
-!i122 21
+!i122 22
 l27
 L25 406
 VG3?@d_O5nnRYZj:0ZO?he2
 !s100 IBoYj;J@_I3k4Vi@Pfkgd0
 R7
 33
-R28
+R34
 !i10b 1
-R29
-R36
-R37
+R35
+R42
+R43
 !i113 1
 R12
 R13
 Efp_exe
-R22
-R23
-R24
-R15
+R28
+R29
+R30
+R21
 R2
 R3
-!i122 20
+!i122 21
 R0
-Z38 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_exe.vhd
-Z39 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_exe.vhd
+Z44 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd
+Z45 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd
 l0
-R27
+R33
 Vn8[RO5WBQGGKTV@?zLkT11
 !s100 c>@o2QZk>6j7Ae=86EkFW0
 R7
 33
-R28
+R34
 !i10b 1
-R29
-Z40 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_exe.vhd|
-Z41 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_exe.vhd|
+R35
+Z46 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd|
+Z47 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R23
-R24
-R15
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_exe 0 22 n8[RO5WBQGGKTV@?zLkT11
-!i122 20
+!i122 21
 l43
 L41 182
 VE4Pk1z8lRT]BVQPnjCHe^0
 !s100 hS7jOZo`kFbZGfQBJ]l0_2
 R7
 33
-R28
+R34
 !i10b 1
-R29
-R40
-R41
+R35
+R46
+R47
 !i113 1
 R12
 R13
 Efp_ext
-R22
-R32
-R23
-R24
-R15
+R28
+R38
+R29
+R30
+R21
 R2
 R3
-!i122 19
+!i122 20
 R0
-Z42 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_ext.vhd
-Z43 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_ext.vhd
+Z48 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd
+Z49 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd
 l0
-R35
+R41
 VgTE9<6DL22SW`ZXFH^f:o3
 !s100 <AZ:1@A_A:B:ICKi;b25_3
 R7
 33
-Z44 !s110 1712061609
+R34
 !i10b 1
-Z45 !s108 1712061609.000000
-Z46 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_ext.vhd|
-Z47 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_ext.vhd|
+R35
+Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd|
+Z51 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_ext 0 22 gTE9<6DL22SW`ZXFH^f:o3
-!i122 19
+!i122 20
 l22
 L20 100
 V8ncjJ01CG9UFNoRV6oTT51
 !s100 _QaRf@0h_4YK2jA2ElF]33
 R7
 33
-R44
+R34
 !i10b 1
-R45
-R46
-R47
+R35
+R50
+R51
 !i113 1
 R12
 R13
 Efp_fdiv
-R22
-R32
-R23
-R24
-R15
+R28
+R38
+R29
+R30
+R21
 R2
 R3
-!i122 18
+!i122 19
 R0
-Z48 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fdiv.vhd
-Z49 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fdiv.vhd
+Z52 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd
+Z53 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd
 l0
-R35
+R41
 VJF1H4jBL;07[Z^X<MQUoo1
 !s100 GijjQIZ=Le2eBVQee@7YZ3
 R7
 33
-R44
+R34
 !i10b 1
-R45
-Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fdiv.vhd|
-Z51 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fdiv.vhd|
+R35
+Z54 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd|
+Z55 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 7 fp_fdiv 0 22 JF1H4jBL;07[Z^X<MQUoo1
-!i122 18
+!i122 19
 l68
 L25 596
 VgP3N<;dz2V124MAUH>[zA0
 !s100 c[SB3n4@mkShnkEAYd1aJ0
 R7
 33
-R44
+R34
 !i10b 1
-R45
-R50
-R51
+R35
+R54
+R55
 !i113 1
 R12
 R13
 Efp_fma
-R22
-R32
-R23
-R24
-R15
+R28
+R38
+R29
+R30
+R21
 R2
 R3
-!i122 17
+!i122 18
 R0
-Z52 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fma.vhd
-Z53 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fma.vhd
+Z56 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd
+Z57 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd
 l0
-R35
+R41
 VP2V_8RP8i_cfP6f8NIU[S0
 !s100 V9Nkz7>jDiA<3oT539GNh0
 R7
 33
-R44
+R34
 !i10b 1
-R45
-Z54 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fma.vhd|
-Z55 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_fma.vhd|
+R35
+Z58 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd|
+Z59 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_fma 0 22 P2V_8RP8i_cfP6f8NIU[S0
-!i122 17
+!i122 18
 l30
 L22 324
 VaNNbJo^HAS6@j[Ua2d_`R0
 !s100 f`JdQZgzP4?Oa@4ElfG[`2
 R7
 33
-R44
+R34
 !i10b 1
-R45
-R54
-R55
+R35
+R58
+R59
 !i113 1
 R12
 R13
 Pfp_func
-R15
+R21
 R2
 R3
-!i122 6
-R22
+!i122 7
+R28
 R0
-Z56 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_func.vhd
-Z57 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_func.vhd
+Z60 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd
+Z61 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd
 l0
 L7 1
 V>k5@V:P6<`ehXKn4dd6>n0
@@ -403,308 +444,308 @@ V>k5@V:P6<`ehXKn4dd6>n0
 R7
 33
 b1
-Z58 !s110 1712061608
+R8
 !i10b 1
-Z59 !s108 1712061608.000000
-Z60 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_func.vhd|
-Z61 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_func.vhd|
+R9
+Z62 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd|
+Z63 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd|
 !i113 1
 R12
 R13
 Bbody
-R32
-R15
+R38
+R21
 R2
 R3
-!i122 6
+!i122 7
 l0
 L18 1
 V=hUTbZIPVIlB0R@3>:_bb2
 !s100 VSi^Y]KR0NaXCfRYVNHC83
 R7
 33
-R58
+R8
 !i10b 1
-R59
-R60
-R61
+R9
+R62
+R63
 !i113 1
 R12
 R13
 Pfp_lib
-R23
-Z62 DPx4 work 7 lzc_lib 0 22 mRf]N7JcI1>2^LQKnPI:^2
-R24
-R15
+R29
+Z64 DPx4 work 7 lzc_lib 0 22 mRf]N7JcI1>2^LQKnPI:^2
+R30
+R21
 R2
 R3
-!i122 12
-R22
+!i122 13
+R28
 R0
-8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_lib.vhd
-FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_lib.vhd
+8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd
+FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd
 l0
-R35
+R41
 Va75LXC963o@7NZDkRcPJZ3
 !s100 :JXJkUWc91X6nVSz[>;n50
 R7
 33
-R58
+R17
 !i10b 1
-R59
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_lib.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_lib.vhd|
+Z65 !s108 1713174997.000000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd|
 !i113 1
 R12
 R13
 Efp_mac
-R22
-R23
-R15
+R28
+R29
+R21
 R2
 R3
-!i122 16
+!i122 17
 R0
-Z63 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_mac.vhd
-Z64 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_mac.vhd
+Z66 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd
+Z67 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd
 l0
 L9 1
 VT9125XTnIon=_@<<^YSZ[1
 !s100 ;7hEjfb]cE]:3[9SihW2o0
 R7
 33
-R44
+R34
 !i10b 1
-R45
-Z65 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_mac.vhd|
-Z66 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_mac.vhd|
+R65
+Z68 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd|
+Z69 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R23
-R15
+R29
+R21
 R2
 R3
 DEx4 work 6 fp_mac 0 22 T9125XTnIon=_@<<^YSZ[1
-!i122 16
+!i122 17
 l23
 L16 16
 VGh5?Hif59VMkA_m2G:TYN0
 !s100 UISf@D?5UWhK`i<A6VbkP1
 R7
 33
-R44
+R34
 !i10b 1
-R45
 R65
-R66
+R68
+R69
 !i113 1
 R12
 R13
 Efp_max
-R22
-R23
-R24
-R15
+R28
+R29
+R30
+R21
 R2
 R3
-!i122 15
+!i122 16
 R0
-Z67 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_max.vhd
-Z68 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_max.vhd
+Z70 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd
+Z71 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd
 l0
-R27
+R33
 V[EWj3@4<_4mVP2FZQYlb=2
 !s100 73P:3KgLlQf65Q6Z<HS8M2
 R7
 33
-R44
+R17
 !i10b 1
-R45
-Z69 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_max.vhd|
-Z70 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_max.vhd|
+R65
+Z72 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd|
+Z73 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R23
-R24
-R15
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_max 0 22 [EWj3@4<_4mVP2FZQYlb=2
-!i122 15
+!i122 16
 l19
 L17 124
 VRDnihFH6mSXfHg6Z<=JBP2
 !s100 N<j7:[A9aem63?[UKGz8;3
 R7
 33
-R44
+R17
 !i10b 1
-R45
-R69
-R70
+R65
+R72
+R73
 !i113 1
 R12
 R13
 Efp_rnd
-R22
-R32
-R23
-R24
-R15
+R28
+R38
+R29
+R30
+R21
 R2
 R3
-!i122 14
+!i122 15
 R0
-Z71 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_rnd.vhd
-Z72 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_rnd.vhd
+Z74 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd
+Z75 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd
 l0
-R35
+R41
 V^nL>5c_CO83CEoc1C_l3h2
 !s100 o[nBSLz^b6JHo4<`BR[:n2
 R7
 33
-R44
+R17
 !i10b 1
-R45
-Z73 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_rnd.vhd|
-Z74 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_rnd.vhd|
+R65
+Z76 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd|
+Z77 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 6 fp_rnd 0 22 ^nL>5c_CO83CEoc1C_l3h2
-!i122 14
+!i122 15
 l20
 L18 171
 Ved1aiC>a5jzCF`VZ1Roz>0
 !s100 f^>H@U5QL[fDXo3N1D7XM1
 R7
 33
-R44
+R17
 !i10b 1
-R45
-R73
-R74
+R65
+R76
+R77
 !i113 1
 R12
 R13
 Efp_sgnj
-Z75 w1711461515
-R23
-R24
-R15
+Z78 w1711461515
+R29
+R30
+R21
 R2
 R3
-!i122 13
+!i122 14
 R0
-Z76 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_sgnj.vhd
-Z77 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_sgnj.vhd
+Z79 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd
+Z80 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd
 l0
-R27
+R33
 V[A80XzzD55md;o>I^E^HV0
 !s100 IDB]9SR`@ek0?@oPGmfg63
 R7
 33
-R44
+R17
 !i10b 1
-R45
-Z78 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_sgnj.vhd|
-Z79 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_sgnj.vhd|
+R65
+Z81 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd|
+Z82 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R23
-R24
-R15
+R29
+R30
+R21
 R2
 R3
 DEx4 work 7 fp_sgnj 0 22 [A80XzzD55md;o>I^E^HV0
-!i122 13
+!i122 14
 l19
 L17 38
 Vc^eT=M=h3<]SKFeHCaFn_2
 !s100 S:GkALP?<YleSR=o7@M[z2
 R7
 33
-R44
+R17
 !i10b 1
-R45
-R78
-R79
+R65
+R81
+R82
 !i113 1
 R12
 R13
 Efp_unit
-R75
-Z80 DPx4 work 6 fp_lib 0 22 a75LXC963o@7NZDkRcPJZ3
-R23
-R62
-R24
-R15
+R78
+Z83 DPx4 work 6 fp_lib 0 22 a75LXC963o@7NZDkRcPJZ3
+R29
+R64
+R30
+R21
 R2
 R3
-!i122 29
+!i122 30
 R0
-Z81 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_unit.vhd
-Z82 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_unit.vhd
+Z84 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd
+Z85 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd
 l0
 L12 1
 VPOMzK_EJ:3ej9^SW1hzW42
 !s100 ;YD:JeOiIX_7:5CkF6U9F3
 R7
 33
-Z83 !s110 1712061611
+Z86 !s110 1713174999
 !i10b 1
-Z84 !s108 1712061611.000000
-Z85 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_unit.vhd|
-Z86 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_unit.vhd|
+Z87 !s108 1713174999.000000
+Z88 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd|
+Z89 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R80
-R23
-R62
-R24
-R15
+R83
+R29
+R64
+R30
+R21
 R2
 R3
 DEx4 work 7 fp_unit 0 22 POMzK_EJ:3ej9^SW1hzW42
-!i122 29
+!i122 30
 l65
 L21 191
 VV;c5dzG2BZVel?a7]YgeN1
 !s100 P8@8alX5D0Cho0ncEBJ4S0
 R7
 33
-R83
-!i10b 1
-R84
-R85
 R86
+!i10b 1
+R87
+R88
+R89
 !i113 1
 R12
 R13
 Pfp_wire
-R15
+R21
 R2
 R3
-!i122 5
-R75
+!i122 6
+R78
 R0
-Z87 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_wire.vhd
-Z88 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_wire.vhd
+Z90 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd
+Z91 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd
 l0
 L8 1
 V_>ZN8]GMiaQXiRhUKZiXQ0
@@ -712,548 +753,593 @@ V_>ZN8]GMiaQXiRhUKZiXQ0
 R7
 33
 b1
-R58
+R8
 !i10b 1
-R59
-Z89 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_wire.vhd|
-Z90 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fp_wire.vhd|
+R9
+Z92 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd|
+Z93 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd|
 !i113 1
 R12
 R13
 Bbody
-R23
-R15
+R29
+R21
 R2
 R3
-!i122 5
+!i122 6
 l0
 L476 1
 V?2ilaO^FE2Y<9G=BI_[=X0
 !s100 D4egf0zPhooHDK]Nj^2XM2
 R7
 33
-R58
+R8
 !i10b 1
-R59
-R89
-R90
+R9
+R92
+R93
 !i113 1
 R12
 R13
 Efpu
-Z91 w1711483693
-R32
-R23
-R24
-R15
+Z94 w1711483693
+R38
+R29
+R30
+R21
 R2
 R3
-!i122 11
+!i122 12
 R0
-Z92 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fpu.vhd
-Z93 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fpu.vhd
+Z95 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd
+Z96 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd
 l0
 L9 1
 VJ`1H7<b3@EJHZ]I6OOGb;0
 !s100 hC06ON5ZRg^``YaNm4dNf0
 R7
 33
-R58
+R17
 !i10b 1
-R59
-Z94 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fpu.vhd|
-Z95 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/fpu.vhd|
+R65
+Z97 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd|
+Z98 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd|
 !i113 1
 R12
 R13
 Artl
-R32
-R23
-R24
-R15
+R38
+R29
+R30
+R21
 R2
 R3
 DEx4 work 3 fpu 0 22 J`1H7<b3@EJHZ]I6OOGb;0
-!i122 11
+!i122 12
 l75
 L25 77
 V6M_1hhcMUH9oR`6FFP6Cb1
 !s100 kLUEVbAo6EHk`GRz6lAjd2
 R7
 33
-R58
+R17
 !i10b 1
-R59
-R94
-R95
+R65
+R97
+R98
+!i113 1
+R12
+R13
+Ein_ram
+Z99 w1713106266
+Z100 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+R2
+R3
+!i122 31
+R0
+Z101 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd
+Z102 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd
+l0
+R6
+VGoQ=gZgg=^YTIBF670h<h3
+!s100 z?Gd:VUMWRL@fOakhR_YF1
+R7
+33
+R86
+!i10b 1
+R87
+Z103 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd|
+Z104 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd|
+!i113 1
+R12
+R13
+Asyn
+R100
+R2
+R3
+DEx4 work 6 in_ram 0 22 GoQ=gZgg=^YTIBF670h<h3
+!i122 31
+l61
+L57 38
+VXdo[W1Pc0=VnAYm1bhD;:3
+!s100 gZ8`?MiHjX@J2k61WJnWT2
+R7
+33
+R86
+!i10b 1
+R87
+R103
+R104
 !i113 1
 R12
 R13
 Elstm_cell
-Z96 w1712060347
-Z97 DPx4 work 7 mytypes 0 22 iZ?2J_2[MkKXb3e=<UNTC0
-R15
+Z105 w1713101304
+Z106 DPx4 work 7 mytypes 0 22 iZ?2J_2[MkKXb3e=<UNTC0
+R21
 R2
 R3
-!i122 10
+!i122 11
 R0
-Z98 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_cell.vhd
-Z99 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_cell.vhd
+Z107 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd
+Z108 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd
 l0
 L7 1
-VkjXk:k`BG`;elolajE[d`1
-!s100 n@V810ak;b@Oa[hLGFgAE2
+VIg?R[VcIjn>oKC<UU1g@g3
+!s100 YKX_oYWjo5OJEclD1LOi;0
 R7
 33
-R58
+R17
 !i10b 1
-R59
-Z100 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_cell.vhd|
-Z101 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_cell.vhd|
+R65
+Z109 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd|
+Z110 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd|
 !i113 1
 R12
 R13
 Artl
-R97
-R15
+R106
+R21
 R2
 R3
-DEx4 work 9 lstm_cell 0 22 kjXk:k`BG`;elolajE[d`1
-!i122 10
-l139
-L20 650
-Vk4[hV;4oKmkULFH8Hm6S?3
-!s100 1enVj;HkI6ne@VU<d>a>83
+DEx4 work 9 lstm_cell 0 22 Ig?R[VcIjn>oKC<UU1g@g3
+!i122 11
+l165
+L21 941
+VSjaH4X=O2iZ_aT@<7f<Q41
+!s100 [8I:d`HVF=9LIcQB>7JZn0
 R7
 33
-R58
+R17
 !i10b 1
-R59
-R100
-R101
+R65
+R109
+R110
 !i113 1
 R12
 R13
 Elstm_test
-Z102 w1712061596
-R15
+Z111 w1712937021
+Z112 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R21
 R2
 R3
-!i122 30
+!i122 32
 R0
-Z103 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_test.vhd
-Z104 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_test.vhd
+Z113 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd
+Z114 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd
 l0
-L5 1
-VK7Wl61Co<[[2cX`GS_8g22
-!s100 GBc8_I[`8M3cW>VNQ2LY43
+R33
+V`>?]T6LMUYF2d7H`Okcch0
+!s100 L1EXmCPRhT_Vzc[DQTTR@0
 R7
 33
-R83
+Z115 !s110 1713175000
 !i10b 1
-R84
-Z105 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_test.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_test.vhd|
+R87
+Z116 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd|
 !i113 1
 R12
 R13
 Atest
-R15
+R112
+R21
 R2
 R3
-DEx4 work 9 lstm_test 0 22 K7Wl61Co<[[2cX`GS_8g22
-!i122 30
-l31
-L8 116
-VYDHQS:z91Ge9F`A^SUKn22
-!s100 kJUV7BoX[g^]A`_OolU7X1
+DEx4 work 9 lstm_test 0 22 `>?]T6LMUYF2d7H`Okcch0
+!i122 32
+l68
+L13 139
+VGobkZXa7FL:m>:KMPlicm0
+!s100 0:A^6?aSaX[aSZ4`=k4EM1
 R7
 33
-R83
+R115
 !i10b 1
-R84
-R105
-Z106 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LSTM_test.vhd|
+R87
+R116
+Z117 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd|
 !i113 1
 R12
 R13
 Elut
-Z107 w1712047847
-Z108 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
+Z118 w1712047847
+R100
 R2
 R3
-!i122 4
+!i122 5
 R0
-Z109 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LUT.vhd
-Z110 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LUT.vhd
+Z119 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd
+Z120 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd
 l0
 R6
 V03d8HCL;1VQ?4Ma:QMKSM2
 !s100 <NZem4gz69OM`[O5chN2U0
 R7
 33
-R58
+R8
 !i10b 1
 R9
-Z111 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LUT.vhd|
-Z112 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/LUT.vhd|
+Z121 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd|
+Z122 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd|
 !i113 1
 R12
 R13
 Asyn
-R108
+R100
 R2
 R3
 DEx4 work 3 lut 0 22 03d8HCL;1VQ?4Ma:QMKSM2
-!i122 4
+!i122 5
 l60
 L56 35
 V;A1[nHK5aXQFm>IYdP@h=0
 !s100 g<VIX@QmdEP?llTnlYjTQ0
 R7
 33
-R58
+R8
 !i10b 1
 R9
-R111
-R112
+R121
+R122
 !i113 1
 R12
 R13
 Elzc_128
-Z113 w1711461497
-R62
+Z123 w1711461497
+R64
 R2
 R3
-!i122 28
+!i122 29
 R0
-Z114 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_128.vhd
-Z115 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_128.vhd
+Z124 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd
+Z125 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd
 l0
 L8 1
 VdAORo2LefBUO@0]JQT5z60
 !s100 WJj2k0d;zZoiazA^`@]G23
 R7
 33
-R83
+R86
 !i10b 1
-R84
-Z116 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_128.vhd|
-Z117 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_128.vhd|
+R87
+Z126 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd|
+Z127 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 7 lzc_128 0 22 dAORo2LefBUO@0]JQT5z60
-!i122 28
+!i122 29
 l38
 L16 51
 V?U;ceP=`<<Ra]2K:jAea80
 !s100 IEQ7DSR0L?gF@WOG_78ec2
 R7
 33
-R83
+R86
 !i10b 1
-R84
-R116
-R117
+R87
+R126
+R127
 !i113 1
 R12
 R13
 Elzc_16
-R113
-R62
+R123
+R64
 R2
 R3
-!i122 25
+!i122 26
 R0
-Z118 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_16.vhd
-Z119 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_16.vhd
+Z128 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd
+Z129 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd
 l0
 L8 1
 VkkoD_lj[X`1FEFZeI[F1;3
 !s100 98c1m1K2VSXbYm_dMFYoi0
 R7
 33
-R28
+R86
 !i10b 1
-R29
-Z120 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_16.vhd|
-Z121 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_16.vhd|
+R87
+Z130 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd|
+Z131 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 6 lzc_16 0 22 kkoD_lj[X`1FEFZeI[F1;3
-!i122 25
+!i122 26
 l32
 L16 36
 VDVCo5VXfYhGj=Zg=^HSVL2
 !s100 d:J7:j[GmAWo_>KfC^:T=2
 R7
 33
-R28
+R86
 !i10b 1
-R29
-R120
-R121
+R87
+R130
+R131
 !i113 1
 R12
 R13
 Elzc_32
-R113
-R62
+R123
+R64
 R2
 R3
-!i122 26
+!i122 27
 R0
-Z122 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_32.vhd
-Z123 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_32.vhd
+Z132 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd
+Z133 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd
 l0
 L8 1
 V9;miSIE[B?6Zl0lcKcj:R2
 !s100 9[1BE4`GjUG`ej5An7<Pj1
 R7
 33
-R28
+R86
 !i10b 1
-R29
-Z124 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_32.vhd|
-Z125 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_32.vhd|
+R87
+Z134 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd|
+Z135 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 6 lzc_32 0 22 9;miSIE[B?6Zl0lcKcj:R2
-!i122 26
+!i122 27
 l34
 L16 41
 V>Ya0G]25Ldz0U5GRSe1bX3
 !s100 ZlI955<n3`<3LCAa8:FaI2
 R7
 33
-R28
+R86
 !i10b 1
-R29
-R124
-R125
+R87
+R134
+R135
 !i113 1
 R12
 R13
 Elzc_4
-R113
-R62
+R123
+R64
 R2
 R3
-!i122 23
+!i122 24
 R0
-Z126 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_4.vhd
-Z127 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_4.vhd
+Z136 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd
+Z137 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd
 l0
 L8 1
 VeQGdNT`f11AGRP1AHY6l[3
 !s100 dSdFm[f=kd3;`f=eRCQ6o0
 R7
 33
-R28
+R34
 !i10b 1
-R29
-Z128 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_4.vhd|
-Z129 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_4.vhd|
+R35
+Z138 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd|
+Z139 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 5 lzc_4 0 22 eQGdNT`f11AGRP1AHY6l[3
-!i122 23
+!i122 24
 l29
-Z130 L16 31
+Z140 L16 31
 V8G^5_Z?@RnC2?]<mJ><]A0
 !s100 T`XZa9dE2]n<H:8l<O8Om1
 R7
 33
-R28
+R34
 !i10b 1
-R29
-R128
-R129
+R35
+R138
+R139
 !i113 1
 R12
 R13
 Elzc_64
-R113
-R62
+R123
+R64
 R2
 R3
-!i122 27
+!i122 28
 R0
-Z131 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_64.vhd
-Z132 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_64.vhd
+Z141 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd
+Z142 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd
 l0
 L8 1
 V2@=NdWg6<H]ZkRMm0VK]m1
 !s100 Zi^[_BX2jeA>4HeIaMheS3
 R7
 33
-R83
+R86
 !i10b 1
-R29
-Z133 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_64.vhd|
-Z134 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_64.vhd|
+R87
+Z143 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd|
+Z144 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 6 lzc_64 0 22 2@=NdWg6<H]ZkRMm0VK]m1
-!i122 27
+!i122 28
 l36
 L16 46
 V3Jz_dJR@2l3gYzYAH]Z191
 !s100 P77bXciOPI1MicJ14gWob3
 R7
 33
-R83
+R86
 !i10b 1
-R29
-R133
-R134
+R87
+R143
+R144
 !i113 1
 R12
 R13
 Elzc_8
-R113
-R62
+R123
+R64
 R2
 R3
-!i122 24
+!i122 25
 R0
-Z135 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_8.vhd
-Z136 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_8.vhd
+Z145 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd
+Z146 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd
 l0
 L8 1
 V1UM_3ojDiZ`Hz:PF@CfPa2
 !s100 d4]n_`AZAUPoL3I25c_Qj2
 R7
 33
-R28
+R86
 !i10b 1
-R29
-Z137 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_8.vhd|
-Z138 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_8.vhd|
+R87
+Z147 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd|
+Z148 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd|
 !i113 1
 R12
 R13
 Abehavior
-R62
+R64
 R2
 R3
 DEx4 work 5 lzc_8 0 22 1UM_3ojDiZ`Hz:PF@CfPa2
-!i122 24
+!i122 25
 l30
-R130
+R140
 VhZ5d@5^hkN=?_HgPki_0S3
 !s100 bGGIdM@>bL>Tc1W;khjV02
 R7
 33
-R28
+R86
 !i10b 1
-R29
-R137
-R138
+R87
+R147
+R148
 !i113 1
 R12
 R13
 Plzc_lib
 R2
 R3
-!i122 8
-R113
+!i122 9
+R123
 R0
-8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_lib.vhd
-FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_lib.vhd
+8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd
+FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd
 l0
 L6 1
 VmRf]N7JcI1>2^LQKnPI:^2
 !s100 ed1ij6zFFbjXk[d2J`=R_3
 R7
 33
-R58
+R8
 !i10b 1
-R59
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_lib.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_lib.vhd|
+R9
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd|
 !i113 1
 R12
 R13
 Plzc_wire
-R15
+R21
 R2
 R3
-!i122 7
-R113
+!i122 8
+R123
 R0
-8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_wire.vhd
-FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_wire.vhd
+8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd
+FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd
 l0
 L7 1
 VAefh9dC5eYdZHzMBjk2_h3
 !s100 mz;O?W@cmkbaOEF24n=@M2
 R7
 33
-R58
+R8
 !i10b 1
-R59
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_wire.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/fpu/lzc_wire.vhd|
+R9
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd|
 !i113 1
 R12
 R13
 Pmytypes
-R15
+R21
 R2
 R3
 !i122 0
 w1711547533
 R0
-8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/myTypes.vhd
-FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/myTypes.vhd
+8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd
+FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd
 l0
 L6 1
 ViZ?2J_2[MkKXb3e=<UNTC0
 !s100 _6Ymn^Nf96_PfJNPj1e_Y2
 R7
 33
-R8
+!s110 1713174995
 !i10b 1
-R9
-!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/myTypes.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/myTypes.vhd|
+Z149 !s108 1713174995.000000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd|
 !i113 1
 R12
 R13
 Enreg
-Z139 w1712059879
+Z150 w1712059879
 R2
 R3
 !i122 1
 R0
-Z140 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/nReg.vhd
-Z141 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/nReg.vhd
+Z151 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd
+Z152 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd
 l0
 L4 1
 VifeFV2UZkUzn9kL9lQI9>2
@@ -1262,9 +1348,9 @@ R7
 33
 R8
 !i10b 1
-R9
-Z142 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/nReg.vhd|
-Z143 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/nReg.vhd|
+R149
+Z153 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd|
+Z154 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd|
 !i113 1
 R12
 R13
@@ -1281,31 +1367,31 @@ R7
 33
 R8
 !i10b 1
-R9
-R142
-R143
+R149
+R153
+R154
 !i113 1
 R12
 R13
 Eshiftreg
-Z144 w1712060156
+Z155 w1712060156
 R2
 R3
-!i122 9
+!i122 4
 R0
-Z145 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/shiftReg.vhd
-Z146 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/shiftReg.vhd
+Z156 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd
+Z157 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd
 l0
 L4 1
 VZXd8gRN3hi`kSiJJlUA3Z0
 !s100 VRHMnSXekIBK`?o_G^L:k1
 R7
 33
-R58
+R8
 !i10b 1
-R59
-Z147 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/shiftReg.vhd|
-Z148 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/LSTM/VHDL/shiftReg.vhd|
+R9
+Z158 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd|
+Z159 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd|
 !i113 1
 R12
 R13
@@ -1313,18 +1399,18 @@ Artl
 R2
 R3
 DEx4 work 8 shiftreg 0 22 ZXd8gRN3hi`kSiJJlUA3Z0
-!i122 9
+!i122 4
 l30
 L25 31
 VSJKV>6CnCCU@E7:nDAkX21
 !s100 oC@OjF]FPU7T9SmF6@[=P0
 R7
 33
-R58
+R8
 !i10b 1
-R59
-R147
-R148
+R9
+R158
+R159
 !i113 1
 R12
 R13

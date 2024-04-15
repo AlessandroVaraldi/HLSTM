@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 seed = 5
 steps = 10
 units = 1
-epochs = 25
+epochs = 50
 learning_rate = 0.0001
-batch_size = 64  # Aggiunto per PyTorch
+batch_size = 64  
 
 # Set seed for reproducibility
 np.random.seed(seed)
@@ -41,18 +41,27 @@ def df_to_X_y(df, window_size=5):
 
 X, y = df_to_X_y(temp, steps)
 
-# Normalize the data
-X_mean = np.mean(X)
-X_std = np.std(X)
-X = (X - X_mean) / X_std
-y_mean = np.mean(y)
-y_std = np.std(y)
-y = (y - y_mean) / y_std
-
-# Split the data into training, validation, and test sets
+# Split and normalize the data into training, validation, and test sets
 X_train, y_train = X[:60000], y[:60000]
+X_train_mean, y_train_mean = np.mean(X_train), np.mean(y_train)
+X_train_std, y_train_std = np.std(X_train), np.std(y_train)
+X_train = (X_train - X_train_mean) / X_train_std
+y_train = (y_train - y_train_mean) / y_train_std
+
 X_val, y_val = X[60000:65000], y[60000:65000]
+X_val_mean, y_val_mean = np.mean(X_val), np.mean(y_val)
+X_val_std, y_val_std = np.std(X_val), np.std(y_val)
+X_val = (X_val - X_val_mean) / X_val_std
+y_val = (y_val - y_val_mean) / y_val_std
+
 X_test, y_test = X[65000:], y[65000:]
+X_test_mean, y_test_mean = np.mean(X_test), np.mean(y_test)
+X_test_std, y_test_std = np.std(X_test), np.std(y_test)
+X_test = (X_test - X_test_mean) / X_test_std
+y_test = (y_test - y_test_mean) / y_test_std
+
+np.save('./Data/xtest.npy', X_test)
+np.save('./Data/ytest.npy', y_test)
 
 # Converti i dati in tensori PyTorch
 X_train_t = torch.tensor(X_train, dtype=torch.float32)
@@ -96,6 +105,7 @@ criterion = nn.MSELoss()
 
 # Ciclo di allenamento
 for epoch in range(epochs):
+    print("Epoch", epoch+1, "of", epochs)
     model.train()
     for X_batch, y_batch in train_loader:
         optimizer.zero_grad()
@@ -121,7 +131,6 @@ actuals = np.concatenate(actuals)
 
 weights_numpy = {name: param.cpu().numpy() for name, param in model.state_dict().items()}
 for name, array in weights_numpy.items():
-    # 'name' può contenere caratteri non validi per i nomi di file, quindi potresti doverlo modificare
     safe_name = name.replace('.', '_')
     np.save(f'./Data/Weights/{safe_name}.npy', array)
 
@@ -136,3 +145,5 @@ plt.plot(test_predictions[:1000])
 plt.suptitle('LSTM applied to test data')
 plt.title('MSE = ' + str(mse), fontsize=9)
 plt.show()
+
+print(test_predictions[:10])

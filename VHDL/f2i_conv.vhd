@@ -14,8 +14,9 @@ END f2i_conv;
 ARCHITECTURE arch OF f2i_conv IS
 	
 	SIGNAL expo_i,expo_o : integer ;
-	SIGNAL frac_o : unsigned (23 DOWNTO 0) ;
+	SIGNAL frac_o: unsigned (23 DOWNTO 0) ;
 	SIGNAL mask,rnd : unsigned (31 DOWNTO 0);
+	signal res: std_logic_vector (23 DOWNTO 0);
 	
 	BEGIN
 		
@@ -28,7 +29,10 @@ ARCHITECTURE arch OF f2i_conv IS
 		expo_o <= to_integer(rnd(30 DOWNTO 23)) - 127;
 		frac_o <= '1' & rnd(22 DOWNTO 0);
 		
-		output(23 downto 0) <= std_logic_vector(shift_right(unsigned(frac_o),(23 - expo_o)));
-		output(31 downto 24) <= (others=>'0');
+		res <= std_logic_vector(shift_right(unsigned(frac_o),(23 - expo_o)));
+		
+		output(23 downto 0)  <=	res				 when res(23 downto 8) = "0000000000000000" else
+										(others => '1');
+		output(31 downto 24) <= (others => '0');
 		
 END arch;

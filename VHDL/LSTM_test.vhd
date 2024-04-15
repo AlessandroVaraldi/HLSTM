@@ -1,6 +1,11 @@
 library ieee ;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.std_logic_textio.all;
+use std.textio.all;
+
+use std.textio.all; -- TextIO is necessary for file operations
+use ieee.std_logic_textio.all; -- For handling std_logic_vector in TextIO
 
 entity LSTM_test is
 end LSTM_test;
@@ -25,8 +30,40 @@ end component;
 signal reset,start,ready,done: std_logic := '0';
 signal input,h_out: std_logic_vector (31 downto 0) := (others=>'0');
 
-type STATE_TYPE is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9);
-signal STATE,NEXT_STATE: STATE_TYPE;
+component in_RAM IS
+	PORT
+	(
+		address		: IN STD_LOGIC_VECTOR (9 DOWNTO 0);
+		clken		: IN STD_LOGIC  := '1';
+		clock		: IN STD_LOGIC  := '1';
+		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		rden		: IN STD_LOGIC  := '1';
+		wren		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+	);
+END component;
+
+signal ram_ce,ram_rd,ram_wr: std_logic := '0';
+signal ram_ad: unsigned (9 downto 0) := (others => '0');
+signal ram_in,ram_re: std_logic_vector (31 downto 0) := (others => '0');
+
+component nReg is 
+ generic (n: integer := 8);
+	port 
+	(
+		clock		: in  std_logic;
+		en			: in  std_logic;
+		aclr		: in  std_logic;
+ 		sclr		: in  std_logic;
+ 		D			: in  std_logic_vector (n-1 downto 0);
+ 		Q			: out std_logic_vector (n-1 downto 0)
+ 	);
+end component;
+
+signal reg_en,reg_cl,reg_rs: std_logic_vector (0 to 7) := (others => '0');
+signal output: std_logic_vector (31 downto 0) := (others => '0'); 
+
+file output_file : text open write_mode is "output_data.txt"; -- File declaration
 
 begin
 	
@@ -34,6 +71,8 @@ begin
 	
 	testing: process
 	begin
+	
+		reset <= '0';
 		
 		start <= '0';
 		
@@ -50,64 +89,31 @@ begin
 	
 	reading: process (clock,ready)
 	begin
+		
+		ram_ce <= '1';
+		ram_rd <= '1';
+		ram_wr <= '0';
+		
 		if rising_edge(clock) then
-			STATE <= NEXT_STATE;
+			if ready = '1' then
+				ram_ad <= ram_ad + "0000000001";
+			end if;
 		end if;
 		
-		input <= "00111111001010101111000111010000";
-		case state is
-			when s0 => 
-				input <= "00111111001010101111000111010000";
-				if ready = '1' then NEXT_STATE <= s1;
-				else NEXT_STATE <= s0;
-				end if;
-			when s1 =>
-				input <= "00111111000111100001110010011110";
-				if ready = '1' then NEXT_STATE <= s2;
-				else NEXT_STATE <= s1;
-				end if;
-			when s2 =>
-				input <= "00111110111100101001101101111011";
-				if ready = '1' then NEXT_STATE <= s3;
-				else NEXT_STATE <= s2;
-				end if;
-			when s3 =>
-				input <= "00111110110000011001010101010011";
-				if ready = '1' then NEXT_STATE <= s4;
-				else NEXT_STATE <= s3;
-				end if;
-			when s4 =>
-				input <= "00111110100100110000011100010011";
-				if ready = '1' then NEXT_STATE <= s5;
-				else NEXT_STATE <= s4;
-				end if;
-			when s5 =>
-				input <= "00111110000111110011011000111001";
-				if ready = '1' then NEXT_STATE <= s6;
-				else NEXT_STATE <= s5;
-				end if;
-			when s6 =>
-				input <= "00111101101111001101110100001010";
-				if ready = '1' then NEXT_STATE <= s7;
-				else NEXT_STATE <= s6;
-				end if;
-			when s7 =>
-				input <= "00111100111011010111010110011111";
-				if ready = '1' then NEXT_STATE <= s8;
-				else NEXT_STATE <= s7;
-				end if;
-			when s8 =>
-				input <= "10111100111110101001101111100010";
-				if ready = '1' then NEXT_STATE <= s9;
-				else NEXT_STATE <= s8;
-				end if;
-			when s9 =>
-				input <= "10111101011110110110011100010100";
-				if ready = '1' then NEXT_STATE <= s0;
-				else NEXT_STATE <= s9;
-				end if;
-		end case;
 	end process;
+	
+	m0:in_RAM
+		port map (
+			clock			=> clock		,
+			clken			=> ram_ce	,
+			rden			=> ram_rd	,
+			wren			=> ram_wr	,
+			address		=> std_logic_vector(ram_ad)	,
+			data			=> (others => '0'),
+			q				=> ram_re
+		);
+	
+	input <= ram_re;
 	
 	u0: LSTM_cell
 		port map (
@@ -118,7 +124,29 @@ begin
 			h_out			=> h_out		,
 			ready			=> ready		,
 			sdone			=> done		
+		);		
+		
+	r0:nReg
+		generic map (n=>32)
+		port map (
+			clock			=> clock		,
+			en				=> done		,
+			aclr			=> '0'		,
+			sclr			=> '0'		,
+			D				=> h_out		,
+			Q 				=> output
 		);
+		
+	 write_output: process(clock)
+        variable line_out : line; -- Variable to hold the text representation of the output
+    begin
+        if rising_edge(clock) then
+            if done = '1' then -- Check if 'done' signal is asserted
+                hwrite(line_out, output); -- Convert the output to hexadecimal and write it to the line variable
+                writeline(output_file, line_out); -- Write the line variable to the file
+            end if;
+        end if;
+    end process write_output;
 		
 end test;
 		

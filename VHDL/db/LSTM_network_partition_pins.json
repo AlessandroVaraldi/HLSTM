@@ -140,11 +140,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "start",
 					"strict" : false
 				},
 				{
-					"name" : "start",
+					"name" : "clock",
 					"strict" : false
 				},
 				{
@@ -153,38 +153,6 @@
 				},
 				{
 					"name" : "input[31]",
-					"strict" : false
-				},
-				{
-					"name" : "input[23]",
-					"strict" : false
-				},
-				{
-					"name" : "input[29]",
-					"strict" : false
-				},
-				{
-					"name" : "input[28]",
-					"strict" : false
-				},
-				{
-					"name" : "input[26]",
-					"strict" : false
-				},
-				{
-					"name" : "input[25]",
-					"strict" : false
-				},
-				{
-					"name" : "input[24]",
-					"strict" : false
-				},
-				{
-					"name" : "input[27]",
-					"strict" : false
-				},
-				{
-					"name" : "input[30]",
 					"strict" : false
 				},
 				{
@@ -200,7 +168,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "input[7]",
+					"name" : "input[3]",
 					"strict" : false
 				},
 				{
@@ -208,11 +176,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "input[3]",
-					"strict" : false
-				},
-				{
-					"name" : "input[1]",
+					"name" : "input[7]",
 					"strict" : false
 				},
 				{
@@ -220,7 +184,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "input[16]",
+					"name" : "input[1]",
 					"strict" : false
 				},
 				{
@@ -229,6 +193,10 @@
 				},
 				{
 					"name" : "input[17]",
+					"strict" : false
+				},
+				{
+					"name" : "input[16]",
 					"strict" : false
 				},
 				{
@@ -248,11 +216,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "input[21]",
+					"name" : "input[20]",
 					"strict" : false
 				},
 				{
-					"name" : "input[20]",
+					"name" : "input[21]",
 					"strict" : false
 				},
 				{
@@ -277,6 +245,38 @@
 				},
 				{
 					"name" : "input[10]",
+					"strict" : false
+				},
+				{
+					"name" : "input[26]",
+					"strict" : false
+				},
+				{
+					"name" : "input[25]",
+					"strict" : false
+				},
+				{
+					"name" : "input[30]",
+					"strict" : false
+				},
+				{
+					"name" : "input[23]",
+					"strict" : false
+				},
+				{
+					"name" : "input[24]",
+					"strict" : false
+				},
+				{
+					"name" : "input[29]",
+					"strict" : false
+				},
+				{
+					"name" : "input[28]",
+					"strict" : false
+				},
+				{
+					"name" : "input[27]",
 					"strict" : false
 				}
 			]
