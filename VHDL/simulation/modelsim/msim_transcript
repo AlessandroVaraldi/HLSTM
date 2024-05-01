@@ -1,51 +1,434 @@
 # Reading pref.tcl
-# do LSTM_network_run_msim_gate_vhdl.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do LSTM_network_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {LSTM_network.vho}
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:14:04 on Apr 15,2024
-# vcom -reportprogress 300 -93 -work work LSTM_network.vho 
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cyclone10lp_atom_pack
-# -- Loading package cyclone10lp_components
-# -- Compiling entity hard_block
-# -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
+# -- Loading package NUMERIC_STD
+# -- Compiling package myTypes
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nReg
+# -- Compiling architecture rtl of nReg
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package NUMERIC_STD
+# -- Compiling entity f2i_conv
+# -- Compiling architecture arch of f2i_conv
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity counter
+# -- Compiling architecture SYN of counter
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftReg
+# -- Compiling architecture rtl of shiftReg
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity LUT
+# -- Compiling architecture SYN of lut
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package fp_wire
+# -- Compiling package body fp_wire
+# -- Loading package fp_wire
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package fp_func
+# -- Compiling package body fp_func
+# -- Loading package fp_func
+# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:53 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package lzc_wire
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package lzc_lib
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity d_flip_flop
+# -- Compiling architecture Behavioral of d_flip_flop
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
 # -- Compiling entity LSTM_cell
-# -- Compiling architecture structure of LSTM_cell
-# End time: 14:14:05 on Apr 15,2024, Elapsed time: 0:00:01
+# -- Compiling architecture rtl of LSTM_cell
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fpu
+# -- Compiling architecture rtl of fpu
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package lzc_lib
+# -- Loading package fp_wire
+# -- Compiling package fp_lib
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Compiling entity fp_sgnj
+# -- Compiling architecture behavior of fp_sgnj
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:54 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fp_rnd
+# -- Compiling architecture behavior of fp_rnd
+# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Compiling entity fp_max
+# -- Compiling architecture behavior of fp_max
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package fp_wire
+# -- Compiling entity fp_mac
+# -- Compiling architecture behavior of fp_mac
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fp_fma
+# -- Compiling architecture behavior of fp_fma
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fp_fdiv
+# -- Compiling architecture behavior of fp_fdiv
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fp_ext
+# -- Compiling architecture behavior of fp_ext
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Compiling entity fp_exe
+# -- Compiling architecture behavior of fp_exe
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Loading package fp_func
+# -- Compiling entity fp_cvt
+# -- Compiling architecture behavior of fp_cvt
+# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:55 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package fp_wire
+# -- Compiling entity fp_cmp
+# -- Compiling architecture behavior of fp_cmp
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_4
+# -- Compiling architecture behavior of lzc_4
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_8
+# -- Compiling architecture behavior of lzc_8
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_16
+# -- Compiling architecture behavior of lzc_16
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_32
+# -- Compiling architecture behavior of lzc_32
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_64
+# -- Compiling architecture behavior of lzc_64
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package lzc_lib
+# -- Compiling entity lzc_128
+# -- Compiling architecture behavior of lzc_128
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package lzc_wire
+# -- Loading package lzc_lib
+# -- Loading package fp_wire
+# -- Loading package fp_lib
+# -- Compiling entity fp_unit
+# -- Compiling architecture behavior of fp_unit
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd}
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:14:05 on Apr 15,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd 
+# Start time: 15:34:56 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_mf_components
 # -- Compiling entity IN_RAM
 # -- Compiling architecture SYN of IN_RAM
-# End time: 14:14:06 on Apr 15,2024, Elapsed time: 0:00:01
+# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd}
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:14:06 on Apr 15,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd 
+# Start time: 15:34:57 on Apr 22,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -53,12 +436,12 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity LSTM_test
 # -- Compiling architecture test of LSTM_test
-# End time: 14:14:06 on Apr 15,2024, Elapsed time: 0:00:00
+# End time: 15:34:57 on Apr 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L cyclone10lp -L gate_work -L work -voptargs="+acc"  LSTM_test
-# vsim -t 1ps -L altera -L cyclone10lp -L gate_work -L work -voptargs=""+acc"" LSTM_test 
-# Start time: 14:14:06 on Apr 15,2024
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs="+acc"  LSTM_test
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs=""+acc"" LSTM_test 
+# Start time: 15:34:57 on Apr 22,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -72,32 +455,42 @@
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altera_device_families(body)
 # Loading altera_mf.altsyncram(translated)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading cyclone10lp.cyclone10lp_atom_pack(body)
-# Loading cyclone10lp.cyclone10lp_components
-# Loading work.lstm_cell(structure)
-# Loading work.hard_block(structure)
-# Loading cyclone10lp.cyclone10lp_io_obuf(arch)
-# Loading cyclone10lp.cyclone10lp_io_ibuf(arch)
-# Loading cyclone10lp.cyclone10lp_clkctrl(vital_clkctrl)
-# Loading cyclone10lp.cyclone10lp_ena_reg(behave)
-# Loading cyclone10lp.cyclone10lp_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# Loading cyclone10lp.cyclone10lp_ram_block(block_arch)
-# Loading cyclone10lp.cyclone10lp_ram_register(reg_arch)
-# Loading cyclone10lp.cyclone10lp_ram_pulse_generator(pgen_arch)
-# Loading cyclone10lp.cyclone10lp_mac_mult(vital_cyclone10lp_mac_mult)
-# Loading cyclone10lp.cyclone10lp_mac_data_reg(vital_cyclone10lp_mac_data_reg)
-# Loading cyclone10lp.cyclone10lp_mac_sign_reg(cyclone10lp_mac_sign_reg)
-# Loading cyclone10lp.cyclone10lp_mac_mult_internal(vital_cyclone10lp_mac_mult_internal)
-# Loading cyclone10lp.cyclone10lp_mac_out(vital_cyclone10lp_mac_out)
-# ** Warning: (vsim-3473) Component instance "r0 : nReg" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd
-# ** Warning: Design size of 603438 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
+# Loading work.mytypes
+# Loading work.lstm_cell(rtl)
+# Loading work.shiftreg(rtl)
+# Loading work.counter(syn)
+# Loading lpm.lpm_components
+# Loading lpm.lpm_common_conversion(body)
+# Loading lpm.lpm_counter(lpm_syn)
+# Loading work.lzc_wire
+# Loading work.fp_wire(body)
+# Loading work.fp_func(body)
+# Loading work.fpu(rtl)
+# Loading work.lzc_lib
+# Loading work.fp_lib
+# Loading work.fp_unit(behavior)
+# Loading work.lzc_32(behavior)
+# Loading work.lzc_16(behavior)
+# Loading work.lzc_8(behavior)
+# Loading work.lzc_4(behavior)
+# Loading work.lzc_128(behavior)
+# Loading work.lzc_64(behavior)
+# Loading work.fp_ext(behavior)
+# Loading work.fp_cmp(behavior)
+# Loading work.fp_rnd(behavior)
+# Loading work.fp_cvt(behavior)
+# Loading work.fp_sgnj(behavior)
+# Loading work.fp_max(behavior)
+# Loading work.fp_fma(behavior)
+# Loading work.fp_mac(behavior)
+# Loading work.fp_fdiv(behavior)
+# Loading work.fp_exe(behavior)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.f2i_conv(arch)
+# Loading work.d_flip_flop(behavioral)
+# Loading work.nreg(rtl)
+# Loading work.lut(syn)
 # 
 # add wave *
 # view structure
@@ -105,282 +498,235 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1 ms
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 25  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 25  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-run -continue
-add wave -position insertpoint sim:/lstm_test/u0/*
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_max_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 12  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 14  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+do C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/simulation/modelsim/wave.do
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3473) Component instance "r0 : nReg" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd
-# ** Warning: Design size of 304385 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
 run -continue
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 2  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 4  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 5  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 15  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 19  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 21  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult5\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 23  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult1\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 25  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult3\/mac_multiply
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 25  Instance: /lstm_test/u0/\u0|u0|fp_fma_comp|Mult0|auto_generated|mac_mult7\/mac_multiply
-# End time: 14:19:03 on Apr 15,2024, Elapsed time: 0:04:57
-# Errors: 0, Warnings: 69
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_max_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 12  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 14  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+add wave -position insertpoint sim:/lstm_test/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -continue
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_max_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 12  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 14  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
+# End time: 16:03:34 on Apr 22,2024, Elapsed time: 0:28:37
+# Errors: 0, Warnings: 37

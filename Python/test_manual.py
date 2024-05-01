@@ -3,24 +3,12 @@ import struct
 import numpy as np
 import time
 
-UPPER_BOUND = 6
-LOWER_BOUND = UPPER_BOUND - 8
-STEPS = 2**7
+precision = 256
 
-def sigmoid(x): 
-    LUT = 1/(1+np.exp(-np.linspace(LOWER_BOUND, UPPER_BOUND, STEPS)))
-    idx = (x - LOWER_BOUND) / ((UPPER_BOUND - LOWER_BOUND) / STEPS)
-    return LUT[int(idx[0])]
-
-def truesigm(x):
+def sigm(x):
     return 1/(1+np.exp(-x))
-     
-def tanh(x): 
-    LUT = np.tanh(np.linspace(LOWER_BOUND, UPPER_BOUND, STEPS))
-    idx = (x - LOWER_BOUND) / ((UPPER_BOUND - LOWER_BOUND) / STEPS)
-    return LUT[int(idx[0])]
 
-def truetanh(x):
+def tanh(x):
     return np.tanh(x)
 
 def relu(x): return np.maximum(0, x)
@@ -33,14 +21,19 @@ def lstm(x_t, wx, wh, bx, bh, W_dense1, b_dense1, W_dense2, b_dense2, output):
         #if i == 0: 
         #    start = time.time()
         for j in range(0,len(x_t[0,:,0])):
-            f_t = truesigm(wx[0, 0] * x_t[i, j, 0] + wh[0, 0] * h_t + bx[0] + bh[0])
-            i_t = truesigm(wx[1, 0] * x_t[i, j, 0] + wh[1, 0] * h_t + bx[1] + bh[1])
-            c_hat_t = truetanh(wx[2, 0] * x_t[i, j, 0] + wh[2, 0] * h_t + bx[2] + bh[2])
-            o_t = truesigm(wx[3, 0] * x_t[i, j, 0] + wh[3, 0] * h_t + bx[3] + bh[3])
-            c_t = f_t * c_t + i_t * c_hat_t
-            h_t = o_t * np.tanh(c_t)
 
-        output[i] = np.dot(W_dense2,  relu(W_dense1*h_t + b_dense1)) + b_dense2 
+            i_t = sigm(wx[0, 0] * x_t[i, j, 0] + wh[0, 0] * h_t + bx[0] + bh[0])
+            f_t = sigm(wx[1, 0] * x_t[i, j, 0] + wh[1, 0] * h_t + bx[1] + bh[1])
+            s_t = tanh(wx[2, 0] * x_t[i, j, 0] + wh[2, 0] * h_t + bx[2] + bh[2])
+            o_t = sigm(wx[3, 0] * x_t[i, j, 0] + wh[3, 0] * h_t + bx[3] + bh[3])
+
+            if i == 0: print(i_t, f_t, s_t, o_t)
+            c_t = f_t * c_t + (i_t * s_t)
+            h_t = o_t * tanh(c_t)
+            if i == 0: print(h_t)
+
+        output[i] = (np.dot(W_dense2,  relu(W_dense1*h_t + b_dense1)) + b_dense2).squeeze()
+
         #if i == 0:
         #    end = time.time()
         #    print("Time per iteration: ", end-start)
@@ -87,5 +80,5 @@ plt.suptitle('LSTM applied to test data')
 plt.title('MSE = ' + str(MSE), fontsize=9)
 plt.show()
 
-for value in output[:100]:
-    print(value)
+for i in range(10):
+    print(output[i])

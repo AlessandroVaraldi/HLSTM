@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LSTM_network
-Mon Apr 15 14:19:43 2024
+Mon Apr 22 14:36:48 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -84,13 +84,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 15 14:19:43 2024       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 22 14:36:48 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; LSTM_network                                ;
 ; Top-level Entity Name              ; LSTM_cell                                   ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 4,651                                       ;
-;     Total combinational functions  ; 4,123                                       ;
+; Total logic elements               ; 4,607                                       ;
+;     Total combinational functions  ; 4,079                                       ;
 ;     Dedicated logic registers      ; 917                                         ;
 ; Total registers                    ; 917                                         ;
 ; Total pins                         ; 69                                          ;
@@ -201,8 +201,8 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 3            ;   0.4%      ;
+;     Processor 4            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -275,16 +275,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 4,651       ;
+; Estimated Total logic elements              ; 4,607       ;
 ;                                             ;             ;
-; Total combinational functions               ; 4123        ;
+; Total combinational functions               ; 4079        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 2311        ;
-;     -- 3 input functions                    ; 1262        ;
-;     -- <=2 input functions                  ; 550         ;
+;     -- 4 input functions                    ; 2271        ;
+;     -- 3 input functions                    ; 1273        ;
+;     -- <=2 input functions                  ; 535         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 3739        ;
+;     -- normal mode                          ; 3695        ;
 ;     -- arithmetic mode                      ; 384         ;
 ;                                             ;             ;
 ; Total registers                             ; 917         ;
@@ -298,7 +298,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 948         ;
-; Total fan-out                               ; 18068       ;
+; Total fan-out                               ; 17911       ;
 ; Average fan-out                             ; 3.46        ;
 +---------------------------------------------+-------------+
 
@@ -308,7 +308,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                    ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |LSTM_cell                                   ; 4123 (65)           ; 917 (51)                  ; 7936        ; 7            ; 1       ; 3         ; 69   ; 0            ; |LSTM_cell                                                                                                                                             ; LSTM_cell       ; work         ;
+; |LSTM_cell                                   ; 4079 (62)           ; 917 (51)                  ; 7936        ; 7            ; 1       ; 3         ; 69   ; 0            ; |LSTM_cell                                                                                                                                             ; LSTM_cell       ; work         ;
 ;    |LUT:LUT1|                                ; 0 (0)               ; 0 (0)                     ; 7936        ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|LUT:LUT1                                                                                                                                    ; LUT             ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 7936        ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|LUT:LUT1|altsyncram:altsyncram_component                                                                                                    ; altsyncram      ; work         ;
 ;          |altsyncram_n4u3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 7936        ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|LUT:LUT1|altsyncram:altsyncram_component|altsyncram_n4u3:auto_generated                                                                     ; altsyncram_n4u3 ; work         ;
@@ -319,17 +319,17 @@ https://fpgasoftware.intel.com/eula.
 ;    |d_flip_flop:f1|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|d_flip_flop:f1                                                                                                                              ; d_flip_flop     ; work         ;
 ;    |d_flip_flop:f2|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|d_flip_flop:f2                                                                                                                              ; d_flip_flop     ; work         ;
 ;    |f2i_conv:u1|                             ; 156 (156)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|f2i_conv:u1                                                                                                                                 ; f2i_conv        ; work         ;
-;    |fpu:u0|                                  ; 3713 (0)            ; 219 (0)                   ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0                                                                                                                                      ; fpu             ; work         ;
-;       |fp_unit:u0|                           ; 3713 (0)            ; 219 (0)                   ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0                                                                                                                           ; fp_unit         ; work         ;
-;          |fp_exe:fp_exe_comp|                ; 843 (843)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_exe:fp_exe_comp                                                                                                        ; fp_exe          ; work         ;
-;          |fp_ext:fp_ext1_comp|               ; 168 (168)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_ext:fp_ext1_comp                                                                                                       ; fp_ext          ; work         ;
-;          |fp_ext:fp_ext2_comp|               ; 146 (146)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_ext:fp_ext2_comp                                                                                                       ; fp_ext          ; work         ;
+;    |fpu:u0|                                  ; 3672 (0)            ; 219 (0)                   ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0                                                                                                                                      ; fpu             ; work         ;
+;       |fp_unit:u0|                           ; 3672 (0)            ; 219 (0)                   ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0                                                                                                                           ; fp_unit         ; work         ;
+;          |fp_exe:fp_exe_comp|                ; 837 (837)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_exe:fp_exe_comp                                                                                                        ; fp_exe          ; work         ;
+;          |fp_ext:fp_ext1_comp|               ; 169 (169)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_ext:fp_ext1_comp                                                                                                       ; fp_ext          ; work         ;
+;          |fp_ext:fp_ext2_comp|               ; 143 (143)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_ext:fp_ext2_comp                                                                                                       ; fp_ext          ; work         ;
 ;          |fp_ext:fp_ext3_comp|               ; 82 (82)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_ext:fp_ext3_comp                                                                                                       ; fp_ext          ; work         ;
-;          |fp_fma:fp_fma_comp|                ; 2213 (2158)         ; 219 (219)                 ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp                                                                                                        ; fp_fma          ; work         ;
+;          |fp_fma:fp_fma_comp|                ; 2194 (2139)         ; 219 (219)                 ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp                                                                                                        ; fp_fma          ; work         ;
 ;             |lpm_mult:Mult0|                 ; 55 (0)              ; 0 (0)                     ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0                                                                                         ; lpm_mult        ; work         ;
 ;                |mult_4dt:auto_generated|     ; 55 (55)             ; 0 (0)                     ; 0           ; 7            ; 1       ; 3         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0|mult_4dt:auto_generated                                                                 ; mult_4dt        ; work         ;
 ;          |fp_rnd:fp_rnd_comp|                ; 49 (49)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|fp_rnd:fp_rnd_comp                                                                                                        ; fp_rnd          ; work         ;
-;          |lzc_128:lzc_128_comp|              ; 127 (33)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp                                                                                                      ; lzc_128         ; work         ;
+;          |lzc_128:lzc_128_comp|              ; 117 (35)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp                                                                                                      ; lzc_128         ; work         ;
 ;             |lzc_64:lzc_64_comp_0|           ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0                                                                                 ; lzc_64          ; work         ;
 ;                |lzc_32:lzc_32_comp_1|        ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0|lzc_32:lzc_32_comp_1                                                            ; lzc_32          ; work         ;
 ;                   |lzc_16:lzc_16_comp_1|     ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1                                       ; lzc_16          ; work         ;
@@ -337,40 +337,39 @@ https://fpgasoftware.intel.com/eula.
 ;                         |lzc_4:lzc_4_comp_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
 ;                      |lzc_8:lzc_8_comp_1|    ; 6 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;             |lzc_64:lzc_64_comp_1|           ; 87 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1                                                                                 ; lzc_64          ; work         ;
-;                |lzc_32:lzc_32_comp_0|        ; 41 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0                                                            ; lzc_32          ; work         ;
-;                   |lzc_16:lzc_16_comp_0|     ; 19 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0                                       ; lzc_16          ; work         ;
-;                      |lzc_8:lzc_8_comp_0|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
-;                         |lzc_4:lzc_4_comp_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                      |lzc_8:lzc_8_comp_1|    ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
+;             |lzc_64:lzc_64_comp_1|           ; 75 (7)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1                                                                                 ; lzc_64          ; work         ;
+;                |lzc_32:lzc_32_comp_0|        ; 43 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0                                                            ; lzc_32          ; work         ;
+;                   |lzc_16:lzc_16_comp_0|     ; 22 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0                                       ; lzc_16          ; work         ;
+;                      |lzc_8:lzc_8_comp_0|    ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
+;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
+;                      |lzc_8:lzc_8_comp_1|    ; 6 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                   |lzc_16:lzc_16_comp_1|     ; 13 (2)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1                                       ; lzc_16          ; work         ;
+;                   |lzc_16:lzc_16_comp_1|     ; 15 (4)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1                                       ; lzc_16          ; work         ;
 ;                      |lzc_8:lzc_8_comp_0|    ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
 ;                      |lzc_8:lzc_8_comp_1|    ; 8 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_0|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                |lzc_32:lzc_32_comp_1|        ; 40 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1                                                            ; lzc_32          ; work         ;
-;                   |lzc_16:lzc_16_comp_0|     ; 20 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0                                       ; lzc_16          ; work         ;
+;                |lzc_32:lzc_32_comp_1|        ; 25 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1                                                            ; lzc_32          ; work         ;
+;                   |lzc_16:lzc_16_comp_0|     ; 15 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0                                       ; lzc_16          ; work         ;
 ;                      |lzc_8:lzc_8_comp_0|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                      |lzc_8:lzc_8_comp_1|    ; 6 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
+;                      |lzc_8:lzc_8_comp_1|    ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
 ;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                   |lzc_16:lzc_16_comp_1|     ; 15 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1                                       ; lzc_16          ; work         ;
-;                      |lzc_8:lzc_8_comp_0|    ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
-;                         |lzc_4:lzc_4_comp_1| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;                      |lzc_8:lzc_8_comp_1|    ; 7 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
-;                         |lzc_4:lzc_4_comp_1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
-;          |lzc_32:lzc1_32_comp|               ; 34 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp                                                                                                       ; lzc_32          ; work         ;
-;             |lzc_16:lzc_16_comp_0|           ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0                                                                                  ; lzc_16          ; work         ;
-;                |lzc_8:lzc_8_comp_1|          ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                                                               ; lzc_8           ; work         ;
-;                   |lzc_4:lzc_4_comp_0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_0                                            ; lzc_4           ; work         ;
+;                   |lzc_16:lzc_16_comp_1|     ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1                                       ; lzc_16          ; work         ;
+;                      |lzc_8:lzc_8_comp_0|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0                    ; lzc_8           ; work         ;
+;                         |lzc_4:lzc_4_comp_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
+;                      |lzc_8:lzc_8_comp_1|    ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1                    ; lzc_8           ; work         ;
+;                         |lzc_4:lzc_4_comp_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_1|lzc_32:lzc_32_comp_1|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1 ; lzc_4           ; work         ;
+;          |lzc_32:lzc1_32_comp|               ; 32 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp                                                                                                       ; lzc_32          ; work         ;
+;             |lzc_16:lzc_16_comp_0|           ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0                                                                                  ; lzc_16          ; work         ;
+;                |lzc_8:lzc_8_comp_1|          ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                                                               ; lzc_8           ; work         ;
 ;                   |lzc_4:lzc_4_comp_1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1                                            ; lzc_4           ; work         ;
 ;             |lzc_16:lzc_16_comp_1|           ; 7 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_1                                                                                  ; lzc_16          ; work         ;
 ;                |lzc_8:lzc_8_comp_0|          ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0                                                               ; lzc_8           ; work         ;
 ;                   |lzc_4:lzc_4_comp_0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_0                                            ; lzc_4           ; work         ;
 ;                   |lzc_4:lzc_4_comp_1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_1                                            ; lzc_4           ; work         ;
 ;                |lzc_8:lzc_8_comp_1|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_1|lzc_8:lzc_8_comp_1                                                               ; lzc_8           ; work         ;
-;          |lzc_32:lzc2_32_comp|               ; 27 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc2_32_comp                                                                                                       ; lzc_32          ; work         ;
+;          |lzc_32:lzc2_32_comp|               ; 25 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc2_32_comp                                                                                                       ; lzc_32          ; work         ;
 ;             |lzc_16:lzc_16_comp_0|           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc2_32_comp|lzc_16:lzc_16_comp_0                                                                                  ; lzc_16          ; work         ;
 ;                |lzc_8:lzc_8_comp_1|          ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc2_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1                                                               ; lzc_8           ; work         ;
 ;                   |lzc_4:lzc_4_comp_1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LSTM_cell|fpu:u0|fp_unit:u0|lzc_32:lzc2_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_1|lzc_4:lzc_4_comp_1                                            ; lzc_4           ; work         ;
@@ -1229,22 +1228,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SLD       ; 4                           ;
 ;     SCLR              ; 88                          ;
 ;     plain             ; 131                         ;
-; cycloneiii_lcell_comb ; 4123                        ;
+; cycloneiii_lcell_comb ; 4079                        ;
 ;     arith             ; 384                         ;
 ;         2 data inputs ; 183                         ;
 ;         3 data inputs ; 201                         ;
-;     normal            ; 3739                        ;
+;     normal            ; 3695                        ;
 ;         0 data inputs ; 7                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 354                         ;
-;         3 data inputs ; 1061                        ;
-;         4 data inputs ; 2311                        ;
+;         2 data inputs ; 339                         ;
+;         3 data inputs ; 1072                        ;
+;         4 data inputs ; 2271                        ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ; cycloneiii_ram_block  ; 31                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 33.90                       ;
-; Average LUT depth     ; 26.33                       ;
+; Max LUT depth         ; 33.50                       ;
+; Average LUT depth     ; 26.45                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1253,7 +1252,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:11     ;
 +----------------+--------------+
 
 
@@ -1263,7 +1262,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 15 14:19:24 2024
+    Info: Processing started: Mon Apr 22 14:36:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LSTM -c LSTM_network
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1364,15 +1363,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file d_flip_
     Info (12023): Found entity 1: d_flip_flop File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd Line: 4
 Info (12127): Elaborating entity "LSTM_cell" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at LSTM_cell.vhd(102): object "tmp" assigned a value but never read File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 102
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(310): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 310
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(313): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 313
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(491): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 491
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(511): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 511
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(520): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 520
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(529): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 529
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(538): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 538
-Info (12128): Elaborating entity "shiftReg" for hierarchy "shiftReg:l0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 602
-Info (12128): Elaborating entity "counter" for hierarchy "counter:c0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 746
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(278): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 278
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(281): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 281
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(459): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 459
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(479): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 479
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(488): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 488
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(497): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 497
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(506): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 506
+Info (12128): Elaborating entity "shiftReg" for hierarchy "shiftReg:l0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 570
+Info (12128): Elaborating entity "counter" for hierarchy "counter:c0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 714
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
 Info (12130): Elaborated megafunction instantiation "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
 Info (12133): Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
@@ -1383,7 +1382,7 @@ Info (12133): Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_gaj.tdf
     Info (12023): Found entity 1: cntr_gaj File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/cntr_gaj.tdf Line: 26
 Info (12128): Elaborating entity "cntr_gaj" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
-Info (12128): Elaborating entity "fpu" for hierarchy "fpu:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 755
+Info (12128): Elaborating entity "fpu" for hierarchy "fpu:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 723
 Info (12128): Elaborating entity "fp_unit" for hierarchy "fpu:u0|fp_unit:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd Line: 89
 Info (12128): Elaborating entity "lzc_32" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 67
 Info (12128): Elaborating entity "lzc_16" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd Line: 36
@@ -1401,10 +1400,10 @@ Info (12128): Elaborating entity "fp_fma" for hierarchy "fpu:u0|fp_unit:u0|fp_fm
 Info (12128): Elaborating entity "fp_mac" for hierarchy "fpu:u0|fp_unit:u0|fp_mac:fp_mac_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 165
 Info (12128): Elaborating entity "fp_fdiv" for hierarchy "fpu:u0|fp_unit:u0|fp_fdiv:fp_fdiv_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 171
 Info (12128): Elaborating entity "fp_exe" for hierarchy "fpu:u0|fp_unit:u0|fp_exe:fp_exe_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 181
-Info (12128): Elaborating entity "f2i_conv" for hierarchy "f2i_conv:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 769
-Info (12128): Elaborating entity "d_flip_flop" for hierarchy "d_flip_flop:f0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 777
-Info (12128): Elaborating entity "nReg" for hierarchy "nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 809
-Info (12128): Elaborating entity "LUT" for hierarchy "LUT:LUT1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 923
+Info (12128): Elaborating entity "f2i_conv" for hierarchy "f2i_conv:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 737
+Info (12128): Elaborating entity "d_flip_flop" for hierarchy "d_flip_flop:f0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 745
+Info (12128): Elaborating entity "nReg" for hierarchy "nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 777
+Info (12128): Elaborating entity "LUT" for hierarchy "LUT:LUT1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 891
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
 Info (12130): Elaborated megafunction instantiation "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
 Info (12133): Instantiated megafunction "LUT:LUT1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
@@ -1486,16 +1485,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 14 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4797 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4753 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 4690 logic cells
+    Info (21061): Implemented 4646 logic cells
     Info (21064): Implemented 31 RAM segments
     Info (21062): Implemented 7 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Mon Apr 15 14:19:43 2024
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Mon Apr 22 14:36:49 2024
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:18
 
 

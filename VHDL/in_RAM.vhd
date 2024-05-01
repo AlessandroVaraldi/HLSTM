@@ -65,7 +65,7 @@ BEGIN
 	GENERIC MAP (
 		clock_enable_input_a => "NORMAL",
 		clock_enable_output_a => "NORMAL",
-		init_file => "./mem_init/input_a.mif",
+		init_file => "./mem_init/input.mif",
 		intended_device_family => "Cyclone 10 LP",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",

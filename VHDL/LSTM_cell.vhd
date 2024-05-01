@@ -164,79 +164,47 @@ signal STATE,NEXT_STATE: STATE_TYPE;
 
 begin
 
-	Wx.d0 <= X"409977ea";
-	Wx.d1 <= X"4030d189";
-	Wx.d2 <= X"41dee54c";
-	Wx.d3 <= X"40b395a3";
+	-- Input state weights
+	Wx.d0 <= X"409aabc9";
+	Wx.d1 <= X"4032fc98";
+	Wx.d2 <= X"41e07930";
+	Wx.d3 <= X"40b5ffce";
 	
-	Bx.d0 <= X"418de5ed";
-	Bx.d1 <= X"41d4d566";
-	Bx.d2 <= X"41085799";
-	Bx.d3 <= X"422ccd73";
+	-- Input state biases
+	Bx.d0 <= X"4189afee";
+	Bx.d1 <= X"41d04493";
+	Bx.d2 <= X"40ffc6c1";
+	Bx.d3 <= X"422ae26f";
 	
-	Wh.d0 <= X"41c4b96f";
-	Wh.d1 <= X"c19985f6";
-	Wh.d2 <= X"c2d63ac9";
-	Wh.d3 <= X"422e6798";
+	-- Hidden state weights
+	Wh.d0 <= X"41c44cb2";
+	Wh.d1 <= X"c19a1c45";
+	Wh.d2 <= X"c2d60a83";
+	Wh.d3 <= X"422da471";
 	
-	Bh.d0 <= X"419df0f5";
-	Bh.d1 <= X"40959221";
-	Bh.d2 <= X"41af5aa0";
-	Bh.d3 <= X"422e9487";
+	-- Hidden state biases
+	Bh.d0 <= X"419dbae6";
+	Bh.d1 <= X"40934d60";
+	Bh.d2 <= X"41af207c";
+	Bh.d3 <= X"422ea984";
 	
-	Wd.d0 <= X"3ff96cbe";
+	-- Dense layers weights and biases
+	Wd.d0 <= X"3ff8c0ad";
 	Wd.d1 <= X"3e99c326";
-	Wd.d2 <= X"bf6300e2";
-	Wd.d3 <= X"3ff1365d";
+	Wd.d2 <= X"bf6300de";
+	Wd.d3 <= X"3ff13669";
 	
-	Bd.d0 <= X"3f1750b1";
+	Bd.d0 <= X"3f169ced";
 	Bd.d1 <= X"bef4406c";
 	Bd.d2 <= X"bf6b2767";
-	Bd.d3 <= X"3f1315c6";
+	Bd.d3 <= X"3f126f61";
 	
-	Wl.d0 <= X"3fb5d88c";
+	Wl.d0 <= X"3fb5289e";
 	Wl.d1 <= X"bed1be6e";
 	Wl.d2 <= X"3cdfd8ae";
-	Wl.d3 <= X"3f8b1173";
+	Wl.d3 <= X"3f8a646f";
 	
-	Bl 	<= X"c02238c9";
-
---	Wx.d0 <= X"c0dc4e18";
---	Wx.d1 <= X"4068aa5c";
---	Wx.d2 <= X"41ba63d8";
---	Wx.d3 <= X"bf5eb25b";
---	
---	Bx.d0 <= X"40da53aa";
---	Bx.d1 <= X"42393573";
---	Bx.d2 <= X"3ec65cb3";
---	Bx.d3 <= X"4282e4ac";
---	
---	Wh.d0 <= X"41f1c3fc";
---	Wh.d1 <= X"c0f5e46d";
---	Wh.d2 <= X"c2bb239d";
---	Wh.d3 <= X"41e8a343";
---	
---	Bh.d0 <= X"410d4073";
---	Bh.d1 <= X"41c2f886";
---	Bh.d2 <= X"415c9060";
---	Bh.d3 <= X"4283c84d";
---	
---	Wd.d0 <= X"3ff5104d";
---	Wd.d1 <= X"3e99c326";
---	Wd.d2 <= X"bf6300de";
---	Wd.d3 <= X"3fec88f8";
---	
---	Bd.d0 <= X"3f0f9789";
---	Bd.d1 <= X"bef4406c";
---	Bd.d2 <= X"bf6b2767";
---	Bd.d3 <= X"3f0a7cf2";
---	
---	Wl.d0 <= X"3facfee7";
---	Wl.d1 <= X"bed1be6e";
---	Wl.d2 <= X"3cdfd8ae";
---	Wl.d3 <= X"3f830f5a";
---	
---	Bl 	<= X"bff367d3";
+	Bl 	<= X"c020ccff";
 
 	
 	control: process (clock,reset,start,STATE)
@@ -660,14 +628,14 @@ begin
 					reg_re.d0	when STATE = S44 else
 					(others => '0');
 	
-	data.d1 <=  Wx.d1 		when STATE = S0  else
-				   Wh.d1 		when STATE = S1  else
+	data.d1 <=  Wx.d0 		when STATE = S0  else
+				   Wh.d0 		when STATE = S1  else
 				   Wx.d2 		when STATE = S2  else
 				   Wh.d2 		when STATE = S3  else
 					reg_re.d5	when STATE = S4  else
-					Wx.d0 		when STATE = S5  else
+					Wx.d1 		when STATE = S5  else
 					reg_re.d6	when STATE = S6  else
-					Wh.d0 		when STATE = S7  else
+					Wh.d1 		when STATE = S7  else
 					Wx.d3 		when STATE = S8  else
 					Wh.d3 		when STATE = S9  else
 					X"3f000000" when STATE = S10 else
@@ -691,12 +659,12 @@ begin
 					reg_re.d1	when STATE = S44 else
 					(others => '0');
 	
-	data.d2 <=  Bx.d1 		when STATE = S0 else
-				   Bh.d1 		when STATE = S1  else
+	data.d2 <=  Bx.d0 		when STATE = S0 else
+				   Bh.d0 		when STATE = S1  else
 				   Bx.d2 		when STATE = S2  else
 				   Bh.d2 		when STATE = S3  else
-					Bx.d0 		when STATE = S5  else
-				   Bh.d0 		when STATE = S7  else
+					Bx.d1 		when STATE = S5  else
+				   Bh.d1 		when STATE = S7  else
 					Bx.d3 		when STATE = S8  else
 				   Bh.d3 		when STATE = S9  else
 					X"3f000000" when STATE = S10 else

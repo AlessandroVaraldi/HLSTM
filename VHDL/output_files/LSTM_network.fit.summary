@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Apr 15 14:20:07 2024
+Fitter Status : Successful - Mon Apr 22 14:37:13 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : LSTM_network
 Top-level Entity Name : LSTM_cell
 Family : Cyclone 10 LP
 Device : 10CL010YM164C6G
 Timing Models : Final
-Total logic elements : 4,322 / 10,320 ( 42 % )
-    Total combinational functions : 4,124 / 10,320 ( 40 % )
+Total logic elements : 4,255 / 10,320 ( 41 % )
+    Total combinational functions : 4,080 / 10,320 ( 40 % )
     Dedicated logic registers : 917 / 10,320 ( 9 % )
 Total registers : 917
 Total pins : 69 / 102 ( 68 % )
