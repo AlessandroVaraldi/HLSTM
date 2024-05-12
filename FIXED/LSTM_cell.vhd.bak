@@ -1,0 +1,25 @@
+library ieee;
+use ieeelibrary ieee ;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity LSTM_cell is
+	port
+	(
+		clock			: in  std_logic;
+		reset			: in  std_logic;
+		start			: in  std_logic;
+		input			: in  signed (15 downto 0);
+		h_out			: out signed (15 downto 0);
+		ready			: out std_logic;
+		sdone			: out std_logic
+	);
+end LSTM_cell;
+
+architecture rtl of LSTM_cell is
+
+signal wx,bx,wh,bh: signed (15 downto 0) := (others => '0');
+
+begin
+
+	wx <= "

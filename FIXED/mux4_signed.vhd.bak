@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux4_signed is
+	generic
+	(
+		n: integer
+	);
+	port
+	(
+		a: in  signed (n-1 downto 0);
+		b: in  signed (n-1 downto 0);
+		c: in  signed (n-1 downto 0);
+		d: in  signed (n-1 downto 0);
+		r: out signed (n-1 downto 0);
+		s: in  std_logic_vector (1 downto 0)
+	);
+end mux4_signed;
+
+architecture rtl of mux4_signed is
+
+begin
+
+	process(s)
+	begin
+	
+		with s select 
+		
+		r <= a when s = "00";
+		r <= b when s = "01";
+		r <= c when s = "10";
+		r <= d when s = "11";
+		
+	end process;
+	
+end rtl;

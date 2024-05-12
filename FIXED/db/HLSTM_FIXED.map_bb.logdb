@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fixed_multiplier:u8|lpm_mult:Mult0|mult_rct:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,mac_pe:s_upd|fixed_multiplier:u0|lpm_mult:Mult0|mult_rct:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fixed_multiplier:u6|lpm_mult:Mult0|mult_rct:auto_generated|mac_out2,

@@ -1,0 +1,65 @@
+
+State Machine - |LSTM_cell|current_state
+Name current_state.state_done current_state.state_linear_f current_state.state_linear_e current_state.state_linear_d current_state.state_linear_c current_state.state_linear_b current_state.state_linear_a current_state.state_dense_b current_state.state_dense_a current_state.state_cnt current_state.state_hupd_s current_state.state_osmul_s current_state.state_osmul current_state.state_stanh_r current_state.state_stanh current_state.state_supd_s current_state.state_supd current_state.state_icmul_s current_state.state_icmul current_state.state_conv current_state.state_gate current_state.state_load current_state.state_start current_state.state_read current_state.state_idle current_state.state_reset 
+current_state.state_reset 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.state_idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.state_read 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.state_start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.state_load 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.state_gate 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.state_conv 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.state_icmul 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.state_icmul_s 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.state_supd 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.state_supd_s 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.state_stanh 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_stanh_r 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_osmul 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_osmul_s 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_hupd_s 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_cnt 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_dense_a 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_dense_b 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_a 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_b 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_c 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_d 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_e 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_linear_f 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.state_done 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |LSTM_cell|LSTM_gate:u3|current_state
+Name current_state.s_done current_state.s_sav current_state.s_sum current_state.s_mac current_state.s_idl current_state.s_rst 
+current_state.s_rst 0 0 0 0 0 0 
+current_state.s_idl 0 0 0 0 1 1 
+current_state.s_mac 0 0 0 1 0 1 
+current_state.s_sum 0 0 1 0 0 1 
+current_state.s_sav 0 1 0 0 0 1 
+current_state.s_done 1 0 0 0 0 1 
+
+State Machine - |LSTM_cell|LSTM_gate:u2|current_state
+Name current_state.s_done current_state.s_sav current_state.s_sum current_state.s_mac current_state.s_idl current_state.s_rst 
+current_state.s_rst 0 0 0 0 0 0 
+current_state.s_idl 0 0 0 0 1 1 
+current_state.s_mac 0 0 0 1 0 1 
+current_state.s_sum 0 0 1 0 0 1 
+current_state.s_sav 0 1 0 0 0 1 
+current_state.s_done 1 0 0 0 0 1 
+
+State Machine - |LSTM_cell|LSTM_gate:u1|current_state
+Name current_state.s_done current_state.s_sav current_state.s_sum current_state.s_mac current_state.s_idl current_state.s_rst 
+current_state.s_rst 0 0 0 0 0 0 
+current_state.s_idl 0 0 0 0 1 1 
+current_state.s_mac 0 0 0 1 0 1 
+current_state.s_sum 0 0 1 0 0 1 
+current_state.s_sav 0 1 0 0 0 1 
+current_state.s_done 1 0 0 0 0 1 
+
+State Machine - |LSTM_cell|LSTM_gate:u0|current_state
+Name current_state.s_done current_state.s_sav current_state.s_sum current_state.s_mac current_state.s_idl current_state.s_rst 
+current_state.s_rst 0 0 0 0 0 0 
+current_state.s_idl 0 0 0 0 1 1 
+current_state.s_mac 0 0 0 1 0 1 
+current_state.s_sum 0 0 1 0 0 1 
+current_state.s_sav 0 1 0 0 0 1 
+current_state.s_done 1 0 0 0 0 1 
