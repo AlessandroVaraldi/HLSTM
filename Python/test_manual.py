@@ -80,5 +80,5 @@ plt.suptitle('LSTM applied to test data')
 plt.title('MSE = ' + str(MSE), fontsize=9)
 plt.show()
 
-for i in range(10):
+for i in range(100):
     print(output[i])

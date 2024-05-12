@@ -12,29 +12,29 @@
 # 
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package myTypes
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity nReg
 # -- Compiling architecture rtl of nReg
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -44,33 +44,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity f2i_conv
 # -- Compiling architecture arch of f2i_conv
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity counter
 # -- Compiling architecture SYN of counter
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity shiftReg
 # -- Compiling architecture rtl of shiftReg
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -78,11 +78,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity LUT
 # -- Compiling architecture SYN of lut
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -91,11 +91,11 @@
 # -- Compiling package fp_wire
 # -- Compiling package body fp_wire
 # -- Loading package fp_wire
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:10 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:10 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -104,43 +104,43 @@
 # -- Compiling package fp_func
 # -- Compiling package body fp_func
 # -- Loading package fp_func
-# End time: 15:34:53 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:11 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:53 on Apr 22,2024
+# Start time: 15:16:11 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package lzc_wire
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:01
+# End time: 15:16:11 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:11 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package lzc_lib
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:11 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:11 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity d_flip_flop
 # -- Compiling architecture Behavioral of d_flip_flop
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:11 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:11 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -149,11 +149,11 @@
 # -- Loading package myTypes
 # -- Compiling entity LSTM_cell
 # -- Compiling architecture rtl of LSTM_cell
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:11 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:11 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -164,11 +164,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fpu
 # -- Compiling architecture rtl of fpu
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:12 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:12 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -178,11 +178,11 @@
 # -- Loading package lzc_lib
 # -- Loading package fp_wire
 # -- Compiling package fp_lib
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:12 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:12 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -192,11 +192,11 @@
 # -- Loading package fp_wire
 # -- Compiling entity fp_sgnj
 # -- Compiling architecture behavior of fp_sgnj
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:12 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:54 on Apr 22,2024
+# Start time: 15:16:12 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -207,11 +207,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fp_rnd
 # -- Compiling architecture behavior of fp_rnd
-# End time: 15:34:54 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:12 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:12 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,11 +221,11 @@
 # -- Loading package fp_wire
 # -- Compiling entity fp_max
 # -- Compiling architecture behavior of fp_max
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:13 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:13 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -234,11 +234,11 @@
 # -- Loading package fp_wire
 # -- Compiling entity fp_mac
 # -- Compiling architecture behavior of fp_mac
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:13 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:13 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -249,11 +249,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fp_fma
 # -- Compiling architecture behavior of fp_fma
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:13 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:13 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -264,11 +264,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fp_fdiv
 # -- Compiling architecture behavior of fp_fdiv
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:13 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:14 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -279,11 +279,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fp_ext
 # -- Compiling architecture behavior of fp_ext
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:14 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:14 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -293,11 +293,11 @@
 # -- Loading package fp_wire
 # -- Compiling entity fp_exe
 # -- Compiling architecture behavior of fp_exe
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:14 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:14 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -308,11 +308,11 @@
 # -- Loading package fp_func
 # -- Compiling entity fp_cvt
 # -- Compiling architecture behavior of fp_cvt
-# End time: 15:34:55 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:14 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:55 on Apr 22,2024
+# Start time: 15:16:14 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -322,11 +322,11 @@
 # -- Loading package fp_wire
 # -- Compiling entity fp_cmp
 # -- Compiling architecture behavior of fp_cmp
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:01
+# End time: 15:16:14 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:14 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -334,11 +334,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_4
 # -- Compiling architecture behavior of lzc_4
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:15 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:15 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -346,11 +346,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_8
 # -- Compiling architecture behavior of lzc_8
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:15 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:15 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -358,11 +358,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_16
 # -- Compiling architecture behavior of lzc_16
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:15 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:15 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -370,11 +370,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_32
 # -- Compiling architecture behavior of lzc_32
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:16 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:16 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -382,11 +382,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_64
 # -- Compiling architecture behavior of lzc_64
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:16 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:16 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -394,11 +394,11 @@
 # -- Loading package lzc_lib
 # -- Compiling entity lzc_128
 # -- Compiling architecture behavior of lzc_128
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:16 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:16 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -410,12 +410,12 @@
 # -- Loading package fp_lib
 # -- Compiling entity fp_unit
 # -- Compiling architecture behavior of fp_unit
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:16 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:56 on Apr 22,2024
+# Start time: 15:16:16 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -423,11 +423,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IN_RAM
 # -- Compiling architecture SYN of IN_RAM
-# End time: 15:34:56 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:17 on May 09,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:57 on Apr 22,2024
+# Start time: 15:16:17 on May 09,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -436,12 +436,12 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity LSTM_test
 # -- Compiling architecture test of LSTM_test
-# End time: 15:34:57 on Apr 22,2024, Elapsed time: 0:00:00
+# End time: 15:16:17 on May 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs="+acc"  LSTM_test
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs=""+acc"" LSTM_test 
-# Start time: 15:34:57 on Apr 22,2024
+# Start time: 15:16:17 on May 09,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -493,6 +493,11 @@
 # Loading work.lut(syn)
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aleva  Hostname: LAPTOP-OPG22R0F  ProcessID: 28784
+#           Attempting to use alternate WLF file "./wlft5fng0d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5fng0d
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -572,7 +577,7 @@
 #    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-do C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/simulation/modelsim/wave.do
+add wave -position insertpoint sim:/lstm_test/u0/*
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run -continue
@@ -650,83 +655,5 @@ run -continue
 #    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-add wave -position insertpoint sim:/lstm_test/*
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -continue
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
-# ** Warning: NUMERIC_STD."<=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cmp_comp
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_max_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_cvt_comp/CVT_IEEE
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Region: /lstm_test/u0/u0/u0/fp_fdiv_comp/FIXED
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 8  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 9  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext1_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext2_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_ext3_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 11  Instance: /lstm_test/u0/u0/u0/fp_cvt_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 12  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 13  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 14  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 16  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 17  Instance: /lstm_test/u0/u0/u0/fp_fma_comp
-# End time: 16:03:34 on Apr 22,2024, Elapsed time: 0:28:37
+# End time: 15:21:59 on May 09,2024, Elapsed time: 0:05:42
 # Errors: 0, Warnings: 37
