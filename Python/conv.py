@@ -17,7 +17,7 @@ def q213_to_decimal(value):
     
     return result
 
-single_binary_value = f"{32961:016b}"
+single_binary_value = f"{4939:016b}"
 
 # Conversione in decimale
 single_converted_decimal_number = q213_to_decimal(single_binary_value)

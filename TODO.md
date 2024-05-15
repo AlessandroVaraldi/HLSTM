@@ -1,2 +1,0 @@
-- trovare causa perdita precisione
-- risolvere bug approssimazione input negativi

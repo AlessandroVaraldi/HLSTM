@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun May 12 13:37:12 2024
+Analysis & Synthesis Status : Successful - Wed May 15 15:54:32 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : HLSTM_FIXED
 Top-level Entity Name : LSTM_cell
 Family : Cyclone 10 LP
-Total logic elements : 3,616
-    Total combinational functions : 3,215
-    Dedicated logic registers : 1,057
-Total registers : 1057
-Total pins : 37
+Total logic elements : 829
+    Total combinational functions : 702
+    Dedicated logic registers : 342
+Total registers : 342
+Total pins : 38
 Total virtual pins : 0
-Total memory bits : 491,520
+Total memory bits : 491,632
 Embedded Multiplier 9-bit elements : 6
 Total PLLs : 0
