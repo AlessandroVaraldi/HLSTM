@@ -1,4 +1,4 @@
 v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,fixed_multiplier:u1|lpm_mult:Mult0|mult_rct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0|mult_2dt:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0|lpm_mult:Mult0|mult_rct:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell:u0|fixed_multiplier:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,

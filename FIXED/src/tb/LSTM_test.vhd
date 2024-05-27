@@ -28,7 +28,7 @@ component LSTM_cell is
 	);
 end component;
 
-signal reset,start,ready,done: std_logic := '0';
+signal reset,start,clear,ready,done: std_logic := '0';
 signal input,h_out: signed (15 downto 0) := (others=>'0');
 
 component in_RAM IS
@@ -76,6 +76,8 @@ begin
 		reset <= '0';
 		
 		start <= '0';
+		
+		clear <= '0';
 		
 		wait for 10 ns;
 		
@@ -128,7 +130,7 @@ begin
 		port map (
 			clock			=> clock		,
 			reset			=> reset		,
-			clear			=> '0',
+			clear			=> clear		,
 			start			=> start		,
 			input			=> input		,
 			h_out			=> h_out		,

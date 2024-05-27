@@ -12,4 +12,11 @@ package myTypes is
 		d3 : signed (15 downto 0);
 	end record;
 	
+	type weight is record
+		wx: signed (15 downto 0);
+		bx: signed (15 downto 0);
+		wh: signed (15 downto 0);
+		bh: signed (15 downto 0);
+	end record;
+	
 end myTypes;

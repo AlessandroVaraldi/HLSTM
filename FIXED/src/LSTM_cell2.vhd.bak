@@ -1,0 +1,128 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+--
+--entity LSTM_cell2 is
+--	port
+--	(
+--		clock			: in  std_logic := '0';
+--		reset			: in  std_logic := '0';
+--		clear			: in  std_logic := '0';
+--		start			: in  std_logic := '0';
+--		x				: in  signed (15 downto 0) := (others => '0');
+--		h				: in  signed (15 downto 0) := (others => '0');
+--		w				: in  std_logic_vector (31 downto 0) := (others => '0');
+--		b				: in  signed (15 downto 0) := (others => '0');
+--		adr			: out signed (15 downto 0) := (others => '0');
+--		res			: in  signed (15 downto 0) := (others => '0');
+--		done			: out std_logic := '0'
+--	);
+--end LSTM_cell2;
+--
+--architecture rtl of LSTM_cell2 is
+--
+--signal mul_a,mul_b,sum_a,sum_b,sum_r: signed (15 downto 0) := (others => '0');
+--signal mul_r: signed (31 downto 0) := (others => '0');
+--
+--component counter is
+--	generic (n: integer := 8);
+--	port
+--	(
+--		aclr			: in std_logic;
+--		clock			: in std_logic;
+--		cnt_en		: in std_logic;
+--		sclr			: in std_logic;
+--		q				: out std_logic_vector (n-1 downto 0)
+--	);
+--end component;
+--
+--signal cnt_rs,cnt_cl,cnt_en: std_logic := '0';
+--signal cnt: std_logic_vector (3 downto 0) := (others => '0');
+--
+--begin
+--
+--	c0:counter generic map (n=>4)
+--		port map (
+--			clock		=> clock		,
+--			aclr		=> cnt_rs	,
+--			sclr		=> cnt_cl	,
+--			cnt_en	=> cnt_en	,
+--			q			=> cnt
+--		);
+--		
+--	process(clock)
+--	begin
+--		if rising_edge(clock) then
+--			cnt_en <= '1';
+--		else
+--			cnt_en <= '0';
+--		end if;
+--		
+--		case cnt is
+--			when "0000" =>
+--				mul_a <= x;
+--				mul_b <= signed(w(31 downto 16));
+--				mul_en <= '1';
+--				sum_a <= (others => '0');
+--				sum_b <= (others => '0');
+--				sum_en <= '0';
+--			when "0001" =>
+--				mul_a <= h;
+--				mul_b <= signed(w(15 downto 0));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= b;
+--				sum_en <= '1';
+--			when "0010" =>
+--				mul_a <= x;
+--				mul_b <= signed(w(31 downto 16));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= sreg; --iadd
+--				sum_en <= '1';
+--			when "0011" =>
+--				mul_a <= h;
+--				mul_b <= signed(w(15 downto 0));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= b;
+--				sum_en <= '1';
+--			when "0100" =>
+--				mul_a <= x;
+--				mul_b <= signed(w(31 downto 16));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= sreg; --c
+--				sum_en <= '1';	
+--			when "0101" =>
+--				mul_a <= h;
+--				mul_b <= signed(w(15 downto 0));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= b;
+--				sum_en <= '1';
+--			when "0110" =>
+--				mul_a <= x;
+--				mul_b <= signed(w(31 downto 16));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= sreg; --fadd
+--				sum_en <= '1';
+--			when "0111" =>
+--				mul_a <= h;
+--				mul_b <= signed(w(15 downto 0));
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= b;
+--				sum_en <= '1';
+--			when "1000" =>
+--				mul_a <= ;
+--				mul_b <= ;
+--				mul_en <= '1';
+--				sum_a <= mreg;
+--				sum_b <= sreg; --oadd
+--				sum_en <= '1';
+--				
+--	end process;
+--	
+	

@@ -17,35 +17,13 @@ end fixed_adder;
 
 architecture rtl of fixed_adder is
 
-signal abs_a, abs_b : unsigned(14 downto 0) := (others => '0');
-signal sum, diff_a, diff_b : signed(14 downto 0) := (others => '0');
-
 begin
-
-	abs_a <= unsigned(in_a(14 downto 0));
-	abs_b <= unsigned(in_b(14 downto 0));
-
-	sum <= signed(abs_a + abs_b);
-	diff_a <= signed(abs_a - abs_b);
-	diff_b <= signed(abs_b - abs_a);
 
 	process (clock)
 	begin
-		if rising_edge(clock) then
-			if in_a (15) = in_b (15) then
-					res (15) <= in_a (15);
-					res (14 downto 0) <= sum(14 downto 0);
-			else
-				if abs_a > abs_b then
-					res (15) <= in_a (15);
-					res (14 downto 0) <= diff_a(14 downto 0);
-				elsif abs_a < abs_b then
-					res (15) <= in_b (15);
-					res (14 downto 0) <= diff_b(14 downto 0);
-				else
-					res <= (others => '0');
-				end if;
-			end if;
+		if rising_edge (clock) then
+			res <= in_a + in_b;
 		end if;
 	end process;
+
 end rtl;

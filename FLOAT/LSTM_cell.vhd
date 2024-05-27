@@ -584,7 +584,7 @@ begin
 		tap8		=> x1			,
 		tap9		=> x0
 	);
-	
+				
 	x <= 	x0 when cnt = "0000" else
 			x1 when cnt = "0001" else
 			x2 when cnt = "0010" else

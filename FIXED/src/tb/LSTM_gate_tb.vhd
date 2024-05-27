@@ -14,6 +14,7 @@ component LSTM_gate is
 	(
 		clock			: in  std_logic := '0';
 		reset			: in  std_logic := '0';
+		clear			: in  std_logic := '0';
 		start			: in  std_logic := '0';
 		input			: in  signed   (15 downto 0) := (others => '0');
 		ht_in			: in  signed   (15 downto 0) := (others => '0');
@@ -21,8 +22,8 @@ component LSTM_gate is
 		bx_in			: in  signed   (15 downto 0) := (others => '0');
 		wh_in			: in  signed   (15 downto 0) := (others => '0');
 		bh_in			: in  signed   (15 downto 0) := (others => '0');
-		lutad			: out unsigned (14 downto 0) := (others => '0');
-		lutre			: in  unsigned (14 downto 0) := (others => '0');
+		lutad			: out signed (15 downto 0) := (others => '0');
+		lutre			: in  signed (15 downto 0) := (others => '0');
 		otanh			: out signed   (15 downto 0) := (others => '0');
 		osigm			: out signed   (15 downto 0) := (others => '0');
 		rdout			: out std_logic := '0';
@@ -33,27 +34,32 @@ end component;
 component lut is
 	port
 	(
-		address	: in  std_logic_vector (14 downto 0);
+		address	: in  std_logic_vector (15 downto 0);
 		clken		: in  std_logic := '1';
 		clock		: in  std_logic := '1';
-		data		: in  std_logic_vector (14 downto 0);
+		data		: in  std_logic_vector (15 downto 0);
 		rden		: in  std_logic := '1';
 		wren		: in  std_logic			;
-		q			: out std_logic_vector (14 downto 0)
+		q			: out std_logic_vector (15 downto 0)
 	);
 end component;
 
 signal clock: std_logic := '1';
 signal reset,start,lut_rd,done: std_logic := '0';
 signal tanh,sigm: signed (15 downto 0) := (others => '0');
-signal lut_ad,lut_re: unsigned (14 downto 0) := (others => '0');
-signal address,q: std_logic_vector (14 downto 0) := (others => '0');
+signal lut_ad: signed (15 downto 0) := (others => '0');
+signal lut_re: signed (15 downto 0) := (others => '0');
+signal q: std_logic_vector (15 downto 0) := (others => '0');
+signal address: std_logic_vector (15 downto 0) := (others => '0');
 
-signal wx,wh,bx,bh: signed (15 downto 0) := (others => '0');
+signal wx,wh,bx,bh,input,ht_in: signed (15 downto 0) := (others => '0');
 
 begin
 
 	clock <= not clock after 2.5 ns;
+	
+	input <= "1110100010101101";
+	ht_in <= "0000110111101100";
 	
 	testing: process
 	begin
@@ -64,7 +70,13 @@ begin
 		
 		wait for 5 ns;
 		
+		reset <= '1';
+		
+		wait for 5 ns;
+		
+		reset <= '0';
 		start <= '1';
+
 		wx <= "0000000101100101";
 		bx <= "0000110100000100";
 		wh <= "1000100110100001";
@@ -102,9 +114,10 @@ begin
 		port map (
 			clock		=> clock,
 			reset		=> reset,
+			clear		=> '0',
 			start		=> start,
-			input		=> "1001011101010011",
-			ht_in		=> "0000110111101100",
+			input		=> input,
+			ht_in		=> ht_in,
 			wx_in		=> wx,
 			bx_in 	=> bx,
 			wh_in 	=> wh,
@@ -117,7 +130,7 @@ begin
 			done		=> done
 		);
 		
-	address <= std_logic_vector(lut_ad);
+	address <= std_logic_vector(unsigned(lut_ad(15 downto 0)));
 		
 	u1: lut
 		port map (
@@ -130,7 +143,7 @@ begin
 			q			=> q
 		);
 		
-	lut_re <= unsigned(q);
+	lut_re <= signed(q);
 
 end test;
 			

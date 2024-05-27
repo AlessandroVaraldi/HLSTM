@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LSTM_network
-Thu May 09 14:42:14 2024
+Thu May 23 12:24:09 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -84,7 +84,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 09 14:42:13 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 23 12:24:09 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; LSTM_network                                ;
 ; Top-level Entity Name              ; LSTM_cell                                   ;
@@ -201,73 +201,73 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.4%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; myTypes.vhd                      ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd              ;         ;
-; LSTM_cell.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd            ;         ;
-; nReg.vhd                         ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd                 ;         ;
-; f2i_conv.vhd                     ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd             ;         ;
-; counter.vhd                      ; yes             ; User Wizard-Generated File             ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd              ;         ;
-; shiftReg.vhd                     ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd             ;         ;
-; LUT.vhd                          ; yes             ; User Wizard-Generated File             ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd                  ;         ;
-; fpu/fpu.vhd                      ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd              ;         ;
-; fpu/fp_lib.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd           ;         ;
-; fpu/fp_wire.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd          ;         ;
-; fpu/fp_unit.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd          ;         ;
-; fpu/fp_sgnj.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd          ;         ;
-; fpu/fp_rnd.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd           ;         ;
-; fpu/fp_max.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd           ;         ;
-; fpu/fp_mac.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd           ;         ;
-; fpu/fp_func.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd          ;         ;
-; fpu/fp_fma.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd           ;         ;
-; fpu/fp_fdiv.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd          ;         ;
-; fpu/fp_ext.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd           ;         ;
-; fpu/fp_exe.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd           ;         ;
-; fpu/fp_cvt.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd           ;         ;
-; fpu/fp_cmp.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd           ;         ;
-; fpu/lzc_wire.vhd                 ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd         ;         ;
-; fpu/lzc_lib.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd          ;         ;
-; fpu/lzc_4.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd            ;         ;
-; fpu/lzc_8.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd            ;         ;
-; fpu/lzc_16.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd           ;         ;
-; fpu/lzc_32.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd           ;         ;
-; fpu/lzc_64.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd           ;         ;
-; fpu/lzc_128.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd          ;         ;
-; d_flip_flop.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd          ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf                               ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc                              ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                               ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc                                  ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc                               ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc                               ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc                                    ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                       ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                ;         ;
-; db/cntr_gaj.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/cntr_gaj.tdf          ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                         ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                   ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                 ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                    ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                    ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                  ;         ;
-; db/altsyncram_n4u3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/altsyncram_n4u3.tdf   ;         ;
-; mem_init/tanh_values.mif         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/mem_init/tanh_values.mif ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                  ;         ;
-; multcore.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                  ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                  ;         ;
-; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                  ;         ;
-; db/mult_4dt.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/mult_4dt.tdf          ;         ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; myTypes.vhd                      ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/myTypes.vhd              ;         ;
+; LSTM_cell.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd            ;         ;
+; nReg.vhd                         ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/nReg.vhd                 ;         ;
+; f2i_conv.vhd                     ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/f2i_conv.vhd             ;         ;
+; counter.vhd                      ; yes             ; User Wizard-Generated File             ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd              ;         ;
+; shiftReg.vhd                     ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/shiftReg.vhd             ;         ;
+; LUT.vhd                          ; yes             ; User Wizard-Generated File             ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd                  ;         ;
+; fpu/fpu.vhd                      ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fpu.vhd              ;         ;
+; fpu/fp_lib.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_lib.vhd           ;         ;
+; fpu/fp_wire.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_wire.vhd          ;         ;
+; fpu/fp_unit.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd          ;         ;
+; fpu/fp_sgnj.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_sgnj.vhd          ;         ;
+; fpu/fp_rnd.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_rnd.vhd           ;         ;
+; fpu/fp_max.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_max.vhd           ;         ;
+; fpu/fp_mac.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_mac.vhd           ;         ;
+; fpu/fp_func.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_func.vhd          ;         ;
+; fpu/fp_fma.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd           ;         ;
+; fpu/fp_fdiv.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fdiv.vhd          ;         ;
+; fpu/fp_ext.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_ext.vhd           ;         ;
+; fpu/fp_exe.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_exe.vhd           ;         ;
+; fpu/fp_cvt.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cvt.vhd           ;         ;
+; fpu/fp_cmp.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cmp.vhd           ;         ;
+; fpu/lzc_wire.vhd                 ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_wire.vhd         ;         ;
+; fpu/lzc_lib.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_lib.vhd          ;         ;
+; fpu/lzc_4.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_4.vhd            ;         ;
+; fpu/lzc_8.vhd                    ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_8.vhd            ;         ;
+; fpu/lzc_16.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_16.vhd           ;         ;
+; fpu/lzc_32.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_32.vhd           ;         ;
+; fpu/lzc_64.vhd                   ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_64.vhd           ;         ;
+; fpu/lzc_128.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_128.vhd          ;         ;
+; d_flip_flop.vhd                  ; yes             ; User VHDL File                         ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/d_flip_flop.vhd          ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf                                ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_constant.inc                               ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                 ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cmpconst.inc                                   ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.inc                                ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.inc                                ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffeea.inc                                     ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                 ;         ;
+; db/cntr_gaj.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/cntr_gaj.tdf          ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                 ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                          ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                  ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                     ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                     ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                   ;         ;
+; db/altsyncram_n4u3.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/altsyncram_n4u3.tdf   ;         ;
+; mem_init/tanh_values.mif         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/mem_init/tanh_values.mif ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;         ;
+; multcore.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                   ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                   ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
+; db/mult_4dt.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/mult_4dt.tdf          ;         ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -1253,7 +1253,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:48     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -1263,151 +1263,151 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu May 09 14:40:49 2024
+    Info: Processing started: Thu May 23 12:23:50 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LSTM -c LSTM_network
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file mytypes.vhd
-    Info (12022): Found design unit 1: myTypes File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/myTypes.vhd Line: 6
+    Info (12022): Found design unit 1: myTypes File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/myTypes.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file lstm_test.vhd
-    Info (12022): Found design unit 1: LSTM_test-test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd Line: 13
-    Info (12023): Found entity 1: LSTM_test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_test.vhd Line: 10
+    Info (12022): Found design unit 1: LSTM_test-test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_test.vhd Line: 13
+    Info (12023): Found entity 1: LSTM_test File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_test.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file lstm_cell.vhd
-    Info (12022): Found design unit 1: LSTM_cell-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 21
-    Info (12023): Found entity 1: LSTM_cell File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 7
+    Info (12022): Found design unit 1: LSTM_cell-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 21
+    Info (12023): Found entity 1: LSTM_cell File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file nreg.vhd
-    Info (12022): Found design unit 1: nReg-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd Line: 17
-    Info (12023): Found entity 1: nReg File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/nReg.vhd Line: 4
+    Info (12022): Found design unit 1: nReg-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/nReg.vhd Line: 17
+    Info (12023): Found entity 1: nReg File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/nReg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file f2i_conv.vhd
-    Info (12022): Found design unit 1: f2i_conv-arch File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd Line: 14
-    Info (12023): Found entity 1: f2i_conv File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/f2i_conv.vhd Line: 6
+    Info (12022): Found design unit 1: f2i_conv-arch File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/f2i_conv.vhd Line: 14
+    Info (12023): Found entity 1: f2i_conv File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/f2i_conv.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
-    Info (12022): Found design unit 1: counter-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 56
-    Info (12023): Found entity 1: counter File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 43
+    Info (12022): Found design unit 1: counter-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd Line: 56
+    Info (12023): Found entity 1: counter File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file shiftreg.vhd
-    Info (12022): Found design unit 1: shiftReg-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd Line: 25
-    Info (12023): Found entity 1: shiftReg File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/shiftReg.vhd Line: 4
+    Info (12022): Found design unit 1: shiftReg-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/shiftReg.vhd Line: 25
+    Info (12023): Found entity 1: shiftReg File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/shiftReg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file in_ram.vhd
-    Info (12022): Found design unit 1: IN_RAM-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd Line: 57
-    Info (12023): Found entity 1: IN_RAM File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/in_RAM.vhd Line: 43
+    Info (12022): Found design unit 1: IN_RAM-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/in_RAM.vhd Line: 57
+    Info (12023): Found entity 1: IN_RAM File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/in_RAM.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file lut.vhd
-    Info (12022): Found design unit 1: lut-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 56
-    Info (12023): Found entity 1: LUT File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 43
+    Info (12022): Found design unit 1: lut-SYN File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd Line: 56
+    Info (12023): Found entity 1: LUT File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fpu.vhd
-    Info (12022): Found design unit 1: fpu-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd Line: 25
-    Info (12023): Found entity 1: fpu File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd Line: 9
+    Info (12022): Found design unit 1: fpu-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fpu.vhd Line: 25
+    Info (12023): Found entity 1: fpu File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fpu.vhd Line: 9
 Info (12021): Found 1 design units, including 0 entities, in source file fpu/fp_lib.vhd
-    Info (12022): Found design unit 1: fp_lib File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_lib.vhd Line: 11
+    Info (12022): Found design unit 1: fp_lib File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_lib.vhd Line: 11
 Info (12021): Found 2 design units, including 0 entities, in source file fpu/fp_wire.vhd
-    Info (12022): Found design unit 1: fp_wire File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd Line: 8
-    Info (12022): Found design unit 2: fp_wire-body File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_wire.vhd Line: 476
+    Info (12022): Found design unit 1: fp_wire File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_wire.vhd Line: 8
+    Info (12022): Found design unit 2: fp_wire-body File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_wire.vhd Line: 476
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_unit.vhd
-    Info (12022): Found design unit 1: fp_unit-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 21
-    Info (12023): Found entity 1: fp_unit File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 12
+    Info (12022): Found design unit 1: fp_unit-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 21
+    Info (12023): Found entity 1: fp_unit File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_sgnj.vhd
-    Info (12022): Found design unit 1: fp_sgnj-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd Line: 17
-    Info (12023): Found entity 1: fp_sgnj File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_sgnj.vhd Line: 10
+    Info (12022): Found design unit 1: fp_sgnj-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_sgnj.vhd Line: 17
+    Info (12023): Found entity 1: fp_sgnj File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_sgnj.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_rnd.vhd
-    Info (12022): Found design unit 1: fp_rnd-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd Line: 18
-    Info (12023): Found entity 1: fp_rnd File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_rnd.vhd Line: 11
+    Info (12022): Found design unit 1: fp_rnd-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_rnd.vhd Line: 18
+    Info (12023): Found entity 1: fp_rnd File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_rnd.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_max.vhd
-    Info (12022): Found design unit 1: fp_max-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd Line: 17
-    Info (12023): Found entity 1: fp_max File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_max.vhd Line: 10
+    Info (12022): Found design unit 1: fp_max-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_max.vhd Line: 17
+    Info (12023): Found entity 1: fp_max File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_max.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_mac.vhd
-    Info (12022): Found design unit 1: fp_mac-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd Line: 16
-    Info (12023): Found entity 1: fp_mac File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_mac.vhd Line: 9
+    Info (12022): Found design unit 1: fp_mac-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_mac.vhd Line: 16
+    Info (12023): Found entity 1: fp_mac File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_mac.vhd Line: 9
 Info (12021): Found 2 design units, including 0 entities, in source file fpu/fp_func.vhd
-    Info (12022): Found design unit 1: fp_func File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd Line: 7
-    Info (12022): Found design unit 2: fp_func-body File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_func.vhd Line: 18
+    Info (12022): Found design unit 1: fp_func File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_func.vhd Line: 7
+    Info (12022): Found design unit 2: fp_func-body File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_func.vhd Line: 18
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_fma.vhd
-    Info (12022): Found design unit 1: fp_fma-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd Line: 22
-    Info (12023): Found entity 1: fp_fma File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd Line: 11
+    Info (12022): Found design unit 1: fp_fma-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd Line: 22
+    Info (12023): Found entity 1: fp_fma File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_fdiv.vhd
-    Info (12022): Found design unit 1: fp_fdiv-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd Line: 25
-    Info (12023): Found entity 1: fp_fdiv File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fdiv.vhd Line: 11
+    Info (12022): Found design unit 1: fp_fdiv-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fdiv.vhd Line: 25
+    Info (12023): Found entity 1: fp_fdiv File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fdiv.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_ext.vhd
-    Info (12022): Found design unit 1: fp_ext-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd Line: 20
-    Info (12023): Found entity 1: fp_ext File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_ext.vhd Line: 11
+    Info (12022): Found design unit 1: fp_ext-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_ext.vhd Line: 20
+    Info (12023): Found entity 1: fp_ext File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_ext.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_exe.vhd
-    Info (12022): Found design unit 1: fp_exe-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd Line: 41
-    Info (12023): Found entity 1: fp_exe File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_exe.vhd Line: 10
+    Info (12022): Found design unit 1: fp_exe-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_exe.vhd Line: 41
+    Info (12023): Found entity 1: fp_exe File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_exe.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_cvt.vhd
-    Info (12022): Found design unit 1: fp_cvt-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd Line: 25
-    Info (12023): Found entity 1: fp_cvt File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cvt.vhd Line: 11
+    Info (12022): Found design unit 1: fp_cvt-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cvt.vhd Line: 25
+    Info (12023): Found entity 1: fp_cvt File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cvt.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/fp_cmp.vhd
-    Info (12022): Found design unit 1: fp_cmp-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd Line: 17
-    Info (12023): Found entity 1: fp_cmp File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_cmp.vhd Line: 10
+    Info (12022): Found design unit 1: fp_cmp-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cmp.vhd Line: 17
+    Info (12023): Found entity 1: fp_cmp File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_cmp.vhd Line: 10
 Info (12021): Found 1 design units, including 0 entities, in source file fpu/lzc_wire.vhd
-    Info (12022): Found design unit 1: lzc_wire File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_wire.vhd Line: 7
+    Info (12022): Found design unit 1: lzc_wire File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_wire.vhd Line: 7
 Info (12021): Found 1 design units, including 0 entities, in source file fpu/lzc_lib.vhd
-    Info (12022): Found design unit 1: lzc_lib File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_lib.vhd Line: 6
+    Info (12022): Found design unit 1: lzc_lib File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_lib.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_4.vhd
-    Info (12022): Found design unit 1: lzc_4-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd Line: 16
-    Info (12023): Found entity 1: lzc_4 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_4.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_4-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_4.vhd Line: 16
+    Info (12023): Found entity 1: lzc_4 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_4.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_8.vhd
-    Info (12022): Found design unit 1: lzc_8-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd Line: 16
-    Info (12023): Found entity 1: lzc_8 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_8-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_8.vhd Line: 16
+    Info (12023): Found entity 1: lzc_8 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_8.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_16.vhd
-    Info (12022): Found design unit 1: lzc_16-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd Line: 16
-    Info (12023): Found entity 1: lzc_16 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_16-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_16.vhd Line: 16
+    Info (12023): Found entity 1: lzc_16 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_16.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_32.vhd
-    Info (12022): Found design unit 1: lzc_32-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd Line: 16
-    Info (12023): Found entity 1: lzc_32 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_32-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_32.vhd Line: 16
+    Info (12023): Found entity 1: lzc_32 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_32.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_64.vhd
-    Info (12022): Found design unit 1: lzc_64-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd Line: 16
-    Info (12023): Found entity 1: lzc_64 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_64.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_64-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_64.vhd Line: 16
+    Info (12023): Found entity 1: lzc_64 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_64.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file fpu/lzc_128.vhd
-    Info (12022): Found design unit 1: lzc_128-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd Line: 16
-    Info (12023): Found entity 1: lzc_128 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd Line: 8
+    Info (12022): Found design unit 1: lzc_128-behavior File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_128.vhd Line: 16
+    Info (12023): Found entity 1: lzc_128 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_128.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file d_flip_flop.vhd
-    Info (12022): Found design unit 1: d_flip_flop-Behavioral File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd Line: 11
-    Info (12023): Found entity 1: d_flip_flop File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/d_flip_flop.vhd Line: 4
+    Info (12022): Found design unit 1: d_flip_flop-Behavioral File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/d_flip_flop.vhd Line: 11
+    Info (12023): Found entity 1: d_flip_flop File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/d_flip_flop.vhd Line: 4
 Info (12127): Elaborating entity "LSTM_cell" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LSTM_cell.vhd(102): object "tmp" assigned a value but never read File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 102
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(278): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 278
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(281): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 281
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(459): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 459
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(479): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 479
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(488): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 488
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(497): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 497
-Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(506): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 506
-Info (12128): Elaborating entity "shiftReg" for hierarchy "shiftReg:l0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 570
-Info (12128): Elaborating entity "counter" for hierarchy "counter:c0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 714
-Info (12128): Elaborating entity "lpm_counter" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
-Info (12130): Elaborated megafunction instantiation "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
-Info (12133): Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/counter.vhd Line: 81
+Warning (10036): Verilog HDL or VHDL warning at LSTM_cell.vhd(102): object "tmp" assigned a value but never read File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 102
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(278): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 278
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(281): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 281
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(459): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 459
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(479): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 479
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(488): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 488
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(497): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 497
+Warning (10492): VHDL Process Statement warning at LSTM_cell.vhd(506): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 506
+Info (12128): Elaborating entity "shiftReg" for hierarchy "shiftReg:l0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 570
+Info (12128): Elaborating entity "counter" for hierarchy "counter:c0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 714
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd Line: 81
+Info (12130): Elaborated megafunction instantiation "counter:c0|lpm_counter:LPM_COUNTER_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd Line: 81
+Info (12133): Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/counter.vhd Line: 81
     Info (12134): Parameter "lpm_direction" = "UP"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_gaj.tdf
-    Info (12023): Found entity 1: cntr_gaj File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/cntr_gaj.tdf Line: 26
+    Info (12023): Found entity 1: cntr_gaj File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/cntr_gaj.tdf Line: 26
 Info (12128): Elaborating entity "cntr_gaj" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 259
-Info (12128): Elaborating entity "fpu" for hierarchy "fpu:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 723
-Info (12128): Elaborating entity "fp_unit" for hierarchy "fpu:u0|fp_unit:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fpu.vhd Line: 89
-Info (12128): Elaborating entity "lzc_32" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 67
-Info (12128): Elaborating entity "lzc_16" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_32.vhd Line: 36
-Info (12128): Elaborating entity "lzc_8" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_16.vhd Line: 34
-Info (12128): Elaborating entity "lzc_4" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_8.vhd Line: 32
-Info (12128): Elaborating entity "lzc_128" for hierarchy "fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 91
-Info (12128): Elaborating entity "lzc_64" for hierarchy "fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/lzc_128.vhd Line: 40
-Info (12128): Elaborating entity "fp_ext" for hierarchy "fpu:u0|fp_unit:u0|fp_ext:fp_ext1_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 97
-Info (12128): Elaborating entity "fp_cmp" for hierarchy "fpu:u0|fp_unit:u0|fp_cmp:fp_cmp_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 121
-Info (12128): Elaborating entity "fp_rnd" for hierarchy "fpu:u0|fp_unit:u0|fp_rnd:fp_rnd_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 127
-Info (12128): Elaborating entity "fp_cvt" for hierarchy "fpu:u0|fp_unit:u0|fp_cvt:fp_cvt_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 133
-Info (12128): Elaborating entity "fp_sgnj" for hierarchy "fpu:u0|fp_unit:u0|fp_sgnj:fp_sgnj_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 143
-Info (12128): Elaborating entity "fp_max" for hierarchy "fpu:u0|fp_unit:u0|fp_max:fp_max_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 149
-Info (12128): Elaborating entity "fp_fma" for hierarchy "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 155
-Info (12128): Elaborating entity "fp_mac" for hierarchy "fpu:u0|fp_unit:u0|fp_mac:fp_mac_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 165
-Info (12128): Elaborating entity "fp_fdiv" for hierarchy "fpu:u0|fp_unit:u0|fp_fdiv:fp_fdiv_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 171
-Info (12128): Elaborating entity "fp_exe" for hierarchy "fpu:u0|fp_unit:u0|fp_exe:fp_exe_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_unit.vhd Line: 181
-Info (12128): Elaborating entity "f2i_conv" for hierarchy "f2i_conv:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 737
-Info (12128): Elaborating entity "d_flip_flop" for hierarchy "d_flip_flop:f0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 745
-Info (12128): Elaborating entity "nReg" for hierarchy "nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 777
-Info (12128): Elaborating entity "LUT" for hierarchy "LUT:LUT1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LSTM_cell.vhd Line: 891
-Info (12128): Elaborating entity "altsyncram" for hierarchy "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
-Info (12133): Instantiated megafunction "LUT:LUT1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/LUT.vhd Line: 63
+Info (12128): Elaborating entity "fpu" for hierarchy "fpu:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 723
+Info (12128): Elaborating entity "fp_unit" for hierarchy "fpu:u0|fp_unit:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fpu.vhd Line: 89
+Info (12128): Elaborating entity "lzc_32" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 67
+Info (12128): Elaborating entity "lzc_16" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_32.vhd Line: 36
+Info (12128): Elaborating entity "lzc_8" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_16.vhd Line: 34
+Info (12128): Elaborating entity "lzc_4" for hierarchy "fpu:u0|fp_unit:u0|lzc_32:lzc1_32_comp|lzc_16:lzc_16_comp_0|lzc_8:lzc_8_comp_0|lzc_4:lzc_4_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_8.vhd Line: 32
+Info (12128): Elaborating entity "lzc_128" for hierarchy "fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 91
+Info (12128): Elaborating entity "lzc_64" for hierarchy "fpu:u0|fp_unit:u0|lzc_128:lzc_128_comp|lzc_64:lzc_64_comp_0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/lzc_128.vhd Line: 40
+Info (12128): Elaborating entity "fp_ext" for hierarchy "fpu:u0|fp_unit:u0|fp_ext:fp_ext1_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 97
+Info (12128): Elaborating entity "fp_cmp" for hierarchy "fpu:u0|fp_unit:u0|fp_cmp:fp_cmp_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 121
+Info (12128): Elaborating entity "fp_rnd" for hierarchy "fpu:u0|fp_unit:u0|fp_rnd:fp_rnd_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 127
+Info (12128): Elaborating entity "fp_cvt" for hierarchy "fpu:u0|fp_unit:u0|fp_cvt:fp_cvt_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 133
+Info (12128): Elaborating entity "fp_sgnj" for hierarchy "fpu:u0|fp_unit:u0|fp_sgnj:fp_sgnj_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 143
+Info (12128): Elaborating entity "fp_max" for hierarchy "fpu:u0|fp_unit:u0|fp_max:fp_max_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 149
+Info (12128): Elaborating entity "fp_fma" for hierarchy "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 155
+Info (12128): Elaborating entity "fp_mac" for hierarchy "fpu:u0|fp_unit:u0|fp_mac:fp_mac_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 165
+Info (12128): Elaborating entity "fp_fdiv" for hierarchy "fpu:u0|fp_unit:u0|fp_fdiv:fp_fdiv_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 171
+Info (12128): Elaborating entity "fp_exe" for hierarchy "fpu:u0|fp_unit:u0|fp_exe:fp_exe_comp" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_unit.vhd Line: 181
+Info (12128): Elaborating entity "f2i_conv" for hierarchy "f2i_conv:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 737
+Info (12128): Elaborating entity "d_flip_flop" for hierarchy "d_flip_flop:f0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 745
+Info (12128): Elaborating entity "nReg" for hierarchy "nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 777
+Info (12128): Elaborating entity "LUT" for hierarchy "LUT:LUT1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LSTM_cell.vhd Line: 891
+Info (12128): Elaborating entity "altsyncram" for hierarchy "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "LUT:LUT1|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd Line: 63
+Info (12133): Instantiated megafunction "LUT:LUT1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/LUT.vhd Line: 63
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1459,15 +1459,15 @@ Info (12133): Instantiated megafunction "LUT:LUT1|altsyncram:altsyncram_componen
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n4u3.tdf
-    Info (12023): Found entity 1: altsyncram_n4u3 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/altsyncram_n4u3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_n4u3 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/altsyncram_n4u3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_n4u3" for hierarchy "LUT:LUT1|altsyncram:altsyncram_component|altsyncram_n4u3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "LUT:LUT1|altsyncram:altsyncram_component|altsyncram_n4u3:auto_generated|q_a[31]" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/altsyncram_n4u3.tdf Line: 750
+        Warning (14320): Synthesized away node "LUT:LUT1|altsyncram:altsyncram_component|altsyncram_n4u3:auto_generated|q_a[31]" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/altsyncram_n4u3.tdf Line: 750
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd Line: 134
-Info (12130): Elaborated megafunction instantiation "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd Line: 134
-Info (12133): Instantiated megafunction "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/fpu/fp_fma.vhd Line: 134
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd Line: 134
+Info (12130): Elaborated megafunction instantiation "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd Line: 134
+Info (12133): Instantiated megafunction "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lpm_mult:Mult0" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/fpu/fp_fma.vhd Line: 134
     Info (12134): Parameter "LPM_WIDTHA" = "24"
     Info (12134): Parameter "LPM_WIDTHB" = "24"
     Info (12134): Parameter "LPM_WIDTHP" = "48"
@@ -1478,7 +1478,7 @@ Info (12133): Instantiated megafunction "fpu:u0|fp_unit:u0|fp_fma:fp_fma_comp|lp
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_4dt.tdf
-    Info (12023): Found entity 1: mult_4dt File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/VHDL/db/mult_4dt.tdf Line: 31
+    Info (12023): Found entity 1: mult_4dt File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FLOAT/db/mult_4dt.tdf Line: 31
 Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "balanced" technology mapper which leaves 4 WYSIWYG logic cells and I/Os untouched
 Info (13014): Ignored 158 buffer(s)
     Info (13019): Ignored 158 SOFT buffer(s)
@@ -1493,9 +1493,9 @@ Info (21057): Implemented 4760 device resources after synthesis - the final reso
     Info (21064): Implemented 31 RAM segments
     Info (21062): Implemented 7 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Thu May 09 14:42:14 2024
-    Info: Elapsed time: 00:01:25
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4860 megabytes
+    Info: Processing ended: Thu May 23 12:24:09 2024
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:19
 
 

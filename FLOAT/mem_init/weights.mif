@@ -1,0 +1,39 @@
+DEPTH = 32;
+WIDTH = 32;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+000 : 409aabc9; --Wx0
+001 : 4189afee; --Bx0
+002 : 41c44cb2; --Wh0
+003 : 419dbae6; --Bh0
+004 : 4032fc98; --Wx1
+005 : 41d04493; --Bx1
+006 : c19a1c45; --Wh1
+007 : 40934d60; --Bh1
+008 : 41e07930; --Wx2
+009 : 40ffc6c1; --Bx2
+00a : c2d60a83; --Wh2
+00b : 41af207c; --Bh2
+00c : 40b5ffce; --Wx3
+00d : 422ae26f; --Bx3
+00e : 422da471; --Wh3
+00f : 422ea984; --Bh3
+010 : 3ff8c0ad; --Wd0
+011 : 3f169ced; --Bd0
+012 : 3e99c326; --Wd1
+013 : bef4406c; --Bd1
+014 : bf6300de; --Wd2
+015 : bf6b2767; --Bd2
+016 : 3ff13669; --Wd3
+017 : 3f126f61; --Bd3
+018 : 3fb5289e; --Wl0
+019 : c020ccff; --Bl
+01a : bed1be6e; --Wl1
+01b : 3cdfd8ae; --Wl2
+01c : 3f8a646f; --Wl3
+01d : 00000000;
+01e : 00000000;
+01f : 00000000;
+END;

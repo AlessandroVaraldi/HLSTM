@@ -23,9 +23,9 @@ VGYdE9NWca9Fn8ZEWBQ;PZ1
 !s100 ?SPnh^B?nfNMA065LLB5f3
 Z7 OV;C;2020.1;71
 33
-Z8 !s110 1715779765
+Z8 !s110 1716457261
 !i10b 1
-Z9 !s108 1715779765.000000
+Z9 !s108 1716457261.000000
 Z10 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/counter.vhd|
 Z11 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/counter.vhd|
 !i113 1
@@ -92,12 +92,12 @@ R18
 R12
 R13
 Efixed_adder
-Z19 w1715769067
-Z20 DPx4 work 7 mytypes 0 22 Oh;[j5A636SMh:Ia<?E]20
+Z19 w1715954176
+Z20 DPx4 work 7 mytypes 0 22 fJ7AmL?d9hzORmD@C49Rh3
 Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
-!i122 11
+!i122 12
 R0
 Z22 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd
 Z23 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd
@@ -107,9 +107,9 @@ VcLgZDG:]mUb:iBJU:H=`a2
 !s100 5D50Bi?1FCSDgNeA8Ha592
 R7
 33
-Z24 !s110 1715779766
+Z24 !s110 1716457262
 !i10b 1
-Z25 !s108 1715779766.000000
+Z25 !s108 1716457262.000000
 Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd|
 Z27 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd|
 !i113 1
@@ -121,11 +121,11 @@ R21
 R2
 R3
 DEx4 work 11 fixed_adder 0 22 cLgZDG:]mUb:iBJU:H=`a2
-!i122 11
-l23
-L18 34
-VdaC7hQMBkLQ?SBbeaVHz]0
-!s100 b18MGg[FbhjjW9X>DFTfk3
+!i122 12
+l20
+L18 12
+V]@E8hzKPN<SVzF^FMR8cd0
+!s100 GkfliIfmha<b9X@86<3VT0
 R7
 33
 R24
@@ -137,21 +137,21 @@ R27
 R12
 R13
 Efixed_multiplier
-Z28 w1715445623
+Z28 w1715954283
 R20
 Z29 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
 Z30 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
 R21
 R2
 R3
-!i122 10
+!i122 11
 R0
 Z31 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd
 Z32 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd
 l0
 L8 1
-V550b4]N_3?AKJ>^nb2A8E0
-!s100 `?=jZD92do=5O4jcZABd[1
+Vz22j@4oYl9feQcFB7O<j]0
+!s100 dBThP7ZhcAX9T8o^FLPm00
 R7
 33
 R24
@@ -169,12 +169,12 @@ R30
 R21
 R2
 R3
-DEx4 work 16 fixed_multiplier 0 22 550b4]N_3?AKJ>^nb2A8E0
-!i122 10
-l22
-L17 28
-VJNG^OXc4OA[YYcHUKOOSi2
-!s100 Z3iX`:5<Ca<>4R1UKFAWa2
+DEx4 work 16 fixed_multiplier 0 22 z22j@4oYl9feQcFB7O<j]0
+!i122 11
+l20
+L18 11
+V=lhhb=2;M>><nHSa[fXQk2
+!s100 0BC5jFBm2CZd[4ZRB^6ZH1
 R7
 33
 R24
@@ -233,7 +233,7 @@ Z40 w1715504024
 Z41 DPx9 altera_mf 20 altera_mf_components 0 22 BN6nPmY:UEbXa[^5b@FTW1
 R2
 R3
-!i122 13
+!i122 15
 R0
 Z42 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/in_RAM.vhd
 Z43 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/in_RAM.vhd
@@ -256,9 +256,9 @@ R41
 R2
 R3
 DEx4 work 6 in_ram 0 22 Q4PK2@DG::@3_ZK_@<mo21
-!i122 13
+!i122 15
 l61
-L57 38
+Z46 L57 38
 VIPZi0;da>5DnRd9Ae]CZh2
 !s100 j4k7Ci8S@UQRjT:4KS4883
 R7
@@ -272,28 +272,28 @@ R45
 R12
 R13
 Elstm_cell
-Z46 w1715779715
+Z47 w1716457251
 R20
 R21
 R29
 R30
 R2
 R3
-!i122 7
+!i122 8
 R0
-Z47 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd
-Z48 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd
+Z48 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd
+Z49 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd
 l0
 L8 1
-ViaAak6?_1fTCh[RFl50Nb0
-!s100 3^n[^lE5H_liiEMfI6]aj3
+Vfld[P>4KHgFhDn<I7fmoI3
+!s100 Tl@]3_iziARdXJL`N<EEb2
 R7
 33
 R8
 !i10b 1
 R9
-Z49 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd|
-Z50 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd|
+Z50 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd|
+Z51 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd|
 !i113 1
 R12
 R13
@@ -304,43 +304,43 @@ R29
 R30
 R2
 R3
-DEx4 work 9 lstm_cell 0 22 iaAak6?_1fTCh[RFl50Nb0
-!i122 7
-l190
-L22 763
-VzCHK3@nFNUPMk;F4UILSY2
-!s100 V`U:cJDjYS>95@GCgW;]?0
+DEx4 work 9 lstm_cell 0 22 fld[P>4KHgFhDn<I7fmoI3
+!i122 8
+l144
+L24 367
+VY`OMzeb2fdLdGQL;8Z3:O3
+!s100 gO:==aMg@nU?hfX2>WP360
 R7
 33
 R8
 !i10b 1
 R9
-R49
 R50
+R51
 !i113 1
 R12
 R13
 Elstm_gate
-Z51 w1715778688
+Z52 w1715958576
 R20
 R21
 R2
 R3
-!i122 8
+!i122 9
 R0
-Z52 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd
-Z53 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd
+Z53 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd
+Z54 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd
 l0
 L7 1
-VP5T1S>lYGb9S<;O=_EKOV1
-!s100 A`[TLUFgEM69jK]iz?[j12
+V[MS[_19a>JK<nP3Ej`lBQ2
+!s100 j2VIhzcKM_B=7WY:5U1m[0
 R7
 33
 R8
 !i10b 1
 R9
-Z54 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd|
-Z55 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd|
+Z55 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd|
+Z56 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd|
 !i113 1
 R12
 R13
@@ -349,87 +349,42 @@ R20
 R21
 R2
 R3
-DEx4 work 9 lstm_gate 0 22 P5T1S>lYGb9S<;O=_EKOV1
-!i122 8
+DEx4 work 9 lstm_gate 0 22 [MS[_19a>JK<nP3Ej`lBQ2
+!i122 9
 l89
-L29 220
-VQDAA@_=1O6H2YBeKjf`1c2
-!s100 O?ocM;f647A]e4an`dfIH3
+L29 207
+Va:B4EakJGUQz`[91=9[Z20
+!s100 CN^18;6JlEQAL:SRAD[2n0
 R7
 33
 R8
 !i10b 1
 R9
-R54
 R55
-!i113 1
-R12
-R13
-Elstm_test
-Z56 w1715775456
-Z57 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-R21
-R2
-R3
-!i122 14
-R0
-Z58 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/LSTM_test.vhd
-Z59 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/LSTM_test.vhd
-l0
-L10 1
-V`>?]T6LMUYF2d7H`Okcch0
-!s100 L1EXmCPRhT_Vzc[DQTTR@0
-R7
-33
-Z60 !s110 1715779767
-!i10b 1
-Z61 !s108 1715779767.000000
-Z62 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/LSTM_test.vhd|
-!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/LSTM_test.vhd|
-!i113 1
-R12
-R13
-Atest
-R57
-R21
-R2
-R3
-DEx4 work 9 lstm_test 0 22 `>?]T6LMUYF2d7H`Okcch0
-!i122 14
-l69
-L13 149
-V1_NDWKQ;dNPUBUALUD;fB1
-!s100 46D<oiWE[5_QG8FhRT7[<2
-R7
-33
-R60
-!i10b 1
-R61
-R62
-Z63 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/LSTM_test.vhd|
+R56
 !i113 1
 R12
 R13
 Elut
-Z64 w1715510070
+Z57 w1716283367
 R41
 R2
 R3
 !i122 1
 R0
-Z65 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LUT.vhd
-Z66 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LUT.vhd
+Z58 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd
+Z59 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd
 l0
 R6
-V=n_1NZlPY:0od`GOlmZ:Y0
-!s100 P9CS@Q5CHP_@RR<51n7Qh2
+VgO6D:ZF2l93TCUCP=k7;g2
+!s100 Gj[^_N;`IJkdFClGdJ?^33
 R7
 33
 R8
 !i10b 1
-R9
-Z67 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LUT.vhd|
-Z68 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LUT.vhd|
+Z60 !s108 1716457260.000000
+Z61 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd|
+Z62 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd|
 !i113 1
 R12
 R13
@@ -437,34 +392,34 @@ Asyn
 R41
 R2
 R3
-DEx4 work 3 lut 0 22 =n_1NZlPY:0od`GOlmZ:Y0
+DEx4 work 3 lut 0 22 gO6D:ZF2l93TCUCP=k7;g2
 !i122 1
-l62
-L57 42
-VoKHDU`>a9Oi8lDEiS?;fS2
-!s100 MR:l]5z7@nN;U?>^zhYhk0
+l60
+L56 37
+VP;@XkWh0IL2>FWInh:M?T2
+!s100 I@^PcM_Q0o2]XciY1dD8F1
 R7
 33
 R8
 !i10b 1
-R9
-R67
-R68
+R60
+R61
+R62
 !i113 1
 R12
 R13
 Emac_pe
-Z69 w1715444654
+Z63 w1715954273
 R20
 R29
 R30
 R21
 R2
 R3
-!i122 9
+!i122 10
 R0
-Z70 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd
-Z71 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd
+Z64 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd
+Z65 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd
 l0
 L8 1
 VS3ChP^1HgM>_@GoQ<z`ca1
@@ -474,8 +429,8 @@ R7
 R8
 !i10b 1
 R9
-Z72 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd|
-Z73 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd|
+Z66 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd|
+Z67 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd|
 !i113 1
 R12
 R13
@@ -487,18 +442,18 @@ R21
 R2
 R3
 DEx4 work 6 mac_pe 0 22 S3ChP^1HgM>_@GoQ<z`ca1
-!i122 9
-l42
-L19 41
-V9D5jB:9^eWN1RTF5ECm300
-!s100 8<14bO[V`BJ3LB9^9MSB;3
+!i122 10
+l43
+L19 43
+VH]0LfO=n=i=oS=THZh:h22
+!s100 l<I2DeZU1Y8?35]M_Md<I0
 R7
 33
 R8
 !i10b 1
 R9
-R72
-R73
+R66
+R67
 !i113 1
 R12
 R13
@@ -506,34 +461,130 @@ Pmytypes
 R21
 R2
 R3
-!i122 0
-w1713963554
+!i122 14
+w1716449302
 R0
 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd
 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd
 l0
 L6 1
-VOh;[j5A636SMh:Ia<?E]20
-!s100 6GIK>7Xab>mk:ScB=o8:_2
+VfJ7AmL?d9hzORmD@C49Rh3
+!s100 aCnE8NmfnCV698JmChQNB0
 R7
 33
-!s110 1715779764
+R24
 !i10b 1
-!s108 1715779764.000000
+R25
 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd|
 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd|
 !i113 1
 R12
 R13
-Enreg
-Z74 w1715086585
+Enetwork
+Z68 w1716455199
+R20
+R21
+R29
+R30
+R2
+R3
+!i122 7
+R0
+Z69 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd
+Z70 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd
+l0
+L8 1
+VT6eLXCUM>XzRfT<5OS`VC0
+!s100 SOH9=aCV`97h^I@@HOB3S1
+R7
+33
+R8
+!i10b 1
+R9
+Z71 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd|
+Z72 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd|
+!i113 1
+R12
+R13
+Artl
+R20
+R21
+R29
+R30
+R2
+R3
+DEx4 work 7 network 0 22 T6eLXCUM>XzRfT<5OS`VC0
+!i122 7
+l131
+L25 233
+VJjIFkMF^6I;VA:B5BC8oL2
+!s100 iF<8A_eXG]:oBAVmXQk1z3
+R7
+33
+R8
+!i10b 1
+R9
+R71
+R72
+!i113 1
+R12
+R13
+Enetwork_test
+Z73 w1716452506
+R20
+Z74 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R21
 R2
 R3
-!i122 12
+!i122 18
 R0
-Z75 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd
-Z76 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd
+Z75 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd
+Z76 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd
+l0
+L12 1
+VK@go@>0eo8a75V7dIY4[32
+!s100 ]7z<Bi7mn9Q7[gfbI?aZo2
+R7
+33
+R24
+!i10b 1
+R25
+Z77 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd|
+!s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd|
+!i113 1
+R12
+R13
+Atest
+R20
+R74
+R21
+R2
+R3
+DEx4 work 12 network_test 0 22 K@go@>0eo8a75V7dIY4[32
+!i122 18
+l95
+L15 198
+Vl2>JJJTFoYiU4NAdCZL`C1
+!s100 IlU`YTng5YV@Hn[0Ie76b1
+R7
+33
+R24
+!i10b 1
+R25
+R77
+Z78 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd|
+!i113 1
+R12
+R13
+Enreg
+Z79 w1715086585
+R21
+R2
+R3
+!i122 17
+R0
+Z80 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd
+Z81 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd
 l0
 L5 1
 Vd>D6h:mA74Cb8al<b0GUm2
@@ -543,8 +594,8 @@ R7
 R24
 !i10b 1
 R25
-Z77 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd|
-Z78 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd|
+Z82 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd|
+Z83 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd|
 !i113 1
 R12
 R13
@@ -553,7 +604,7 @@ R21
 R2
 R3
 DEx4 work 4 nreg 0 22 d>D6h:mA74Cb8al<b0GUm2
-!i122 12
+!i122 17
 l20
 L18 17
 VD[4?o9oHhPP`PSL44Ucdz1
@@ -563,20 +614,69 @@ R7
 R24
 !i10b 1
 R25
-R77
-R78
+R82
+R83
+!i113 1
+R12
+R13
+Eoutput_layer
+Z84 w1716299735
+R20
+R21
+R29
+R30
+R2
+R3
+!i122 13
+R0
+Z85 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd
+Z86 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd
+l0
+L8 1
+VNFfRh8LGg@Ok0f88[z^KY3
+!s100 kNWjVn]U8<K;:e3VT8^bA0
+R7
+33
+R24
+!i10b 1
+R25
+Z87 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd|
+Z88 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd|
+!i113 1
+R12
+R13
+Artl
+R20
+R21
+R29
+R30
+R2
+R3
+DEx4 work 12 output_layer 0 22 NFfRh8LGg@Ok0f88[z^KY3
+!i122 13
+l87
+L21 269
+Vi119nU0JB5bDlCK9^o8Y51
+!s100 _23L^o9eYLRKKW;QG4H4X0
+R7
+33
+R24
+!i10b 1
+R25
+R87
+R88
 !i113 1
 R12
 R13
 Eshiftreg
-Z79 w1715351993
+Z89 w1715351993
 R21
 R2
 R3
 !i122 3
 R0
-Z80 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd
-Z81 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd
+Z90 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd
+Z91 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd
 l0
 L5 1
 V_FYW^g4N40f@DLfnCeaK=3
@@ -586,8 +686,8 @@ R7
 R8
 !i10b 1
 R9
-Z82 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd|
-Z83 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd|
+Z92 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd|
+Z93 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd|
 !i113 1
 R12
 R13
@@ -606,8 +706,51 @@ R7
 R8
 !i10b 1
 R9
-R82
-R83
+R92
+R93
+!i113 1
+R12
+R13
+Ewb_ram
+Z94 w1716452348
+R41
+R2
+R3
+!i122 16
+R0
+Z95 8C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd
+Z96 FC:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd
+l0
+R6
+VN[U6nHH@KaBFa8KENBDhX3
+!s100 o?GeGQfS?[D;2QNL`881g0
+R7
+33
+R24
+!i10b 1
+R25
+Z97 !s90 -reportprogress|300|-2008|-work|work|C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd|
+Z98 !s107 C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd|
+!i113 1
+R12
+R13
+Asyn
+R41
+R2
+R3
+DEx4 work 6 wb_ram 0 22 N[U6nHH@KaBFa8KENBDhX3
+!i122 16
+l61
+R46
+VUBM^<<X;E;maf>_hllSmR1
+!s100 zbUg28>e8?m8^<KL?mjJh1
+R7
+33
+R24
+!i10b 1
+R25
+R97
+R98
 !i113 1
 R12
 R13

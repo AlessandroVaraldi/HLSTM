@@ -57,26 +57,26 @@ architecture sim of mac_pe_tb is
 
         -- Test Case 2
         in_a <= to_signed(5555, 16);
-        in_b <= to_signed(36000, 16);
+        in_b <= to_signed(-3232, 16);
         in_c <= to_signed(1500, 16);
         wait for 10 * clock_period;
 
         -- Test Case 3
 		  in_a <= to_signed(5555, 16);
-        in_b <= to_signed(36000, 16);
-        in_c <= to_signed(34268, 16);
+        in_b <= to_signed(-3232, 16);
+        in_c <= to_signed(-1500, 16);
         wait for 10 * clock_period;
 		  
 		  -- Test Case 4
-        in_a <= to_signed(38323, 16);
-        in_b <= to_signed(36000, 16);
+        in_a <= to_signed(-5555, 16);
+        in_b <= to_signed(-3232, 16);
         in_c <= to_signed(1500, 16);
         wait for 10 * clock_period;
 		  
 			-- Test Case 5
-        in_a <= to_signed(38323, 16);
-        in_b <= to_signed(36000, 16);
-        in_c <= to_signed(34268, 16);
+        in_a <= to_signed(-5555, 16);
+        in_b <= to_signed(3232, 16);
+        in_c <= to_signed(-1500, 16);
         wait for 10 * clock_period;
 
         -- Test ends

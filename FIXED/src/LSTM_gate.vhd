@@ -11,16 +11,16 @@ entity LSTM_gate is
 		reset			: in  std_logic := '0';
 		clear			: in  std_logic := '0';
 		start			: in  std_logic := '0';
-		input			: in  signed   (15 downto 0) := (others => '0');
-		ht_in			: in  signed   (15 downto 0) := (others => '0');
-		wx_in			: in  signed   (15 downto 0) := (others => '0');
-		bx_in			: in  signed   (15 downto 0) := (others => '0');
-		wh_in			: in  signed   (15 downto 0) := (others => '0');
-		bh_in			: in  signed   (15 downto 0) := (others => '0');
-		lutad			: out unsigned (15 downto 0) := (others => '0');
-		lutre			: in  unsigned (14 downto 0) := (others => '0');
-		otanh			: out signed   (15 downto 0) := (others => '0');
-		osigm			: out signed   (15 downto 0) := (others => '0');
+		input			: in  signed (15 downto 0) := (others => '0');
+		ht_in			: in  signed (15 downto 0) := (others => '0');
+		wx_in			: in  signed (15 downto 0) := (others => '0');
+		bx_in			: in  signed (15 downto 0) := (others => '0');
+		wh_in			: in  signed (15 downto 0) := (others => '0');
+		bh_in			: in  signed (15 downto 0) := (others => '0');
+		lutad			: out signed (15 downto 0) := (others => '0');
+		lutre			: in  signed (15 downto 0) := (others => '0');
+		otanh			: out signed (15 downto 0) := (others => '0');
+		osigm			: out signed (15 downto 0) := (others => '0');
 		rdout			: out std_logic := '0';
 		done			: out std_logic := '0'
 	);
@@ -150,33 +150,20 @@ begin
 			q		=> re2_re
 		);
 	
-	lutad <= unsigned(re2_re);
+	lutad <= re2_re when re2_re (15) = '0' else
+				not(re2_re) + "0000000000000001";
 		
 	ff0: flip_flop_chain
 		generic map (n=>4)
 		port map (
 			clock	=> clock,
 			reset	=> reset,
-			start	=> re0_re (15),
+			start	=> re2_re (15),
 			q 		=> sgn
 		);
 		
-	tanh (15) <= sgn (3);
-	tanh (14) <= lutre (14);
-	tanh (13) <= lutre (13);
-	tanh (12) <= lutre (12);
-	tanh (11) <= lutre (11);
-	tanh (10) <= lutre (10);
-	tanh ( 9) <= lutre ( 9);
-	tanh ( 8) <= lutre ( 8);
-	tanh ( 7) <= lutre ( 7);
-	tanh ( 6) <= lutre ( 6);
-	tanh ( 5) <= lutre ( 5);
-	tanh ( 4) <= lutre ( 4);
-	tanh ( 3) <= lutre ( 3);
-	tanh ( 2) <= lutre ( 2);
-	tanh ( 1) <= lutre ( 1);
-	tanh ( 0) <= lutre ( 0);
+	tanh <=  lutre when sgn(1) = '0' else
+				not(lutre) + "0000000000000001";
 	
 	re3_in <= tanh;
 	
