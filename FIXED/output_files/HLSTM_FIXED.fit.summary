@@ -1,16 +1,16 @@
-Fitter Status : Successful - Mon May 27 13:42:34 2024
+Fitter Status : Successful - Tue Jun 04 12:03:19 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : HLSTM_FIXED
 Top-level Entity Name : network
 Family : Cyclone 10 LP
 Device : 10CL006YU256C6G
 Timing Models : Final
-Total logic elements : 1,651 / 6,272 ( 26 % )
-    Total combinational functions : 1,539 / 6,272 ( 25 % )
-    Dedicated logic registers : 736 / 6,272 ( 12 % )
-Total registers : 753
+Total logic elements : 1,552 / 6,272 ( 25 % )
+    Total combinational functions : 1,442 / 6,272 ( 23 % )
+    Dedicated logic registers : 671 / 6,272 ( 11 % )
+Total registers : 688
 Total pins : 112 / 177 ( 63 % )
 Total virtual pins : 0
 Total memory bits : 8,192 / 276,480 ( 3 % )
-Embedded Multiplier 9-bit elements : 6 / 30 ( 20 % )
+Embedded Multiplier 9-bit elements : 8 / 30 ( 27 % )
 Total PLLs : 0 / 2 ( 0 % )

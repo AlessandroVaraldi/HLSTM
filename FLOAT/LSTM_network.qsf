@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone 10 LP"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY LSTM_cell
+set_global_assignment -name TOP_LEVEL_ENTITY fpu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:51:53  MARCH 26, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -52,7 +52,7 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH LSTM_test -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH fpu_test -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME LSTM_test -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id LSTM_test
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id LSTM_test
@@ -66,6 +66,14 @@ set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME fpu_test -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id fpu_test
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id fpu_test
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME fpu_test -section_id fpu_test
+set_global_assignment -name EDA_TEST_BENCH_FILE in_RAM.vhd -section_id LSTM_test
+set_global_assignment -name EDA_TEST_BENCH_FILE LSTM_test.vhd -section_id LSTM_test
+set_global_assignment -name EDA_TEST_BENCH_FILE fpu_test.vhd -section_id fpu_test
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SDC_FILE SDC1.sdc
 set_global_assignment -name VHDL_FILE myTypes.vhd
 set_global_assignment -name VHDL_FILE LSTM_test.vhd
@@ -83,10 +91,8 @@ set_global_assignment -name VHDL_FILE fpu/fp_unit.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_sgnj.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_rnd.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_max.vhd
-set_global_assignment -name VHDL_FILE fpu/fp_mac.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_func.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_fma.vhd
-set_global_assignment -name VHDL_FILE fpu/fp_fdiv.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_ext.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_exe.vhd
 set_global_assignment -name VHDL_FILE fpu/fp_cvt.vhd
@@ -99,7 +105,7 @@ set_global_assignment -name VHDL_FILE fpu/lzc_16.vhd
 set_global_assignment -name VHDL_FILE fpu/lzc_32.vhd
 set_global_assignment -name VHDL_FILE fpu/lzc_64.vhd
 set_global_assignment -name VHDL_FILE fpu/lzc_128.vhd
-set_global_assignment -name EDA_TEST_BENCH_FILE in_RAM.vhd -section_id LSTM_test
-set_global_assignment -name EDA_TEST_BENCH_FILE LSTM_test.vhd -section_id LSTM_test
 set_global_assignment -name VHDL_FILE d_flip_flop.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE LSTM_cell2.vhd
+set_global_assignment -name VHDL_FILE fpu_test.vhd
+set_global_assignment -name VHDL_FILE RAM.vhd

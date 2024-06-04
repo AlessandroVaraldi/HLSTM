@@ -31,8 +31,8 @@ entity fp_exe is
 		fp_sgnj_i    : out fp_sgnj_in_type;
 		fp_fma_o     : in  fp_fma_out_type;
 		fp_fma_i     : out fp_fma_in_type;
-		fp_fdiv_o    : in  fp_fdiv_out_type;
-		fp_fdiv_i    : out fp_fdiv_in_type;
+--		fp_fdiv_o    : in  fp_fdiv_out_type;
+--		fp_fdiv_i    : out fp_fdiv_in_type;
 		fp_rnd_o     : in  fp_rnd_out_type;
 		fp_rnd_i     : out fp_rnd_in_type
 	);
@@ -42,7 +42,9 @@ architecture behavior of fp_exe is
 
 begin
 
-	process(fp_exe_i, fp_ext1_o, fp_ext2_o, fp_ext3_o, fp_cmp_o, fp_max_o, fp_sgnj_o, fp_cvt_f2i_o, fp_cvt_i2f_o, fp_fma_o, fp_fdiv_o, fp_rnd_o)
+	process(fp_exe_i, fp_ext1_o, fp_ext2_o, fp_ext3_o, fp_cmp_o, fp_max_o, fp_sgnj_o, fp_cvt_f2i_o, fp_cvt_i2f_o, fp_fma_o, 
+	--fp_fdiv_o, 
+	fp_rnd_o)
 		variable data1 : std_logic_vector(31 downto 0);
 		variable data2 : std_logic_vector(31 downto 0);
 		variable data3 : std_logic_vector(31 downto 0);
@@ -143,18 +145,18 @@ begin
 		fp_fma_i.fmt <= fmt;
 		fp_fma_i.rm <= rm;
 
-		fp_fdiv_i.data1 <= ext1;
-		fp_fdiv_i.data2 <= ext2;
-		fp_fdiv_i.class1 <= class1;
-		fp_fdiv_i.class2 <= class2;
-		fp_fdiv_i.op <= op;
-		fp_fdiv_i.fmt <= fmt;
-		fp_fdiv_i.rm <= rm;
+--		fp_fdiv_i.data1 <= ext1;
+--		fp_fdiv_i.data2 <= ext2;
+--		fp_fdiv_i.class1 <= class1;
+--		fp_fdiv_i.class2 <= class2;
+--		fp_fdiv_i.op <= op;
+--		fp_fdiv_i.fmt <= fmt;
+--		fp_fdiv_i.rm <= rm;
 
 		if fp_fma_o.ready = '1' then
 			fp_rnd := fp_fma_o.fp_rnd;
-		elsif fp_fdiv_o.ready = '1' then
-			fp_rnd := fp_fdiv_o.fp_rnd;
+--		elsif fp_fdiv_o.ready = '1' then
+--			fp_rnd := fp_fdiv_o.fp_rnd;
 		elsif op.fcvt_i2f = '1' then
 			fp_rnd := fp_cvt_i2f_o.fp_rnd;
 		end if;
@@ -165,10 +167,10 @@ begin
 			result := fp_rnd_o.result;
 			flags := fp_rnd_o.flags;
 			ready := '1';
-		elsif fp_fdiv_o.ready = '1' then
-			result := fp_rnd_o.result;
-			flags := fp_rnd_o.flags;
-			ready := '1';
+--		elsif fp_fdiv_o.ready = '1' then
+--			result := fp_rnd_o.result;
+--			flags := fp_rnd_o.flags;
+--			ready := '1';
 		elsif op.fmadd = '1' then
 			ready := '0';
 		elsif op.fmsub = '1' then

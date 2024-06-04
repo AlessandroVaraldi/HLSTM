@@ -1,5 +1,5 @@
 EDA Netlist Writer report for HLSTM_FIXED
-Mon May 27 13:42:41 2024
+Tue Jun 04 12:03:25 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 27 13:42:41 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 04 12:03:25 2024 ;
 ; Revision Name             ; HLSTM_FIXED                           ;
 ; Top-level Entity Name     ; network                               ;
 ; Family                    ; Cyclone 10 LP                         ;
@@ -81,14 +81,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 27 13:42:40 2024
+    Info: Processing started: Tue Jun 04 12:03:25 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file HLSTM_FIXED.vho in folder "C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Mon May 27 13:42:41 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Tue Jun 04 12:03:25 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

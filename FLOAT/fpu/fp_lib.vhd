@@ -69,23 +69,23 @@ package fp_lib is
 		);
 	end component;
 
-	component fp_mac
-		port(
-			fp_mac_i : in  fp_mac_in_type;
-			fp_mac_o : out fp_mac_out_type
-		);
-	end component;
+--	component fp_mac
+--		port(
+--			fp_mac_i : in  fp_mac_in_type;
+--			fp_mac_o : out fp_mac_out_type
+--		);
+--	end component;
 
-	component fp_fdiv
-		port(
-			reset     : in  std_logic;
-			clock     : in  std_logic;
-			fp_fdiv_i : in  fp_fdiv_in_type;
-			fp_fdiv_o : out fp_fdiv_out_type;
-			fp_mac_i  : out fp_mac_in_type;
-			fp_mac_o  : in  fp_mac_out_type
-		);
-	end component;
+--	component fp_fdiv
+--		port(
+--			reset     : in  std_logic;
+--			clock     : in  std_logic;
+--			fp_fdiv_i : in  fp_fdiv_in_type;
+--			fp_fdiv_o : out fp_fdiv_out_type;
+--			fp_mac_i  : out fp_mac_in_type;
+--			fp_mac_o  : in  fp_mac_out_type
+--		);
+--	end component;
 
 	component fp_exe
 		port(
@@ -111,8 +111,8 @@ package fp_lib is
 			fp_sgnj_i    : out fp_sgnj_in_type;
 			fp_fma_o     : in  fp_fma_out_type;
 			fp_fma_i     : out fp_fma_in_type;
-			fp_fdiv_o    : in  fp_fdiv_out_type;
-			fp_fdiv_i    : out fp_fdiv_in_type;
+--			fp_fdiv_o    : in  fp_fdiv_out_type;
+--			fp_fdiv_i    : out fp_fdiv_in_type;
 			fp_rnd_o     : in  fp_rnd_out_type;
 			fp_rnd_i     : out fp_rnd_in_type
 		);

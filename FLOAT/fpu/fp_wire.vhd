@@ -194,201 +194,201 @@ package fp_wire is
 		ready        => '0'
 	);
 
-	type fp_mac_in_type is record
-		a  : signed(26 downto 0);
-		b  : signed(26 downto 0);
-		c  : signed(26 downto 0);
-		op : std_logic;
-	end record;
+--	type fp_mac_in_type is record
+--		a  : signed(26 downto 0);
+--		b  : signed(26 downto 0);
+--		c  : signed(26 downto 0);
+--		op : std_logic;
+--	end record;
 
-	type fp_mac_out_type is record
-		d : signed(51 downto 0);
-	end record;
+--	type fp_mac_out_type is record
+--		d : signed(51 downto 0);
+--	end record;
 
-	type fp_fdiv_in_type is record
-		data1  : std_logic_vector(32 downto 0);
-		data2  : std_logic_vector(32 downto 0);
-		class1 : std_logic_vector(9 downto 0);
-		class2 : std_logic_vector(9 downto 0);
-		op     : fp_operation_type;
-		fmt    : std_logic_vector(1 downto 0);
-		rm     : std_logic_vector(2 downto 0);
-	end record;
+--	type fp_fdiv_in_type is record
+--		data1  : std_logic_vector(32 downto 0);
+--		data2  : std_logic_vector(32 downto 0);
+--		class1 : std_logic_vector(9 downto 0);
+--		class2 : std_logic_vector(9 downto 0);
+--		op     : fp_operation_type;
+--		fmt    : std_logic_vector(1 downto 0);
+--		rm     : std_logic_vector(2 downto 0);
+--	end record;
+--
+--	type fp_fdiv_out_type is record
+--		fp_rnd : fp_rnd_in_type;
+--		ready  : std_logic;
+--	end record;
 
-	type fp_fdiv_out_type is record
-		fp_rnd : fp_rnd_in_type;
-		ready  : std_logic;
-	end record;
-
-	type fp_fdiv_functional_reg_type is record
-		state             : f_state_type;
-		istate            : natural range 0 to 15;
-		fmt               : std_logic_vector(1 downto 0);
-		rm                : std_logic_vector(2 downto 0);
-		a                 : std_logic_vector(32 downto 0);
-		b                 : std_logic_vector(32 downto 0);
-		class_a           : std_logic_vector(9 downto 0);
-		class_b           : std_logic_vector(9 downto 0);
-		snan              : std_logic;
-		qnan              : std_logic;
-		inf               : std_logic;
-		dbz               : std_logic;
-		zero              : std_logic;
-		op                : std_logic;
-		index             : natural range 0 to 127;
-		qa                : signed(26 downto 0);
-		qb                : signed(26 downto 0);
-		q0                : signed(26 downto 0);
-		q1                : signed(26 downto 0);
-		r0                : signed(51 downto 0);
-		r1                : signed(51 downto 0);
-		y                 : signed(26 downto 0);
-		y0                : signed(26 downto 0);
-		y1                : signed(26 downto 0);
-		y2                : signed(26 downto 0);
-		h0                : signed(26 downto 0);
-		h1                : signed(26 downto 0);
-		e0                : signed(26 downto 0);
-		e1                : signed(26 downto 0);
-		sign_fdiv         : std_logic;
-		exponent_fdiv     : integer range -1023 to 1023;
-		mantissa_fdiv     : std_logic_vector(55 downto 0);
-		counter_fdiv      : integer range 0 to 1;
-		exponent_bias     : integer range 0 to 127;
-		sign_rnd          : std_logic;
-		exponent_rnd      : integer range -1023 to 1023;
-		mantissa_rnd      : std_logic_vector(24 downto 0);
-		remainder_rnd     : std_logic_vector(1 downto 0);
-		counter_rnd       : integer range 0 to 31;
-		grs               : std_logic_vector(2 downto 0);
-		odd               : std_logic;
-		result            : std_logic_vector(31 downto 0);
-		flags             : std_logic_vector(4 downto 0);
-		ready             : std_logic;
-	end record;
-
-	constant init_fp_fdiv_functional_reg : fp_fdiv_functional_reg_type := (
-		state             => F0,
-		istate            => 0,
-		fmt               => (others => '0'),
-		rm                => (others => '0'),
-		a                 => (others => '0'),
-		b                 => (others => '0'),
-		class_a           => (others => '0'),
-		class_b           => (others => '0'),
-		snan              => '0',
-		qnan              => '0',
-		inf               => '0',
-		dbz               => '0',
-		zero              => '0',
-		op                => '0',
-		index             => 0,
-		qa                => (others => '0'),
-		qb                => (others => '0'),
-		q0                => (others => '0'),
-		q1                => (others => '0'),
-		r0                => (others => '0'),
-		r1                => (others => '0'),
-		y                 => (others => '0'),
-		y0                => (others => '0'),
-		y1                => (others => '0'),
-		y2                => (others => '0'),
-		h0                => (others => '0'),
-		h1                => (others => '0'),
-		e0                => (others => '0'),
-		e1                => (others => '0'),
-		sign_fdiv         => '0',
-		exponent_fdiv     => 0,
-		mantissa_fdiv     => (others => '0'),
-		counter_fdiv      => 0,
-		exponent_bias     => 0,
-		sign_rnd          => '0',
-		exponent_rnd      => 0,
-		mantissa_rnd      => (others => '0'),
-		remainder_rnd     => (others => '0'),
-		counter_rnd       => 0,
-		grs               => (others => '0'),
-		odd               => '0',
-		result            => (others => '0'),
-		flags             => (others => '0'),
-		ready             => '0'
-	);
-
-	type fp_fdiv_fixed_reg_type is record
-		state             : f_state_type;
-		istate            : natural range 0 to 31;
-		fmt               : std_logic_vector(1 downto 0);
-		rm                : std_logic_vector(2 downto 0);
-		a                 : std_logic_vector(32 downto 0);
-		b                 : std_logic_vector(32 downto 0);
-		class_a           : std_logic_vector(9 downto 0);
-		class_b           : std_logic_vector(9 downto 0);
-		snan              : std_logic;
-		qnan              : std_logic;
-		inf               : std_logic;
-		dbz               : std_logic;
-		zero              : std_logic;
-		op                : std_logic;
-		qa                : signed(26 downto 0);
-		qb                : signed(26 downto 0);
-		q                 : std_logic_vector(25 downto 0);
-		m                 : std_logic_vector(27 downto 0);
-		r                 : std_logic_vector(27 downto 0);
-		e                 : std_logic_vector(27 downto 0);
-		sign_fdiv         : std_logic;
-		exponent_fdiv     : integer range -1023 to 1023;
-		mantissa_fdiv     : std_logic_vector(77 downto 0);
-		counter_fdiv      : integer range 0 to 1;
-		exponent_bias     : integer range 0 to 127;
-		sign_rnd          : std_logic;
-		exponent_rnd      : integer range -1023 to 1023;
-		mantissa_rnd      : std_logic_vector(24 downto 0);
-		remainder_rnd     : std_logic_vector(1 downto 0);
-		counter_rnd       : integer range 0 to 31;
-		grs               : std_logic_vector(2 downto 0);
-		odd               : std_logic;
-		result            : std_logic_vector(31 downto 0);
-		flags             : std_logic_vector(4 downto 0);
-		ready             : std_logic;
-	end record;
-
-	constant init_fp_fdiv_fixed_reg : fp_fdiv_fixed_reg_type := (
-		state             => F0,
-		istate            => 0,
-		fmt               => (others => '0'),
-		rm                => (others => '0'),
-		a                 => (others => '0'),
-		b                 => (others => '0'),
-		class_a           => (others => '0'),
-		class_b           => (others => '0'),
-		snan              => '0',
-		qnan              => '0',
-		inf               => '0',
-		dbz               => '0',
-		zero              => '0',
-		op                => '0',
-		qa                => (others => '0'),
-		qb                => (others => '0'),
-		q                 => (others => '0'),
-		m                 => (others => '0'),
-		r                 => (others => '0'),
-		e                 => (others => '0'),
-		sign_fdiv         => '0',
-		exponent_fdiv     => 0,
-		mantissa_fdiv     => (others => '0'),
-		counter_fdiv      => 0,
-		exponent_bias     => 0,
-		sign_rnd          => '0',
-		exponent_rnd      => 0,
-		mantissa_rnd      => (others => '0'),
-		remainder_rnd     => (others => '0'),
-		counter_rnd       => 0,
-		grs               => (others => '0'),
-		odd               => '0',
-		result            => (others => '0'),
-		flags             => (others => '0'),
-		ready             => '0'
-	);
+--	type fp_fdiv_functional_reg_type is record
+--		state             : f_state_type;
+--		istate            : natural range 0 to 15;
+--		fmt               : std_logic_vector(1 downto 0);
+--		rm                : std_logic_vector(2 downto 0);
+--		a                 : std_logic_vector(32 downto 0);
+--		b                 : std_logic_vector(32 downto 0);
+--		class_a           : std_logic_vector(9 downto 0);
+--		class_b           : std_logic_vector(9 downto 0);
+--		snan              : std_logic;
+--		qnan              : std_logic;
+--		inf               : std_logic;
+--		dbz               : std_logic;
+--		zero              : std_logic;
+--		op                : std_logic;
+--		index             : natural range 0 to 127;
+--		qa                : signed(26 downto 0);
+--		qb                : signed(26 downto 0);
+--		q0                : signed(26 downto 0);
+--		q1                : signed(26 downto 0);
+--		r0                : signed(51 downto 0);
+--		r1                : signed(51 downto 0);
+--		y                 : signed(26 downto 0);
+--		y0                : signed(26 downto 0);
+--		y1                : signed(26 downto 0);
+--		y2                : signed(26 downto 0);
+--		h0                : signed(26 downto 0);
+--		h1                : signed(26 downto 0);
+--		e0                : signed(26 downto 0);
+--		e1                : signed(26 downto 0);
+--		sign_fdiv         : std_logic;
+--		exponent_fdiv     : integer range -1023 to 1023;
+--		mantissa_fdiv     : std_logic_vector(55 downto 0);
+--		counter_fdiv      : integer range 0 to 1;
+--		exponent_bias     : integer range 0 to 127;
+--		sign_rnd          : std_logic;
+--		exponent_rnd      : integer range -1023 to 1023;
+--		mantissa_rnd      : std_logic_vector(24 downto 0);
+--		remainder_rnd     : std_logic_vector(1 downto 0);
+--		counter_rnd       : integer range 0 to 31;
+--		grs               : std_logic_vector(2 downto 0);
+--		odd               : std_logic;
+--		result            : std_logic_vector(31 downto 0);
+--		flags             : std_logic_vector(4 downto 0);
+--		ready             : std_logic;
+--	end record;
+--
+--	constant init_fp_fdiv_functional_reg : fp_fdiv_functional_reg_type := (
+--		state             => F0,
+--		istate            => 0,
+--		fmt               => (others => '0'),
+--		rm                => (others => '0'),
+--		a                 => (others => '0'),
+--		b                 => (others => '0'),
+--		class_a           => (others => '0'),
+--		class_b           => (others => '0'),
+--		snan              => '0',
+--		qnan              => '0',
+--		inf               => '0',
+--		dbz               => '0',
+--		zero              => '0',
+--		op                => '0',
+--		index             => 0,
+--		qa                => (others => '0'),
+--		qb                => (others => '0'),
+--		q0                => (others => '0'),
+--		q1                => (others => '0'),
+--		r0                => (others => '0'),
+--		r1                => (others => '0'),
+--		y                 => (others => '0'),
+--		y0                => (others => '0'),
+--		y1                => (others => '0'),
+--		y2                => (others => '0'),
+--		h0                => (others => '0'),
+--		h1                => (others => '0'),
+--		e0                => (others => '0'),
+--		e1                => (others => '0'),
+--		sign_fdiv         => '0',
+--		exponent_fdiv     => 0,
+--		mantissa_fdiv     => (others => '0'),
+--		counter_fdiv      => 0,
+--		exponent_bias     => 0,
+--		sign_rnd          => '0',
+--		exponent_rnd      => 0,
+--		mantissa_rnd      => (others => '0'),
+--		remainder_rnd     => (others => '0'),
+--		counter_rnd       => 0,
+--		grs               => (others => '0'),
+--		odd               => '0',
+--		result            => (others => '0'),
+--		flags             => (others => '0'),
+--		ready             => '0'
+--	);
+--
+--	type fp_fdiv_fixed_reg_type is record
+--		state             : f_state_type;
+--		istate            : natural range 0 to 31;
+--		fmt               : std_logic_vector(1 downto 0);
+--		rm                : std_logic_vector(2 downto 0);
+--		a                 : std_logic_vector(32 downto 0);
+--		b                 : std_logic_vector(32 downto 0);
+--		class_a           : std_logic_vector(9 downto 0);
+--		class_b           : std_logic_vector(9 downto 0);
+--		snan              : std_logic;
+--		qnan              : std_logic;
+--		inf               : std_logic;
+--		dbz               : std_logic;
+--		zero              : std_logic;
+--		op                : std_logic;
+--		qa                : signed(26 downto 0);
+--		qb                : signed(26 downto 0);
+--		q                 : std_logic_vector(25 downto 0);
+--		m                 : std_logic_vector(27 downto 0);
+--		r                 : std_logic_vector(27 downto 0);
+--		e                 : std_logic_vector(27 downto 0);
+--		sign_fdiv         : std_logic;
+--		exponent_fdiv     : integer range -1023 to 1023;
+--		mantissa_fdiv     : std_logic_vector(77 downto 0);
+--		counter_fdiv      : integer range 0 to 1;
+--		exponent_bias     : integer range 0 to 127;
+--		sign_rnd          : std_logic;
+--		exponent_rnd      : integer range -1023 to 1023;
+--		mantissa_rnd      : std_logic_vector(24 downto 0);
+--		remainder_rnd     : std_logic_vector(1 downto 0);
+--		counter_rnd       : integer range 0 to 31;
+--		grs               : std_logic_vector(2 downto 0);
+--		odd               : std_logic;
+--		result            : std_logic_vector(31 downto 0);
+--		flags             : std_logic_vector(4 downto 0);
+--		ready             : std_logic;
+--	end record;
+--
+--	constant init_fp_fdiv_fixed_reg : fp_fdiv_fixed_reg_type := (
+--		state             => F0,
+--		istate            => 0,
+--		fmt               => (others => '0'),
+--		rm                => (others => '0'),
+--		a                 => (others => '0'),
+--		b                 => (others => '0'),
+--		class_a           => (others => '0'),
+--		class_b           => (others => '0'),
+--		snan              => '0',
+--		qnan              => '0',
+--		inf               => '0',
+--		dbz               => '0',
+--		zero              => '0',
+--		op                => '0',
+--		qa                => (others => '0'),
+--		qb                => (others => '0'),
+--		q                 => (others => '0'),
+--		m                 => (others => '0'),
+--		r                 => (others => '0'),
+--		e                 => (others => '0'),
+--		sign_fdiv         => '0',
+--		exponent_fdiv     => 0,
+--		mantissa_fdiv     => (others => '0'),
+--		counter_fdiv      => 0,
+--		exponent_bias     => 0,
+--		sign_rnd          => '0',
+--		exponent_rnd      => 0,
+--		mantissa_rnd      => (others => '0'),
+--		remainder_rnd     => (others => '0'),
+--		counter_rnd       => 0,
+--		grs               => (others => '0'),
+--		odd               => '0',
+--		result            => (others => '0'),
+--		flags             => (others => '0'),
+--		ready             => '0'
+--	);
 
 	type fp_cmp_in_type is record
 		data1  : std_logic_vector(32 downto 0);

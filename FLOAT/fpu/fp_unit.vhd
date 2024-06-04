@@ -48,11 +48,11 @@ architecture behavior of fp_unit is
 	signal fp_fma_i  : fp_fma_in_type;
 	signal fp_fma_o  : fp_fma_out_type;
 
-	signal fp_mac_i : fp_mac_in_type;
-	signal fp_mac_o : fp_mac_out_type;
+--	signal fp_mac_i : fp_mac_in_type;
+--	signal fp_mac_o : fp_mac_out_type;
 
-	signal fp_fdiv_i : fp_fdiv_in_type;
-	signal fp_fdiv_o : fp_fdiv_out_type;
+--	signal fp_fdiv_i : fp_fdiv_in_type;
+--	signal fp_fdiv_o : fp_fdiv_out_type;
 
 	signal fp_cvt_f2i_o : fp_cvt_f2i_out_type;
 	signal fp_cvt_f2i_i : fp_cvt_f2i_in_type;
@@ -162,21 +162,21 @@ begin
 			lzc_i    => lzc_128_i
 		);
 
-	fp_mac_comp : fp_mac
-		port map(
-			fp_mac_i => fp_mac_i,
-			fp_mac_o => fp_mac_o
-		);
+--	fp_mac_comp : fp_mac
+--		port map(
+--			fp_mac_i => fp_mac_i,
+--			fp_mac_o => fp_mac_o
+--		);
 
-	fp_fdiv_comp : fp_fdiv
-		port map(
-			reset     => reset,
-			clock     => clock,
-			fp_fdiv_i => fp_fdiv_i,
-			fp_fdiv_o => fp_fdiv_o,
-			fp_mac_i  => fp_mac_i,
-			fp_mac_o  => fp_mac_o
-		);
+--	fp_fdiv_comp : fp_fdiv
+--		port map(
+--			reset     => reset,
+--			clock     => clock,
+--			fp_fdiv_i => fp_fdiv_i,
+--			fp_fdiv_o => fp_fdiv_o,
+--			fp_mac_i  => fp_mac_i,
+--			fp_mac_o  => fp_mac_o
+--		);
 
 	fp_exe_comp : fp_exe
 		port map(
@@ -202,8 +202,8 @@ begin
 			fp_sgnj_i    => fp_sgnj_i,
 			fp_fma_o     => fp_fma_o,
 			fp_fma_i     => fp_fma_i,
-			fp_fdiv_o    => fp_fdiv_o,
-			fp_fdiv_i    => fp_fdiv_i,
+--			fp_fdiv_o    => fp_fdiv_o,
+--			fp_fdiv_i    => fp_fdiv_i,
 			fp_rnd_o     => fp_rnd_o,
 			fp_rnd_i     => fp_rnd_i
 		);

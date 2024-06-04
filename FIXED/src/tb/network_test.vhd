@@ -94,7 +94,7 @@ file output_file : text open write_mode is "output_data.txt"; -- File declaratio
 
 begin
 	
-	clock <= not clock after 5 ns;
+	clock <= not clock after 4.35 ns;
 	
 	testing: process
 	begin

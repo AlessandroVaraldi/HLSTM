@@ -70,7 +70,7 @@ component fixed_adder is
 end component;
 
 signal sgn: std_logic_vector(3 downto 0) := (others => '0');
-signal tanh,sigm: signed (15 downto 0) := (others => '0');
+signal tanh,sigm,tempa,tempb: signed (15 downto 0) := (others => '0');
 
 component flip_flop_chain is
 	generic (
@@ -84,7 +84,7 @@ component flip_flop_chain is
 	);
 end component;
 
-signal q: std_logic_vector(8 downto 0) := (others => '0');
+signal q: std_logic_vector(7 downto 0) := (others => '0');
 
 begin
 
@@ -176,15 +176,23 @@ begin
 			d		=> re3_in,
 			q		=> re3_re
 		);
+		
+--	tempa (15) <= re3_re (15);	
+--	tempa (14 downto 0) <= re3_re (15 downto 1);
+--	
+--	tempb (15 downto 12) <= tempa (15 downto 12) + "0001";
+--	tempb (11 downto  0) <= tempa (11 downto  0);
+--	
+--	u4: mac_pe -- da sostituire
+--		port map (
+--			clock	=> clock,
+--			in_a	=>	re3_re,
+--			in_b	=>	"0001000000000000",
+--			in_c	=>	"0001000000000000",
+--			res	=>	sigm
+--		);
 	
-	u4: mac_pe -- da sostituire
-		port map (
-			clock	=> clock,
-			in_a	=>	re3_re,
-			in_b	=>	"0001000000000000",
-			in_c	=>	"0001000000000000",
-			res	=>	sigm
-		);
+	sigm <= signed(((re3_re (15) & re3_re (15 downto 13)) + "0001") & re3_re(12 downto 1));
 		
 	re4_in <= sigm;
 		
@@ -204,7 +212,7 @@ begin
 	-- FLIP FLOP CHAIN --
 	
 	ff1: flip_flop_chain
-		generic map (n => 9)
+		generic map (n => 8)
 		port map (
 			clock	=> clock,
 			reset	=> reset,
@@ -229,7 +237,7 @@ begin
 	re2_en <= '1' when q(2) = '1' else '0';
 	rdout  <= '1' when q(3) = '1' else '0';
 	re3_en <= '1' when q(5) = '1' else '0';
-	re4_en <= '1' when q(7) = '1' else '0';
-	done <= '1' when q(8) = '1' else '0';
+	re4_en <= '1' when q(6) = '1' else '0';
+	done <= '1' when q(7) = '1' else '0';
 	
 end rtl;

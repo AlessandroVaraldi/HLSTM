@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HLSTM_FIXED
-Mon May 27 13:42:21 2024
+Tue Jun 04 12:03:08 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -34,54 +34,52 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  26. Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r3
  27. Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r4
  28. Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r5
- 29. Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r6
- 30. Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r7
- 31. Parameter Settings for User Entity Instance: LSTM_cell:u0|flip_flop_chain:ff0
- 32. Parameter Settings for User Entity Instance: nReg:r0
- 33. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1a
- 34. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1b
- 35. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1c
- 36. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1d
- 37. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r2
- 38. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r3
- 39. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r4
- 40. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r5
- 41. Parameter Settings for User Entity Instance: output_layer:u1|flip_flop_chain:ff0
- 42. Parameter Settings for User Entity Instance: flip_flop_chain:ff0
- 43. Parameter Settings for User Entity Instance: flip_flop_chain:ff1
- 44. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u5|fixed_multiplier:u0|lpm_mult:Mult0
- 45. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1d|fixed_multiplier:u0|lpm_mult:Mult0
- 46. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u4|fixed_multiplier:u0|lpm_mult:Mult0
- 47. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|fixed_multiplier:u1|lpm_mult:Mult0
- 48. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1c|fixed_multiplier:u0|lpm_mult:Mult0
- 49. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u3|fixed_multiplier:u0|lpm_mult:Mult0
- 50. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1b|fixed_multiplier:u0|lpm_mult:Mult0
- 51. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0
- 52. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1a|fixed_multiplier:u0|lpm_mult:Mult0
- 53. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0
- 54. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0|lpm_mult:Mult0
- 55. altsyncram Parameter Settings by Entity Instance
- 56. lpm_mult Parameter Settings by Entity Instance
- 57. Port Connectivity Checks: "flip_flop_chain:ff0"
- 58. Port Connectivity Checks: "output_layer:u1|flip_flop_chain:ff0"
- 59. Port Connectivity Checks: "output_layer:u1|mac_pe:u5"
- 60. Port Connectivity Checks: "output_layer:u1|mac_pe:u4"
- 61. Port Connectivity Checks: "output_layer:u1|mac_pe:u3"
- 62. Port Connectivity Checks: "output_layer:u1|mac_pe:u2"
- 63. Port Connectivity Checks: "output_layer:u1|mac_pe:u1d"
- 64. Port Connectivity Checks: "output_layer:u1|mac_pe:u1c"
- 65. Port Connectivity Checks: "output_layer:u1|mac_pe:u1b"
- 66. Port Connectivity Checks: "output_layer:u1|mac_pe:u1a"
- 67. Port Connectivity Checks: "LSTM_cell:u0|flip_flop_chain:ff0"
- 68. Port Connectivity Checks: "LSTM_cell:u0|lut:m0"
- 69. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1"
- 70. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u4"
- 71. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0"
- 72. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0"
- 73. Port Connectivity Checks: "shiftReg:l0"
- 74. Post-Synthesis Netlist Statistics for Top Partition
- 75. Elapsed Time Per Partition
- 76. Analysis & Synthesis Messages
+ 29. Parameter Settings for User Entity Instance: LSTM_cell:u0|flip_flop_chain:ff0
+ 30. Parameter Settings for User Entity Instance: nReg:r0
+ 31. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1a
+ 32. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1b
+ 33. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1c
+ 34. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1d
+ 35. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r2
+ 36. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r3
+ 37. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r4
+ 38. Parameter Settings for User Entity Instance: output_layer:u1|nReg:r5
+ 39. Parameter Settings for User Entity Instance: output_layer:u1|flip_flop_chain:ff0
+ 40. Parameter Settings for User Entity Instance: flip_flop_chain:ff0
+ 41. Parameter Settings for User Entity Instance: flip_flop_chain:ff1
+ 42. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u5|fixed_multiplier:u0|lpm_mult:Mult0
+ 43. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1d|fixed_multiplier:u0|lpm_mult:Mult0
+ 44. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u4|fixed_multiplier:u0|lpm_mult:Mult0
+ 45. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|fixed_multiplier:u1|lpm_mult:Mult0
+ 46. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1c|fixed_multiplier:u0|lpm_mult:Mult0
+ 47. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u3|fixed_multiplier:u0|lpm_mult:Mult0
+ 48. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1b|fixed_multiplier:u0|lpm_mult:Mult0
+ 49. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0
+ 50. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0
+ 51. Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1a|fixed_multiplier:u0|lpm_mult:Mult0
+ 52. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0
+ 53. Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0|lpm_mult:Mult0
+ 54. altsyncram Parameter Settings by Entity Instance
+ 55. lpm_mult Parameter Settings by Entity Instance
+ 56. Port Connectivity Checks: "flip_flop_chain:ff0"
+ 57. Port Connectivity Checks: "output_layer:u1|flip_flop_chain:ff0"
+ 58. Port Connectivity Checks: "output_layer:u1|mac_pe:u5"
+ 59. Port Connectivity Checks: "output_layer:u1|mac_pe:u4"
+ 60. Port Connectivity Checks: "output_layer:u1|mac_pe:u3"
+ 61. Port Connectivity Checks: "output_layer:u1|mac_pe:u2"
+ 62. Port Connectivity Checks: "output_layer:u1|mac_pe:u1d"
+ 63. Port Connectivity Checks: "output_layer:u1|mac_pe:u1c"
+ 64. Port Connectivity Checks: "output_layer:u1|mac_pe:u1b"
+ 65. Port Connectivity Checks: "output_layer:u1|mac_pe:u1a"
+ 66. Port Connectivity Checks: "LSTM_cell:u0|flip_flop_chain:ff0"
+ 67. Port Connectivity Checks: "LSTM_cell:u0|lut:m0"
+ 68. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1"
+ 69. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0"
+ 70. Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0"
+ 71. Port Connectivity Checks: "shiftReg:l0"
+ 72. Post-Synthesis Netlist Statistics for Top Partition
+ 73. Elapsed Time Per Partition
+ 74. Analysis & Synthesis Messages
 
 
 
@@ -108,19 +106,19 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 27 13:42:21 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 04 12:03:08 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; HLSTM_FIXED                                 ;
 ; Top-level Entity Name              ; network                                     ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 1,802                                       ;
-;     Total combinational functions  ; 1,539                                       ;
-;     Dedicated logic registers      ; 753                                         ;
-; Total registers                    ; 753                                         ;
+; Total logic elements               ; 1,671                                       ;
+;     Total combinational functions  ; 1,442                                       ;
+;     Dedicated logic registers      ; 720                                         ;
+; Total registers                    ; 720                                         ;
 ; Total pins                         ; 112                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192                                       ;
-; Embedded Multiplier 9-bit elements ; 6                                           ;
+; Embedded Multiplier 9-bit elements ; 8                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
@@ -308,31 +306,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,802       ;
+; Estimated Total logic elements              ; 1,671       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1539        ;
+; Total combinational functions               ; 1442        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 427         ;
-;     -- 3 input functions                    ; 656         ;
-;     -- <=2 input functions                  ; 456         ;
+;     -- 4 input functions                    ; 416         ;
+;     -- 3 input functions                    ; 624         ;
+;     -- <=2 input functions                  ; 402         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 987         ;
-;     -- arithmetic mode                      ; 552         ;
+;     -- normal mode                          ; 877         ;
+;     -- arithmetic mode                      ; 565         ;
 ;                                             ;             ;
-; Total registers                             ; 753         ;
-;     -- Dedicated logic registers            ; 753         ;
+; Total registers                             ; 720         ;
+;     -- Dedicated logic registers            ; 720         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 112         ;
 ; Total memory bits                           ; 8192        ;
 ;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 6           ;
+; Embedded Multiplier 9-bit elements          ; 8           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 769         ;
-; Total fan-out                               ; 7594        ;
-; Average fan-out                             ; 2.99        ;
+; Maximum fan-out                             ; 736         ;
+; Total fan-out                               ; 7263        ;
+; Average fan-out                             ; 3.01        ;
 +---------------------------------------------+-------------+
 
 
@@ -341,14 +339,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                            ; Entity Name      ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |network                                                ; 1539 (4)            ; 753 (0)                   ; 8192        ; 6            ; 0       ; 3         ; 112  ; 0            ; |network                                                                                                                                                                       ; network          ; work         ;
-;    |LSTM_cell:u0|                                       ; 511 (264)           ; 305 (0)                   ; 8192        ; 6            ; 0       ; 3         ; 0    ; 0            ; |network|LSTM_cell:u0                                                                                                                                                          ; LSTM_cell        ; work         ;
-;       |LSTM_gate:u0|                                    ; 162 (26)            ; 154 (0)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0                                                                                                                                             ; LSTM_gate        ; work         ;
+; |network                                                ; 1442 (121)          ; 720 (0)                   ; 8192        ; 8            ; 0       ; 4         ; 112  ; 0            ; |network                                                                                                                                                                       ; network          ; work         ;
+;    |LSTM_cell:u0|                                       ; 297 (42)            ; 272 (0)                   ; 8192        ; 8            ; 0       ; 4         ; 0    ; 0            ; |network|LSTM_cell:u0                                                                                                                                                          ; LSTM_cell        ; work         ;
+;       |LSTM_gate:u0|                                    ; 153 (36)            ; 137 (0)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0                                                                                                                                             ; LSTM_gate        ; work         ;
 ;          |fixed_adder:u2|                               ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|fixed_adder:u2                                                                                                                              ; fixed_adder      ; work         ;
 ;          |flip_flop_chain:ff0|                          ; 0 (0)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0                                                                                                                         ; flip_flop_chain  ; work         ;
 ;             |d_flip_flop:\gen_ff:0:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0|d_flip_flop:\gen_ff:0:ff                                                                                                ; d_flip_flop      ; work         ;
 ;             |d_flip_flop:\gen_ff:1:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0|d_flip_flop:\gen_ff:1:ff                                                                                                ; d_flip_flop      ; work         ;
-;          |flip_flop_chain:ff1|                          ; 0 (0)               ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1                                                                                                                         ; flip_flop_chain  ; work         ;
+;          |flip_flop_chain:ff1|                          ; 0 (0)               ; 7 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1                                                                                                                         ; flip_flop_chain  ; work         ;
 ;             |d_flip_flop:\gen_ff:0:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:0:ff                                                                                                ; d_flip_flop      ; work         ;
 ;             |d_flip_flop:\gen_ff:1:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:1:ff                                                                                                ; d_flip_flop      ; work         ;
 ;             |d_flip_flop:\gen_ff:2:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:2:ff                                                                                                ; d_flip_flop      ; work         ;
@@ -356,7 +354,6 @@ https://fpgasoftware.intel.com/eula.
 ;             |d_flip_flop:\gen_ff:4:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:4:ff                                                                                                ; d_flip_flop      ; work         ;
 ;             |d_flip_flop:\gen_ff:5:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:5:ff                                                                                                ; d_flip_flop      ; work         ;
 ;             |d_flip_flop:\gen_ff:6:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:6:ff                                                                                                ; d_flip_flop      ; work         ;
-;             |d_flip_flop:\gen_ff:7:ff|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1|d_flip_flop:\gen_ff:7:ff                                                                                                ; d_flip_flop      ; work         ;
 ;          |mac_pe:u0|                                    ; 16 (0)              ; 16 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0                                                                                                                                   ; mac_pe           ; work         ;
 ;             |fixed_adder:u1|                            ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_adder:u1                                                                                                                    ; fixed_adder      ; work         ;
 ;             |fixed_multiplier:u0|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0                                                                                                               ; fixed_multiplier ; work         ;
@@ -367,13 +364,11 @@ https://fpgasoftware.intel.com/eula.
 ;             |fixed_multiplier:u0|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0                                                                                                               ; fixed_multiplier ; work         ;
 ;                |lpm_mult:Mult0|                         ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0                                                                                                ; lpm_mult         ; work         ;
 ;                   |mult_s5t:auto_generated|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|lpm_mult:Mult0|mult_s5t:auto_generated                                                                        ; mult_s5t         ; work         ;
-;          |mac_pe:u4|                                    ; 4 (0)               ; 16 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u4                                                                                                                                   ; mac_pe           ; work         ;
-;             |fixed_adder:u1|                            ; 4 (4)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|mac_pe:u4|fixed_adder:u1                                                                                                                    ; fixed_adder      ; work         ;
-;          |nReg:r0|                                      ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r0                                                                                                                                     ; nReg             ; work         ;
-;          |nReg:r1|                                      ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r1                                                                                                                                     ; nReg             ; work         ;
+;          |nReg:r0|                                      ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r0                                                                                                                                     ; nReg             ; work         ;
+;          |nReg:r1|                                      ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r1                                                                                                                                     ; nReg             ; work         ;
 ;          |nReg:r2|                                      ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r2                                                                                                                                     ; nReg             ; work         ;
 ;          |nReg:r3|                                      ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r3                                                                                                                                     ; nReg             ; work         ;
-;          |nReg:r4|                                      ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r4                                                                                                                                     ; nReg             ; work         ;
+;          |nReg:r4|                                      ; 2 (2)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r4                                                                                                                                     ; nReg             ; work         ;
 ;       |fixed_multiplier:u1|                             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|fixed_multiplier:u1                                                                                                                                      ; fixed_multiplier ; work         ;
 ;          |lpm_mult:Mult0|                               ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|fixed_multiplier:u1|lpm_mult:Mult0                                                                                                                       ; lpm_mult         ; work         ;
 ;             |mult_s5t:auto_generated|                   ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|fixed_multiplier:u1|lpm_mult:Mult0|mult_s5t:auto_generated                                                                                               ; mult_s5t         ; work         ;
@@ -404,14 +399,17 @@ https://fpgasoftware.intel.com/eula.
 ;       |lut:m0|                                          ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|lut:m0                                                                                                                                                   ; lut              ; work         ;
 ;          |altsyncram:altsyncram_component|              ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component                                                                                                                   ; altsyncram       ; work         ;
 ;             |altsyncram_los3:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated                                                                                    ; altsyncram_los3  ; work         ;
+;       |mac_pe:u2|                                       ; 16 (0)              ; 16 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|mac_pe:u2                                                                                                                                                ; mac_pe           ; work         ;
+;          |fixed_adder:u1|                               ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|mac_pe:u2|fixed_adder:u1                                                                                                                                 ; fixed_adder      ; work         ;
+;          |fixed_multiplier:u0|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0                                                                                                                            ; fixed_multiplier ; work         ;
+;             |lpm_mult:Mult0|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0                                                                                                             ; lpm_mult         ; work         ;
+;                |mult_s5t:auto_generated|                ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |network|LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0|mult_s5t:auto_generated                                                                                     ; mult_s5t         ; work         ;
 ;       |nReg:r0|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r0                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r1|                                         ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r1                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r2|                                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r2                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r3|                                         ; 16 (16)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r3                                                                                                                                                  ; nReg             ; work         ;
+;       |nReg:r1|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r1                                                                                                                                                  ; nReg             ; work         ;
+;       |nReg:r2|                                         ; 1 (1)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r2                                                                                                                                                  ; nReg             ; work         ;
+;       |nReg:r3|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r3                                                                                                                                                  ; nReg             ; work         ;
 ;       |nReg:r4|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r4                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r5|                                         ; 1 (1)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r5                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r6|                                         ; 1 (1)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r6                                                                                                                                                  ; nReg             ; work         ;
-;       |nReg:r7|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r7                                                                                                                                                  ; nReg             ; work         ;
+;       |nReg:r5|                                         ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|LSTM_cell:u0|nReg:r5                                                                                                                                                  ; nReg             ; work         ;
 ;    |counter:c0|                                         ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|counter:c0                                                                                                                                                            ; counter          ; work         ;
 ;       |lpm_counter:LPM_COUNTER_component|               ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|counter:c0|lpm_counter:LPM_COUNTER_component                                                                                                                          ; lpm_counter      ; work         ;
 ;          |cntr_gaj:auto_generated|                      ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |network|counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated                                                                                                  ; cntr_gaj         ; work         ;
@@ -564,10 +562,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 3           ;
+; Simple Multipliers (18-bit)           ; 4           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 6           ;
-; Signed Embedded Multipliers           ; 3           ;
+; Embedded Multiplier 9-bit elements    ; 8           ;
+; Signed Embedded Multipliers           ; 4           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
@@ -581,12 +579,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 753   ;
-; Number of registers using Synchronous Clear  ; 21    ;
+; Total registers                              ; 720   ;
+; Number of registers using Synchronous Clear  ; 35    ;
 ; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 561   ;
+; Number of registers using Asynchronous Clear ; 528   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 516   ;
+; Number of registers using Clock Enable       ; 484   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -596,26 +594,26 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r5|Q[9]            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r0|Q[3]               ;
-; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r1a|Q[6]           ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r4|Q[3]            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r7|Q[1]               ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r3|Q[2]            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r1|Q[11]              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r6|Q[10]              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r4|Q[0]               ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r5|Q[14]              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r5|Q[13]           ;
+; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r1a|Q[10]          ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r4|Q[13]           ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r3|Q[13]           ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r5|Q[12]              ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|output_layer:u1|nReg:r2|Q[7]            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r2|Q[10] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r4|Q[10] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r1|Q[5]  ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |network|LSTM_cell:u0|nReg:r1|Q[5]               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r3|Q[9]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|nReg:r0|Q[11]                           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |network|LSTM_cell:u0|mul_b[1]                   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r4|Q[7]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r2|Q[15] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r0|Q[12] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |network|LSTM_cell:u0|LSTM_gate:u0|nReg:r3|Q[2]  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |network|LSTM_cell:u0|nReg:r3|Q[15]              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|nReg:r0|Q[0]                            ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r0|Q[5]               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r1|Q[13]              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r2|Q[15]              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |network|LSTM_cell:u0|nReg:r4|Q[15]              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |network|LSTM_cell:u0|mul_a[3]                   ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |network|LSTM_cell:u0|address[12]                ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |network|LSTM_cell:u0|w_ad[1]                    ;
-; 17:1               ; 16 bits   ; 176 LEs       ; 128 LEs              ; 48 LEs                 ; No         ; |network|LSTM_cell:u0|g_xin[5]                   ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 112 LEs              ; 48 LEs                 ; No         ; |network|Mux0                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
@@ -750,7 +748,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                              ;
 +----------------+-------+-------------------------------------------------------------------+
-; n              ; 9     ; Signed Integer                                                    ;
+; n              ; 8     ; Signed Integer                                                    ;
 +----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -848,26 +846,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r5 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; n              ; 16    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r6 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; n              ; 16    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LSTM_cell:u0|nReg:r7 ;
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
@@ -1286,6 +1264,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0 ;
++------------------------------------------------+---------------+-------------------------------------------+
+; Parameter Name                                 ; Value         ; Type                                      ;
++------------------------------------------------+---------------+-------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON            ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS                           ; OFF           ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS                            ; ON            ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF           ; IGNORE_CASCADE                            ;
+; LPM_WIDTHA                                     ; 16            ; Untyped                                   ;
+; LPM_WIDTHB                                     ; 16            ; Untyped                                   ;
+; LPM_WIDTHP                                     ; 32            ; Untyped                                   ;
+; LPM_WIDTHR                                     ; 32            ; Untyped                                   ;
+; LPM_WIDTHS                                     ; 1             ; Untyped                                   ;
+; LPM_REPRESENTATION                             ; SIGNED        ; Untyped                                   ;
+; LPM_PIPELINE                                   ; 0             ; Untyped                                   ;
+; LATENCY                                        ; 0             ; Untyped                                   ;
+; INPUT_A_IS_CONSTANT                            ; NO            ; Untyped                                   ;
+; INPUT_B_IS_CONSTANT                            ; NO            ; Untyped                                   ;
+; USE_EAB                                        ; OFF           ; Untyped                                   ;
+; MAXIMIZE_SPEED                                 ; 5             ; Untyped                                   ;
+; DEVICE_FAMILY                                  ; Cyclone 10 LP ; Untyped                                   ;
+; CARRY_CHAIN                                    ; MANUAL        ; Untyped                                   ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT           ; TECH_MAPPER_APEX20K                       ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO          ; Untyped                                   ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0             ; Untyped                                   ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0             ; Untyped                                   ;
+; CBXI_PARAMETER                                 ; mult_s5t      ; Untyped                                   ;
+; INPUT_A_FIXED_VALUE                            ; Bx            ; Untyped                                   ;
+; INPUT_B_FIXED_VALUE                            ; Bx            ; Untyped                                   ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF           ; Untyped                                   ;
++------------------------------------------------+---------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1a|fixed_multiplier:u0|lpm_mult:Mult0 ;
 +------------------------------------------------+---------------+-----------------------------------------------+
@@ -1416,7 +1429,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+------------------------------------------------------------------------+
 ; Name                                  ; Value                                                                  ;
 +---------------------------------------+------------------------------------------------------------------------+
-; Number of entity instances            ; 11                                                                     ;
+; Number of entity instances            ; 12                                                                     ;
 ; Entity Instance                       ; output_layer:u1|mac_pe:u5|fixed_multiplier:u0|lpm_mult:Mult0           ;
 ;     -- LPM_WIDTHA                     ; 16                                                                     ;
 ;     -- LPM_WIDTHB                     ; 15                                                                     ;
@@ -1501,6 +1514,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                 ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                     ;
 ;     -- INPUT_B_IS_CONSTANT            ; YES                                                                    ;
+;     -- USE_EAB                        ; OFF                                                                    ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                   ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                     ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                     ;
+; Entity Instance                       ; LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|lpm_mult:Mult0              ;
+;     -- LPM_WIDTHA                     ; 16                                                                     ;
+;     -- LPM_WIDTHB                     ; 16                                                                     ;
+;     -- LPM_WIDTHP                     ; 32                                                                     ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                 ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                     ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                     ;
 ;     -- USE_EAB                        ; OFF                                                                    ;
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                   ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                     ;
@@ -1739,10 +1763,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[19..18] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; q[16..15] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; q[10..6]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; q[20]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; q[18]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; q[9..6]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; q[0]      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -1762,24 +1785,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; q[6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; q[4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; q[1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u4" ;
-+--------------+-------+----------+-------------------------------+
-; Port         ; Type  ; Severity ; Details                       ;
-+--------------+-------+----------+-------------------------------+
-; in_b[15..13] ; Input ; Info     ; Stuck at GND                  ;
-; in_b[11..0]  ; Input ; Info     ; Stuck at GND                  ;
-; in_b[12]     ; Input ; Info     ; Stuck at VCC                  ;
-; in_c[15..13] ; Input ; Info     ; Stuck at GND                  ;
-; in_c[11..0]  ; Input ; Info     ; Stuck at GND                  ;
-; in_c[12]     ; Input ; Info     ; Stuck at VCC                  ;
-+--------------+-------+----------+-------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -1792,13 +1800,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; done ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "LSTM_cell:u0|LSTM_gate:u0"                                                                 ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; lutad[5..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; lutad[15]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; done        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -1816,28 +1826,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 112                         ;
-; cycloneiii_ff         ; 753                         ;
-;     CLR               ; 45                          ;
-;     ENA CLR           ; 491                         ;
-;     ENA CLR SCLR      ; 21                          ;
+; cycloneiii_ff         ; 720                         ;
+;     CLR               ; 44                          ;
+;     ENA CLR           ; 445                         ;
+;     ENA CLR SCLR      ; 35                          ;
 ;     ENA CLR SLD       ; 4                           ;
 ;     plain             ; 192                         ;
-; cycloneiii_lcell_comb ; 1539                        ;
-;     arith             ; 552                         ;
-;         2 data inputs ; 132                         ;
-;         3 data inputs ; 420                         ;
-;     normal            ; 987                         ;
+; cycloneiii_lcell_comb ; 1442                        ;
+;     arith             ; 565                         ;
+;         2 data inputs ; 129                         ;
+;         3 data inputs ; 436                         ;
+;     normal            ; 877                         ;
 ;         0 data inputs ; 9                           ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 301                         ;
-;         3 data inputs ; 236                         ;
-;         4 data inputs ; 427                         ;
-; cycloneiii_mac_mult   ; 3                           ;
-; cycloneiii_mac_out    ; 3                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 251                         ;
+;         3 data inputs ; 188                         ;
+;         4 data inputs ; 416                         ;
+; cycloneiii_mac_mult   ; 4                           ;
+; cycloneiii_mac_out    ; 4                           ;
 ; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.30                        ;
-; Average LUT depth     ; 3.84                        ;
+; Average LUT depth     ; 3.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1846,7 +1856,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1856,7 +1866,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon May 27 13:42:04 2024
+    Info: Processing started: Tue Jun 04 12:02:56 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1868,7 +1878,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/net
 Info (12021): Found 2 design units, including 1 entities, in source file src/lstm_cell.vhd
     Info (12022): Found design unit 1: LSTM_cell-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 24
     Info (12023): Found entity 1: LSTM_cell File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 8
-Info (12021): Found 0 design units, including 0 entities, in source file src/lstm_cell2.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file src/lstm_gate.vhd
     Info (12022): Found design unit 1: LSTM_gate-rtl File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 29
     Info (12023): Found entity 1: LSTM_gate File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 7
@@ -1933,15 +1942,15 @@ Info (12128): Elaborating entity "cntr_gaj" for hierarchy "counter:c0|lpm_counte
 Info (12128): Elaborating entity "shiftReg" for hierarchy "shiftReg:l0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd Line: 142
 Info (12128): Elaborating entity "LSTM_cell" for hierarchy "LSTM_cell:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd Line: 178
 Warning (10036): Verilog HDL or VHDL warning at LSTM_cell.vhd(50): object "gdone" assigned a value but never read File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 50
-Info (12128): Elaborating entity "nReg" for hierarchy "LSTM_cell:u0|nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 168
-Info (12128): Elaborating entity "LSTM_gate" for hierarchy "LSTM_cell:u0|LSTM_gate:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 213
+Info (12128): Elaborating entity "nReg" for hierarchy "LSTM_cell:u0|nReg:r0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 142
+Info (12128): Elaborating entity "LSTM_gate" for hierarchy "LSTM_cell:u0|LSTM_gate:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 181
 Info (12128): Elaborating entity "mac_pe" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 91
 Info (12128): Elaborating entity "fixed_multiplier" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd Line: 45
 Info (12128): Elaborating entity "fixed_adder" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_adder:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd Line: 53
 Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 156
 Info (12128): Elaborating entity "d_flip_flop" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff0|d_flip_flop:\gen_ff:0:ff" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/flip_flop_chain.vhd Line: 34
-Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 206
-Info (12128): Elaborating entity "lut" for hierarchy "LSTM_cell:u0|lut:m0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 236
+Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell:u0|LSTM_gate:u0|flip_flop_chain:ff1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd Line: 214
+Info (12128): Elaborating entity "lut" for hierarchy "LSTM_cell:u0|lut:m0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 206
 Info (12128): Elaborating entity "altsyncram" for hierarchy "LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd Line: 63
 Info (12130): Elaborated megafunction instantiation "LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd Line: 63
 Info (12133): Instantiated megafunction "LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd Line: 63
@@ -1998,12 +2007,12 @@ Info (12133): Instantiated megafunction "LSTM_cell:u0|lut:m0|altsyncram:altsyncr
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_los3.tdf
     Info (12023): Found entity 1: altsyncram_los3 File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/db/altsyncram_los3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_los3" for hierarchy "LSTM_cell:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell:u0|flip_flop_chain:ff0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 362
+Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell:u0|flip_flop_chain:ff0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd Line: 295
 Info (12128): Elaborating entity "output_layer" for hierarchy "output_layer:u1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd Line: 202
 Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "output_layer:u1|flip_flop_chain:ff0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd Line: 268
 Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd Line: 213
 Info (12128): Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff1" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd Line: 222
-Info (278001): Inferred 11 megafunctions from design logic
+Info (278001): Inferred 12 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u5|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1d|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u4|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
@@ -2012,6 +2021,7 @@ Info (278001): Inferred 11 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u3|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1b|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u2|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell:u0|mac_pe:u2|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1a|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u1|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell:u0|LSTM_gate:u0|mac_pe:u0|fixed_multiplier:u0|Mult0" File: C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd Line: 25
@@ -2168,16 +2178,16 @@ Info (12133): Instantiated megafunction "output_layer:u1|mac_pe:u1a|fixed_multip
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1970 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1836 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 89 input pins
     Info (21059): Implemented 23 output pins
-    Info (21061): Implemented 1836 logic cells
+    Info (21061): Implemented 1700 logic cells
     Info (21064): Implemented 16 RAM segments
-    Info (21062): Implemented 6 DSP elements
+    Info (21062): Implemented 8 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4852 megabytes
-    Info: Processing ended: Mon May 27 13:42:21 2024
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Tue Jun 04 12:03:08 2024
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:12
 
 

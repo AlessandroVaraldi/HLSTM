@@ -1,0 +1,33 @@
+library ieee ;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use work.myTypes.all;
+
+entity LSTM_cell is
+	port
+	(
+		clock			: in  std_logic;
+		reset			: in  std_logic;
+		start			: in  std_logic;
+		input			: in  std_logic_vector (31 downto 0);
+		--htrue			: in  std_logic_vector (31 downto 0);
+		h_out			: out std_logic_vector (31 downto 0);
+		ready			: out std_logic;
+		sdone			: out std_logic
+	);
+end LSTM_cell;
+
+architecture rtl of LSTM_cell is
+
+component ram 
+	port map (
+		address	=> ram_ad,
+		clken		=> ram_ce,
+		clock		=> clock,
+		data		=> ram_in,
+		rden		=> ram_rd,
+		wren		=> ram_wr,
+		q			=> ram_re
+	);
+end component;

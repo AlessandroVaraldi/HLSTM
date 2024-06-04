@@ -53,11 +53,3 @@ STATE.S44 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 STATE.S45 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 STATE.S46 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 STATE.DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |LSTM_cell|fpu:u0|fp_unit:u0|fp_fdiv:fp_fdiv_comp|r_fix.state
-Name r_fix.state.F4 r_fix.state.F3 r_fix.state.F2 r_fix.state.F1 r_fix.state.F0 
-r_fix.state.F0 0 0 0 0 0 
-r_fix.state.F1 0 0 0 1 1 
-r_fix.state.F2 0 0 1 0 1 
-r_fix.state.F3 0 1 0 0 1 
-r_fix.state.F4 1 0 0 0 1 

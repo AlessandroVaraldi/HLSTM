@@ -1,14 +1,22 @@
 
-State Machine - |LSTM_gate|current_state
-Name current_state.s_done current_state.s_save_cnv current_state.s_conv current_state.s_save_lut current_state.s_wait_1 current_state.s_wait_0 current_state.s_save_sum current_state.s_sum current_state.s_mac current_state.s_idle current_state.s_rst 
-current_state.s_rst 0 0 0 0 0 0 0 0 0 0 0 
-current_state.s_idle 0 0 0 0 0 0 0 0 0 1 1 
-current_state.s_mac 0 0 0 0 0 0 0 0 1 0 1 
-current_state.s_sum 0 0 0 0 0 0 0 1 0 0 1 
-current_state.s_save_sum 0 0 0 0 0 0 1 0 0 0 1 
-current_state.s_wait_0 0 0 0 0 0 1 0 0 0 0 1 
-current_state.s_wait_1 0 0 0 0 1 0 0 0 0 0 1 
-current_state.s_save_lut 0 0 0 1 0 0 0 0 0 0 1 
-current_state.s_conv 0 0 1 0 0 0 0 0 0 0 1 
-current_state.s_save_cnv 0 1 0 0 0 0 0 0 0 0 1 
-current_state.s_done 1 0 0 0 0 0 0 0 0 0 1 
+State Machine - |LSTM_cell2|state
+Name state.STATE_DONE state.state15 state.state14 state.state13 state.state12 state.state11 state.state10 state.state9 state.state8 state.state7 state.state6 state.state5 state.state4 state.state3 state.state2 state.state1 state.state0 state.STATE_IDLE state.STATE_RESET 
+state.STATE_RESET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.STATE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.state0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.state1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.state2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.state3 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.state4 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.state5 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.state6 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.state7 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.state8 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.state9 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.state10 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.state11 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.state12 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.state13 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.state14 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.state15 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.STATE_DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

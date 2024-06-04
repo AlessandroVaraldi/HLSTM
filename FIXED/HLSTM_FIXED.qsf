@@ -70,14 +70,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME network_test -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id network_test
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 us" -section_id network_test
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME network_test -section_id network_test
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SDC_FILE src/SDC1.sdc
 set_global_assignment -name VHDL_FILE src/mytypes.vhd
 set_global_assignment -name VHDL_FILE src/network.vhd
 set_global_assignment -name VHDL_FILE src/LSTM_cell.vhd
-set_global_assignment -name VHDL_FILE src/LSTM_cell2.vhd
 set_global_assignment -name VHDL_FILE src/LSTM_gate.vhd
 set_global_assignment -name VHDL_FILE src/mac_pe.vhd
 set_global_assignment -name VHDL_FILE src/fixed_multiplier.vhd
@@ -91,6 +87,13 @@ set_global_assignment -name VHDL_FILE src/shiftReg.vhd
 set_global_assignment -name VHDL_FILE src/counter.vhd
 set_global_assignment -name VHDL_FILE src/d_flip_flop.vhd
 set_global_assignment -name VHDL_FILE src/flip_flop_chain.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME LSTM_cell2_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id LSTM_cell2_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id LSTM_cell2_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME LSTM_cell2_tb -section_id LSTM_cell2_tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE src/nReg.vhd -section_id test
 set_global_assignment -name EDA_TEST_BENCH_FILE src/in_RAM.vhd -section_id test
 set_global_assignment -name EDA_TEST_BENCH_FILE src/tb/LSTM_test.vhd -section_id test
@@ -102,4 +105,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE src/in_RAM.vhd -section_id netwo
 set_global_assignment -name EDA_TEST_BENCH_FILE src/wb_RAM.vhd -section_id network_test
 set_global_assignment -name EDA_TEST_BENCH_FILE src/nReg.vhd -section_id network_test
 set_global_assignment -name EDA_TEST_BENCH_FILE src/tb/network_test.vhd -section_id network_test
+set_global_assignment -name EDA_TEST_BENCH_FILE src/lut.vhd -section_id LSTM_cell2_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE src/tb/LSTM_cell2_tb.vhd -section_id LSTM_cell2_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

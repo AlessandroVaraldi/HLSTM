@@ -20,6 +20,7 @@ architecture rtl of fixed_adder is
 begin
 
 	process (clock)
+	--process (in_a,in_b)
 	begin
 		if rising_edge (clock) then
 			res <= in_a + in_b;

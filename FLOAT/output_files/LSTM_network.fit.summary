@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu May 23 12:24:34 2024
+Fitter Status : Successful - Mon Jun 03 15:56:29 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : LSTM_network
-Top-level Entity Name : LSTM_cell
+Top-level Entity Name : fpu
 Family : Cyclone 10 LP
-Device : 10CL010YM164C6G
+Device : 10CL006YU256C6G
 Timing Models : Final
-Total logic elements : 4,279 / 10,320 ( 41 % )
-    Total combinational functions : 4,087 / 10,320 ( 40 % )
-    Dedicated logic registers : 917 / 10,320 ( 9 % )
-Total registers : 917
-Total pins : 69 / 102 ( 68 % )
+Total logic elements : 3,062 / 6,272 ( 49 % )
+    Total combinational functions : 3,061 / 6,272 ( 49 % )
+    Dedicated logic registers : 219 / 6,272 ( 3 % )
+Total registers : 219
+Total pins : 139 / 177 ( 79 % )
 Total virtual pins : 0
-Total memory bits : 7,936 / 423,936 ( 2 % )
-Embedded Multiplier 9-bit elements : 7 / 46 ( 15 % )
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 7 / 30 ( 23 % )
 Total PLLs : 0 / 2 ( 0 % )
