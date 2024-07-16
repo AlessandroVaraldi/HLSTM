@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Fitter Resource Usage Summary</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Resource</TH>
+<TH>Usage</TH>
+</TR>
+</thead><tbody><TR >
+<TD >Total logic elements</TD>
+<TD >1,480 / 6,272 ( 24 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Combinational with no register</TD>
+<TD >820</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Register only</TD>
+<TD >197</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Combinational with a register</TD>
+<TD >463</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Logic element usage by number of LUT inputs</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- 4 input functions</TD>
+<TD >409</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- 3 input functions</TD>
+<TD >546</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- <=2 input functions</TD>
+<TD >328</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Register only</TD>
+<TD >197</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Logic elements by mode</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- normal mode</TD>
+<TD >717</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- arithmetic mode</TD>
+<TD >566</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Total registers*</TD>
+<TD >660 / 7,106 ( 9 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Dedicated logic registers</TD>
+<TD >660 / 6,272 ( 11 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- I/O registers</TD>
+<TD >0 / 834 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Total LABs:&nbsp; partially or completely used</TD>
+<TD >108 / 392 ( 28 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Virtual pins</TD>
+<TD >0</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >I/O pins</TD>
+<TD >112 / 177 ( 63 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Clock pins </TD>
+<TD >3 / 4 ( 75 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Dedicated input pins </TD>
+<TD >0 / 9 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >M9Ks</TD>
+<TD >1 / 30 ( 3 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Total block memory bits</TD>
+<TD >8,192 / 276,480 ( 3 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Total block memory implementation bits</TD>
+<TD >9,216 / 276,480 ( 3 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Embedded Multiplier 9-bit elements</TD>
+<TD >8 / 30 ( 27 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >PLLs</TD>
+<TD >0 / 2 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Global signals </TD>
+<TD >2</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;-- Global clocks</TD>
+<TD >2 / 10 ( 20 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >JTAGs</TD>
+<TD >0 / 1 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >CRC blocks</TD>
+<TD >0 / 1 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >ASMI blocks</TD>
+<TD >0 / 1 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Oscillator blocks</TD>
+<TD >0 / 1 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Impedance control blocks</TD>
+<TD >0 / 4 ( 0 % )</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Average interconnect usage (total/H/V)</TD>
+<TD >3.8% / 3.9% / 3.6%</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Peak interconnect usage (total/H/V)</TD>
+<TD >10.2% / 9.5% / 11.0%</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Maximum fan-out</TD>
+<TD >664</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Highest non-global fan-out</TD>
+<TD >318</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Total fan-out</TD>
+<TD >6693</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >Average fan-out</TD>
+<TD >2.99</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

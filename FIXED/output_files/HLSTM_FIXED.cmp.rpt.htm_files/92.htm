@@ -1,0 +1,739 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Fitter Netlist Optimizations</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Node</TH>
+<TH>Action</TH>
+<TH>Operation</TH>
+<TH>Reason</TH>
+<TH>Node Port</TH>
+<TH>Node Port Name</TH>
+<TH>Destination Node</TH>
+<TH>Destination Port</TH>
+<TH>Destination Port Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[0]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[1]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[2]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[3]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[4]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[5]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[6]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[7]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[8]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[9]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[10]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[11]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[12]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[13]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[14]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|res[15]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2</TD>
+<TD >DATAOUT</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[0]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[0]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[0]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[1]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[1]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[1]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[2]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[2]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[2]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[3]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[3]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[3]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[4]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[4]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[4]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[5]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[5]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[5]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[6]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[6]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[6]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[7]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[7]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[7]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[8]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[8]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[8]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[9]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[9]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[9]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[10]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[10]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[10]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[11]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[11]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[11]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[12]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[12]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[12]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[13]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[13]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[13]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[14]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[14]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[14]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[15]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r7|Q[15]</TD>
+<TD >Duplicated</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|nReg:r7|Q[15]~_Duplicate_1</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[0]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[1]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[2]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[3]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[4]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[5]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[6]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[7]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[8]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[9]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[10]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[11]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[12]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[13]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[14]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LSTM_cell2:u0|nReg:r8|Q[15]</TD>
+<TD >Packed Register</TD>
+<TD >Register Packing</TD>
+<TD >Timing optimization</TD>
+<TD >Q</TD>
+<TD >&nbsp;</TD>
+<TD >LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1</TD>
+<TD >DATAA</TD>
+<TD >&nbsp;</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

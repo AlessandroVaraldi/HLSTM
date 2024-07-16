@@ -1,0 +1,624 @@
+Exploration report for HLSTM_FIXED
+Wed Jun 05 10:14:29 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
++------------------+
+; Table of Contents;
++------------------+
+  1. Legal Notice
+  2. Exploration Summary
+  3. DSE Messages
+
++-------------+
+; Legal Notice;
++-------------+
+Copyright (C) 1991-2024 Altera Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Exploration Summary                                                                                                                                  ;
++-----------------+--------------+--------------+---------------+--------------+------------------+-----------------+-----------------+----------------+
+;Exploration Point;Quality of Fit;f(MAX) Geomean;WC Slack: Setup;WC Slack: Hold;WC Slack: Recovery;WC Slack: Removal;Logic Utilization;Compilation Time;
++-----------------+--------------+--------------+---------------+--------------+------------------+-----------------+-----------------+----------------+
+;dse1_base        ;        -4.270;112.180 MHz   ;         -4.364;         0.193;             3.131;            0.411;1,459            ;00:02:11        ;
++-----------------+--------------+--------------+---------------+--------------+------------------+-----------------+-----------------+----------------+
+
++-------------+
+; DSE Messages;
++-------------+
+Info: Archiving C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/HLSTM_FIXED.qpf revision HLSTM_FIXED ...
+Info: Job 1 : quartus_sh --ipc_json --flow compile HLSTM_FIXED.qsf
+Info: Explorer server: http://localhost:59163 started.
+Info: Starting compile design only exploration
+Info: Revision: dse1_base will be compiled on compute node: LAPTOP-OPG22R0F
+Info: Registering self with server http://localhost:59163/api/v1.0/broker/server/
+Info: Successfully registered with server.
+Info: Starting compilation quartus_sh --ipc_json --flow compile HLSTM_FIXED.qsf
+Info: Sent timestamps successfully
+Info: Preparing to compile HLSTM_FIXED ...
+Info: Downloading HLSTM_FIXED.qar.sha256 ...
+Info: Finished download.
+Info: Verified dse/dse1/dse1_base\HLSTM_FIXED.qar.sha256 exists.
+Info: Downloading HLSTM_FIXED.qar ...
+Info: Finished download.
+Info: Verified dse/dse1/dse1_base\HLSTM_FIXED.qar exists.
+Info: Download successful. Checksum matched expected value.
+Info: Running quartus_sh --restore -output dse/dse1/dse1_base dse/dse1/dse1_base\HLSTM_FIXED.qar
+Info: Downloading dse1_base.qsf ...
+Info: Finished download.
+Info: Verified C:\Users\aleva\OneDrive\Documenti\Politecnico\Dottorato\Progetti\HLSTM\FIXED\dse/dse1/dse1_base\HLSTM_FIXED.qsf exists.
+Info: Downloading dse1_base.qpf ...
+Info: Finished download.
+Info: Verified dse/dse1/dse1_base\HLSTM_FIXED.qpf exists.
+Info: Sent timestamps successfully
+Info: Sent timestamps successfully
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:10:16 2024
+Info: Command: quartus_sh --flow compile HLSTM_FIXED.qsf
+Info: Quartus(args): compile HLSTM_FIXED.qsf
+Info: Project Name = C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/HLSTM_FIXED
+Info: Revision Name = HLSTM_FIXED
+Info: *******************************************************************
+Info: Running Quartus Prime Signal Tap
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:10:19 2024
+Info: Command: quartus_stp HLSTM_FIXED -c HLSTM_FIXED
+Info: Quartus Prime Signal Tap was successful. 0 errors, 0 warnings
+Info: 	Peak virtual memory: 4557 megabytes
+Info: 	Processing ended: Wed Jun 05 10:10:20 2024
+Info: 	Elapsed time: 00:00:01
+Info: 	Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:10:22 2024
+Info: Command: quartus_map --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 1 design units, including 0 entities, in source file src/mytypes.vhd
+Info: 	Found design unit 1: myTypes
+Info: Found 2 design units, including 1 entities, in source file src/network.vhd
+Info: 	Found design unit 1: network-rtl
+Info: 	Found entity 1: network
+Info: Found 2 design units, including 1 entities, in source file src/lstm_cell.vhd
+Info: 	Found design unit 1: LSTM_cell-rtl
+Info: 	Found entity 1: LSTM_cell
+Info: Found 2 design units, including 1 entities, in source file src/lstm_gate.vhd
+Info: 	Found design unit 1: LSTM_gate-rtl
+Info: 	Found entity 1: LSTM_gate
+Info: Found 2 design units, including 1 entities, in source file src/mac_pe.vhd
+Info: 	Found design unit 1: mac_pe-rtl
+Info: 	Found entity 1: mac_pe
+Info: Found 2 design units, including 1 entities, in source file src/fixed_multiplier.vhd
+Info: 	Found design unit 1: fixed_multiplier-rtl
+Info: 	Found entity 1: fixed_multiplier
+Info: Found 2 design units, including 1 entities, in source file src/fixed_adder.vhd
+Info: 	Found design unit 1: fixed_adder-rtl
+Info: 	Found entity 1: fixed_adder
+Info: Found 2 design units, including 1 entities, in source file src/output_layer.vhd
+Info: 	Found design unit 1: output_layer-rtl
+Info: 	Found entity 1: output_layer
+Info: Found 2 design units, including 1 entities, in source file src/in_ram.vhd
+Info: 	Found design unit 1: IN_RAM-SYN
+Info: 	Found entity 1: IN_RAM
+Info: Found 2 design units, including 1 entities, in source file src/wb_ram.vhd
+Info: 	Found design unit 1: wb_ram-SYN
+Info: 	Found entity 1: wb_RAM
+Info: Found 2 design units, including 1 entities, in source file src/lut.vhd
+Info: 	Found design unit 1: lut-SYN
+Info: 	Found entity 1: lut
+Info: Found 2 design units, including 1 entities, in source file src/nreg.vhd
+Info: 	Found design unit 1: nReg-rtl
+Info: 	Found entity 1: nReg
+Info: Found 2 design units, including 1 entities, in source file src/shiftreg.vhd
+Info: 	Found design unit 1: shiftReg-rtl
+Info: 	Found entity 1: shiftReg
+Info: Found 2 design units, including 1 entities, in source file src/counter.vhd
+Info: 	Found design unit 1: counter-SYN
+Info: 	Found entity 1: counter
+Info: Found 2 design units, including 1 entities, in source file src/d_flip_flop.vhd
+Info: 	Found design unit 1: d_flip_flop-Behavioral
+Info: 	Found entity 1: d_flip_flop
+Info: Found 2 design units, including 1 entities, in source file src/flip_flop_chain.vhd
+Info: 	Found design unit 1: flip_flop_chain-rtl
+Info: 	Found entity 1: flip_flop_chain
+Info: Found 2 design units, including 1 entities, in source file src/lstm_cell2.vhd
+Info: 	Found design unit 1: LSTM_cell2-rtl
+Info: 	Found entity 1: LSTM_cell2
+Info: Elaborating entity "network" for the top level hierarchy
+Warning: VHDL Process Statement warning at network.vhd(164): signal "x0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(165): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(166): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(167): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(168): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(169): signal "x5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(170): signal "x6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(171): signal "x7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(172): signal "x8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(173): signal "x9" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "counter" for hierarchy "counter:c0"
+Info: Elaborating entity "lpm_counter" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component"
+Info: Elaborated megafunction instantiation "counter:c0|lpm_counter:LPM_COUNTER_component"
+Info: Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_component" with the following parameter:
+Info: 	Parameter "lpm_direction" = "UP"
+Info: 	Parameter "lpm_port_updown" = "PORT_UNUSED"
+Info: 	Parameter "lpm_type" = "LPM_COUNTER"
+Info: 	Parameter "lpm_width" = "4"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_gaj.tdf
+Info: 	Found entity 1: cntr_gaj
+Info: Elaborating entity "cntr_gaj" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated"
+Info: Elaborating entity "shiftReg" for hierarchy "shiftReg:l0"
+Info: Elaborating entity "LSTM_cell2" for hierarchy "LSTM_cell2:u0"
+Warning: Verilog HDL or VHDL warning at LSTM_cell2.vhd(117): object "lut_ce" assigned a value but never read
+Info: Elaborating entity "mac_pe" for hierarchy "LSTM_cell2:u0|mac_pe:u0"
+Info: Elaborating entity "nReg" for hierarchy "LSTM_cell2:u0|nReg:r0"
+Info: Elaborating entity "fixed_adder" for hierarchy "LSTM_cell2:u0|fixed_adder:u2"
+Info: Elaborating entity "lut" for hierarchy "LSTM_cell2:u0|lut:m0"
+Info: Elaborating entity "altsyncram" for hierarchy "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component" with the following parameter:
+Info: 	Parameter "address_aclr_a" = "UNUSED"
+Info: 	Parameter "address_aclr_b" = "NONE"
+Info: 	Parameter "address_reg_b" = "CLOCK1"
+Info: 	Parameter "byte_size" = "8"
+Info: 	Parameter "byteena_aclr_a" = "UNUSED"
+Info: 	Parameter "byteena_aclr_b" = "NONE"
+Info: 	Parameter "byteena_reg_b" = "CLOCK1"
+Info: 	Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+Info: 	Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+Info: 	Parameter "clock_enable_input_a" = "BYPASS"
+Info: 	Parameter "clock_enable_input_b" = "NORMAL"
+Info: 	Parameter "clock_enable_output_a" = "BYPASS"
+Info: 	Parameter "clock_enable_output_b" = "NORMAL"
+Info: 	Parameter "intended_device_family" = "Cyclone 10 LP"
+Info: 	Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+Info: 	Parameter "enable_ecc" = "FALSE"
+Info: 	Parameter "implement_in_les" = "OFF"
+Info: 	Parameter "indata_aclr_a" = "UNUSED"
+Info: 	Parameter "indata_aclr_b" = "NONE"
+Info: 	Parameter "indata_reg_b" = "CLOCK1"
+Info: 	Parameter "init_file" = "./init/tanh_lut.mif"
+Info: 	Parameter "init_file_layout" = "PORT_A"
+Info: 	Parameter "maximum_depth" = "0"
+Info: 	Parameter "numwords_a" = "512"
+Info: 	Parameter "numwords_b" = "0"
+Info: 	Parameter "operation_mode" = "SINGLE_PORT"
+Info: 	Parameter "outdata_aclr_a" = "NONE"
+Info: 	Parameter "outdata_aclr_b" = "NONE"
+Info: 	Parameter "outdata_reg_a" = "CLOCK0"
+Info: 	Parameter "outdata_reg_b" = "UNREGISTERED"
+Info: 	Parameter "power_up_uninitialized" = "FALSE"
+Info: 	Parameter "ram_block_type" = "AUTO"
+Info: 	Parameter "rdcontrol_aclr_b" = "NONE"
+Info: 	Parameter "rdcontrol_reg_b" = "CLOCK1"
+Info: 	Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+Info: 	Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+Info: 	Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+Info: 	Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+Info: 	Parameter "width_a" = "16"
+Info: 	Parameter "width_b" = "1"
+Info: 	Parameter "width_byteena_a" = "1"
+Info: 	Parameter "width_byteena_b" = "1"
+Info: 	Parameter "width_eccstatus" = "3"
+Info: 	Parameter "widthad_a" = "9"
+Info: 	Parameter "widthad_b" = "1"
+Info: 	Parameter "wrcontrol_aclr_a" = "UNUSED"
+Info: 	Parameter "wrcontrol_aclr_b" = "NONE"
+Info: 	Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+Info: 	Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+Info: 	Parameter "lpm_type" = "altsyncram"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_los3.tdf
+Info: 	Found entity 1: altsyncram_los3
+Info: Elaborating entity "altsyncram_los3" for hierarchy "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f0"
+Info: Elaborating entity "d_flip_flop" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f0|d_flip_flop:\gen_ff:0:ff"
+Info: Elaborating entity "fixed_multiplier" for hierarchy "LSTM_cell2:u0|fixed_multiplier:u3"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f1"
+Info: Elaborating entity "output_layer" for hierarchy "output_layer:u1"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "output_layer:u1|flip_flop_chain:ff0"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff0"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff1"
+Info: Inferred 12 megafunctions from design logic
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u5|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u4|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1d|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u3|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1c|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell2:u0|fixed_multiplier:u3|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u2|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1b|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "output_layer:u1|mac_pe:u1a|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell2:u0|mac_pe:u4|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell2:u0|mac_pe:u1|Mult0"
+Info: 	Inferred multiplier megafunction ("lpm_mult") from the following logic: "LSTM_cell2:u0|mac_pe:u0|Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u5|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "15"
+Info: 	Parameter "LPM_WIDTHP" = "31"
+Info: 	Parameter "LPM_WIDTHR" = "31"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_ckh.tdf
+Info: 	Found entity 1: add_sub_ckh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_i9h.tdf
+Info: 	Found entity 1: add_sub_i9h
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_7kh.tdf
+Info: 	Found entity 1: add_sub_7kh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u4|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "9"
+Info: 	Parameter "LPM_WIDTHP" = "25"
+Info: 	Parameter "LPM_WIDTHR" = "25"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_6kh.tdf
+Info: 	Found entity 1: add_sub_6kh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_c9h.tdf
+Info: 	Found entity 1: add_sub_c9h
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_akh.tdf
+Info: 	Found entity 1: add_sub_akh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1d|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1d|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "15"
+Info: 	Parameter "LPM_WIDTHP" = "31"
+Info: 	Parameter "LPM_WIDTHR" = "31"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u3|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "13"
+Info: 	Parameter "LPM_WIDTHP" = "29"
+Info: 	Parameter "LPM_WIDTHR" = "29"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_g9h.tdf
+Info: 	Found entity 1: add_sub_g9h
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_5kh.tdf
+Info: 	Found entity 1: add_sub_5kh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "14"
+Info: 	Parameter "LPM_WIDTHP" = "30"
+Info: 	Parameter "LPM_WIDTHR" = "30"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_bkh.tdf
+Info: 	Found entity 1: add_sub_bkh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_h9h.tdf
+Info: 	Found entity 1: add_sub_h9h
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_8kh.tdf
+Info: 	Found entity 1: add_sub_8kh
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0"
+Info: Instantiated megafunction "LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "16"
+Info: 	Parameter "LPM_WIDTHP" = "32"
+Info: 	Parameter "LPM_WIDTHR" = "32"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "NO"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/mult_s5t.tdf
+Info: 	Found entity 1: mult_s5t
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u2|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u2|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "15"
+Info: 	Parameter "LPM_WIDTHP" = "31"
+Info: 	Parameter "LPM_WIDTHR" = "31"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1b|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1b|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "13"
+Info: 	Parameter "LPM_WIDTHP" = "29"
+Info: 	Parameter "LPM_WIDTHR" = "29"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1a|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1a|lpm_mult:Mult0" with the following parameter:
+Info: 	Parameter "LPM_WIDTHA" = "16"
+Info: 	Parameter "LPM_WIDTHB" = "15"
+Info: 	Parameter "LPM_WIDTHP" = "31"
+Info: 	Parameter "LPM_WIDTHR" = "31"
+Info: 	Parameter "LPM_WIDTHS" = "1"
+Info: 	Parameter "LPM_REPRESENTATION" = "SIGNED"
+Info: 	Parameter "INPUT_A_IS_CONSTANT" = "NO"
+Info: 	Parameter "INPUT_B_IS_CONSTANT" = "YES"
+Info: 	Parameter "MAXIMIZE_SPEED" = "5"
+Info: Resynthesizing 0 WYSIWYG logic cells and I/Os using "area" technology mapper which leaves 4 WYSIWYG logic cells and I/Os untouched
+Info: Timing-Driven Synthesis is running
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.map.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+Info: 	Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info: Implemented 1816 device resources after synthesis - the final resource count might be different
+Info: 	Implemented 89 input pins
+Info: 	Implemented 23 output pins
+Info: 	Implemented 1680 logic cells
+Info: 	Implemented 16 RAM segments
+Info: 	Implemented 8 DSP elements
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.map.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+Info: 	Peak virtual memory: 4865 megabytes
+Info: 	Processing ended: Wed Jun 05 10:11:16 2024
+Info: 	Elapsed time: 00:00:54
+Info: 	Total CPU time (on all processors): 00:00:54
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:11:19 2024
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = HLSTM_FIXED
+Info: Revision = HLSTM_FIXED
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Automatically selected device 10CL006YU256C6G for design HLSTM_FIXED
+Info: Fitting design with smaller device may be possible, but smaller device must be specified
+Info: High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info: Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Warning: Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
+Info: 	Atom "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
+Info: Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
+Warning: Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+Info: 	Device 10CL010YU256C6G is compatible
+Info: 	Device 10CL016YU256C6G is compatible
+Info: 	Device 10CL025YU256C6G is compatible
+Info: Fitter converted 5 user pins into dedicated programming pins
+Info: 	Pin ~ALTERA_ASDO_DATA1~ is reserved at location C1
+Info: 	Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location D2
+Info: 	Pin ~ALTERA_DCLK~ is reserved at location H1
+Info: 	Pin ~ALTERA_DATA0~ is reserved at location H2
+Info: 	Pin ~ALTERA_nCEO~ is reserved at location F16
+Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info: Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Warning: No exact pin location assignment(s) for 112 pins of 112 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Info: Reading SDC File: 'src/SDC1.sdc'
+Info: Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info: Found 1 clocks
+Info: 	  Period   Clock Name
+Info: 	======== ============
+Info: 	   4.550        clock
+Info: Automatically promoted node clock~input (placed in PIN E2 (CLK0, DIFFCLK_0p))
+Info: 	Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+Info: Automatically promoted node reset~input (placed in PIN E1 (CLK1, DIFFCLK_0n))
+Info: 	Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
+Info: Starting register packing
+Info: Finished register packing
+Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+Info: 	Number of I/O pins in group: 110 (unused VREF, 2.5V VCCIO, 87 input, 23 output, 0 bidirectional)
+Info: I/O bank details before I/O pin placement
+Info: 	Statistics of I/O banks
+Info: Fitter preparation operations ending: elapsed time is 00:00:06
+Info: Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info: Fitter placement preparation operations beginning
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info: Fitter placement operations beginning
+Info: Fitter placement was successful
+Info: Fitter placement operations ending: elapsed time is 00:00:31
+Info: Fitter routing operations beginning
+Info: Router estimated average interconnect usage is 3% of the available device resources
+Info: 	Router estimated peak interconnect usage is 6% of the available device resources in the region that extends from location X11_Y0 to location X22_Y11
+Info: Fitter routing operations ending: elapsed time is 00:00:09
+Info: Total time spent on timing analysis during the Fitter is 5.05 seconds.
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Info: Fitter post-fit operations ending: elapsed time is 00:00:06
+Info: Generated suppressed messages file C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/output_files/HLSTM_FIXED.fit.smsg
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.fit.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+Info: 	Peak virtual memory: 5466 megabytes
+Info: 	Processing ended: Wed Jun 05 10:12:26 2024
+Info: 	Elapsed time: 00:01:07
+Info: 	Total CPU time (on all processors): 00:00:51
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:12:28 2024
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Writing out detailed assembly data for power analysis
+Info: Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+Info: 	Peak virtual memory: 4686 megabytes
+Info: 	Processing ended: Wed Jun 05 10:12:31 2024
+Info: 	Elapsed time: 00:00:03
+Info: 	Total CPU time (on all processors): 00:00:02
+Info: Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:12:33 2024
+Info: Command: quartus_sta HLSTM_FIXED -c HLSTM_FIXED
+Info: qsta_default_script.tcl version: #1
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info: Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info: Reading SDC File: 'src/SDC1.sdc'
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Warning: Timing requirements not met
+Info: 	For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info: Worst-case setup slack is -4.364
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	   -4.364            -525.901 clock 
+Info: Worst-case hold slack is 0.371
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.371               0.000 clock 
+Info: Worst-case recovery slack is 3.131
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    3.131               0.000 clock 
+Info: Worst-case removal slack is 0.413
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.413               0.000 clock 
+Info: Worst-case minimum pulse width slack is 0.550
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.550               0.000 clock 
+Info: Analyzing Slow 1200mV 0C Model
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing requirements not met
+Info: 	For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info: Worst-case setup slack is -3.386
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	   -3.386            -325.951 clock 
+Info: Worst-case hold slack is 0.337
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.337               0.000 clock 
+Info: Worst-case recovery slack is 3.226
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    3.226               0.000 clock 
+Info: Worst-case removal slack is 0.411
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.411               0.000 clock 
+Info: Worst-case minimum pulse width slack is 0.550
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.550               0.000 clock 
+Info: Analyzing Fast 1200mV 0C Model
+Warning: Timing requirements not met
+Info: 	For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info: Worst-case setup slack is -0.621
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	   -0.621              -7.829 clock 
+Info: Worst-case hold slack is 0.193
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.193               0.000 clock 
+Info: Worst-case recovery slack is 3.221
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    3.221               0.000 clock 
+Info: Worst-case removal slack is 0.456
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.456               0.000 clock 
+Info: Worst-case minimum pulse width slack is 0.550
+Info: 	    Slack       End Point TNS Clock 
+Info: 	========= =================== =====================
+Info: 	    0.550               0.000 clock 
+Info: Design is fully constrained for setup requirements
+Info: Design is fully constrained for hold requirements
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.sta.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+Info: 	Peak virtual memory: 4793 megabytes
+Info: 	Processing ended: Wed Jun 05 10:12:43 2024
+Info: 	Elapsed time: 00:00:10
+Info: 	Total CPU time (on all processors): 00:00:05
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.sta.json_files/
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+Info: 	Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Info: 	Processing started: Wed Jun 05 10:12:46 2024
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Generated file HLSTM_FIXED.vho in folder "C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/simulation/modelsim/" for EDA simulation tool
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.eda.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+Info: 	Peak virtual memory: 4650 megabytes
+Info: 	Processing ended: Wed Jun 05 10:12:49 2024
+Info: 	Elapsed time: 00:00:03
+Info: 	Total CPU time (on all processors): 00:00:02
+Info: Quartus Prime Full Compilation was successful. 0 errors, 23 warnings
+Info: Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 23 warnings
+Info: 	Peak virtual memory: 4696 megabytes
+Info: 	Processing ended: Wed Jun 05 10:12:51 2024
+Info: 	Elapsed time: 00:02:35
+Info: 	Total CPU time (on all processors): 00:00:03
+Info: Compilation finished. 249 msgs
+Info: Processing keep results option: all
+Info: Completed exploration. Results: 1 passed; 0 failed.
+Info: Processing ended: Wed Jun 05 10:14:15 2024
+Info: Elapsed time: 0:04:24
+

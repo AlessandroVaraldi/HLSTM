@@ -1,0 +1,1034 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Slow 1200mV 0C Model Setup: &apos;clock&apos;</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Slack</TH>
+<TH>From Node</TH>
+<TH>To Node</TH>
+<TH>Launch Clock</TH>
+<TH>Latch Clock</TH>
+<TH>Relationship</TH>
+<TH>Clock Skew</TH>
+<TH>Data Delay</TH>
+</TR>
+</thead><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.269</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.062</TD>
+<TD >8.599</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.403</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.062</TD>
+<TD >8.465</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.530</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.062</TD>
+<TD >8.338</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.615</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >8.250</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.635</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >8.230</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.681</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.511</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.682</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.062</TD>
+<TD >8.186</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.693</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.499</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.733</TD>
+<TD >shiftReg:l0|reg[8][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >8.132</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.770</TD>
+<TD >shiftReg:l0|reg[4][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >8.095</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.781</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.411</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.793</TD>
+<TD >shiftReg:l0|reg[5][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >8.070</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.793</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.399</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.815</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.377</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.827</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.365</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.843</TD>
+<TD >shiftReg:l0|reg[8][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >8.020</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.879</TD>
+<TD >shiftReg:l0|reg[8][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.985</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.881</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[10]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.311</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.885</TD>
+<TD >shiftReg:l0|reg[3][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.980</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.893</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[9]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.299</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.898</TD>
+<TD >b_ad[0]</TD>
+<TD >w_ad[1]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.000</TD>
+<TD >7.017</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.912</TD>
+<TD >shiftReg:l0|reg[6][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.953</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.913</TD>
+<TD >shiftReg:l0|reg[4][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.950</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.915</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.277</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.921</TD>
+<TD >shiftReg:l0|reg[5][3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.058</TD>
+<TD >7.951</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.927</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.265</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.929</TD>
+<TD >shiftReg:l0|reg[5][11]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.936</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.942</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.250</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.954</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.238</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >1.981</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[8]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.211</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >1.993</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[7]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.199</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.014</TD>
+<TD >shiftReg:l0|reg[8][11]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.851</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.015</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[10]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.177</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.027</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.162</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.027</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[9]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.165</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.034</TD>
+<TD >shiftReg:l0|reg[8][6]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.061</TD>
+<TD >7.835</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.039</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.150</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.041</TD>
+<TD >shiftReg:l0|reg[3][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.822</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.042</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.150</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.047</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.142</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.054</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.138</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.058</TD>
+<TD >shiftReg:l0|reg[4][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.806</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.059</TD>
+<TD >shiftReg:l0|reg[3][3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.058</TD>
+<TD >7.813</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.059</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.130</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.081</TD>
+<TD >shiftReg:l0|reg[5][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.783</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.081</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[6]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.111</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.093</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[5]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.099</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.094</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.098</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.105</TD>
+<TD >shiftReg:l0|reg[8][4]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.760</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.106</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.086</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.115</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[8]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.077</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.124</TD>
+<TD >shiftReg:l0|reg[8][13]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.063</TD>
+<TD >7.743</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.127</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.062</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.127</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[7]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.065</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.133</TD>
+<TD >shiftReg:l0|reg[4][4]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.732</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.139</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.050</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.142</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[10]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.050</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.145</TD>
+<TD >shiftReg:l0|reg[8][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.044</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.147</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.042</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.154</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[9]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.038</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.155</TD>
+<TD >shiftReg:l0|reg[5][4]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.710</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.156</TD>
+<TD >shiftReg:l0|reg[7][8]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.708</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.157</TD>
+<TD >shiftReg:l0|reg[8][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.032</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.159</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.030</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.166</TD>
+<TD >shiftReg:l0|reg[8][15]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.699</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.174</TD>
+<TD >shiftReg:l0|reg[9][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.689</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.180</TD>
+<TD >shiftReg:l0|reg[9][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.685</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.181</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[4]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >8.011</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.182</TD>
+<TD >shiftReg:l0|reg[4][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >8.007</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.193</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[3]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.999</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.194</TD>
+<TD >shiftReg:l0|reg[4][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.995</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.194</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.998</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.201</TD>
+<TD >flip_flop_chain:ff0|d_flip_flop:\gen_ff:0:ff|q</TD>
+<TD >w_ad[1]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-1.851</TD>
+<TD >5.363</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.205</TD>
+<TD >shiftReg:l0|reg[5][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.257</TD>
+<TD >7.982</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.206</TD>
+<TD >shiftReg:l0|reg[9][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.658</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.206</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.986</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.207</TD>
+<TD >shiftReg:l0|reg[6][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.656</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.209</TD>
+<TD >shiftReg:l0|reg[8][3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.058</TD>
+<TD >7.663</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.210</TD>
+<TD >shiftReg:l0|reg[3][11]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.655</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.213</TD>
+<TD >shiftReg:l0|reg[3][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.651</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.215</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[6]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.977</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.217</TD>
+<TD >shiftReg:l0|reg[5][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[13]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.257</TD>
+<TD >7.970</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.219</TD>
+<TD >shiftReg:l0|reg[8][9]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.644</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.227</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[10]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.962</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.227</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[5]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.965</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.232</TD>
+<TD >shiftReg:l0|reg[8][8]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.064</TD>
+<TD >7.634</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.234</TD>
+<TD >shiftReg:l0|reg[4][3]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.058</TD>
+<TD >7.638</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.234</TD>
+<TD >shiftReg:l0|reg[6][0]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.630</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.239</TD>
+<TD >shiftReg:l0|reg[8][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[9]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.950</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.242</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[8]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.950</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.245</TD>
+<TD >shiftReg:l0|reg[8][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[12]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.944</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.245</TD>
+<TD >LSTM_cell2:u0|flip_flop_chain:f1|d_flip_flop:\gen_ff:0:ff|q</TD>
+<TD >w_ad[1]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-1.851</TD>
+<TD >5.319</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.246</TD>
+<TD >shiftReg:l0|reg[5][7]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.061</TD>
+<TD >7.623</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.247</TD>
+<TD >shiftReg:l0|reg[5][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[10]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.942</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.251</TD>
+<TD >shiftReg:l0|reg[6][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.065</TD>
+<TD >7.614</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.254</TD>
+<TD >counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated|counter_reg_bit[2]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[7]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.262</TD>
+<TD >7.938</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.255</TD>
+<TD >shiftReg:l0|reg[8][1]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[14]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.257</TD>
+<TD >7.932</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.256</TD>
+<TD >shiftReg:l0|reg[5][9]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.067</TD>
+<TD >7.607</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#FFFFFF">
+<TD >2.257</TD>
+<TD >shiftReg:l0|reg[8][5]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[11]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >0.259</TD>
+<TD >7.932</TD>
+</TR>
+</tbody><tbody><TR  bgcolor="#EDEDED">
+<TD >2.259</TD>
+<TD >shiftReg:l0|reg[5][12]</TD>
+<TD >LSTM_cell2:u0|mac_pe:u0|res[15]</TD>
+<TD >clock</TD>
+<TD >clock</TD>
+<TD >10.000</TD>
+<TD >-0.066</TD>
+<TD >7.605</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

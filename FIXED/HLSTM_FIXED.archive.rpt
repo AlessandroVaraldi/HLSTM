@@ -1,0 +1,105 @@
+Archive Project report for HLSTM_FIXED
+Wed Jun 05 10:10:01 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Wed Jun 05 10:10:01 2024 ;
+; Revision Name          ; HLSTM_FIXED                           ;
+; Top-level Entity Name  ; network                               ;
+; Family                 ; Cyclone 10 LP                         ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:\\Users\\aleva\\OneDrive\\Documenti\\Politecnico\\Dottorato\\Progetti\\HLSTM\\FIXED\\dse\\dse1\\HLSTM_FIXED.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'HLSTM_FIXED.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Wed Jun 05 10:10:01 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; HLSTM_FIXED.dse                                              ;
+; HLSTM_FIXED.qpf                                              ;
+; HLSTM_FIXED.qsf                                              ;
+; init/tanh_lut.mif                                            ;
+; src/counter.vhd                                              ;
+; src/d_flip_flop.vhd                                          ;
+; src/fixed_adder.vhd                                          ;
+; src/fixed_multiplier.vhd                                     ;
+; src/flip_flop_chain.vhd                                      ;
+; src/in_RAM.vhd                                               ;
+; src/LSTM_cell.vhd                                            ;
+; src/LSTM_cell2.vhd                                           ;
+; src/LSTM_gate.vhd                                            ;
+; src/LUT.vhd                                                  ;
+; src/lut.vhd                                                  ;
+; src/mac_pe.vhd                                               ;
+; src/mytypes.vhd                                              ;
+; src/network.vhd                                              ;
+; src/nReg.vhd                                                 ;
+; src/output_layer.vhd                                         ;
+; src/SDC1.sdc                                                 ;
+; src/shiftReg.vhd                                             ;
+; src/tb/LSTM_cell2_tb.vhd                                     ;
+; src/tb/LSTM_gate_tb.vhd                                      ;
+; src/tb/LSTM_test.vhd                                         ;
+; src/tb/mac_pe_tb.vhd                                         ;
+; src/tb/network_test.vhd                                      ;
+; src/wb_RAM.vhd                                               ;
++--------------------------------------------------------------+
+
+

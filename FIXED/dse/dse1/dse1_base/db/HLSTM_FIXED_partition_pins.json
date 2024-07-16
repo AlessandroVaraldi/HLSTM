@@ -1,0 +1,457 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "w_ad[0]",
+					"strict" : false
+				},
+				{
+					"name" : "w_ad[1]",
+					"strict" : false
+				},
+				{
+					"name" : "w_ad[2]",
+					"strict" : false
+				},
+				{
+					"name" : "w_ad[3]",
+					"strict" : false
+				},
+				{
+					"name" : "w_ad[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "output[8]",
+					"strict" : false
+				},
+				{
+					"name" : "output[9]",
+					"strict" : false
+				},
+				{
+					"name" : "output[10]",
+					"strict" : false
+				},
+				{
+					"name" : "output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "output[12]",
+					"strict" : false
+				},
+				{
+					"name" : "output[13]",
+					"strict" : false
+				},
+				{
+					"name" : "output[14]",
+					"strict" : false
+				},
+				{
+					"name" : "output[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "done",
+					"strict" : false
+				},
+				{
+					"name" : "b_ad[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b_ad[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b_ad[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b_ad[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b_ad[4]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bh[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.bx[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wh[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wbxh.wx[15]",
+					"strict" : false
+				},
+				{
+					"name" : "input[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input[5]",
+					"strict" : false
+				},
+				{
+					"name" : "input[6]",
+					"strict" : false
+				},
+				{
+					"name" : "input[7]",
+					"strict" : false
+				},
+				{
+					"name" : "input[8]",
+					"strict" : false
+				},
+				{
+					"name" : "input[9]",
+					"strict" : false
+				},
+				{
+					"name" : "input[10]",
+					"strict" : false
+				},
+				{
+					"name" : "input[11]",
+					"strict" : false
+				},
+				{
+					"name" : "input[12]",
+					"strict" : false
+				},
+				{
+					"name" : "input[13]",
+					"strict" : false
+				},
+				{
+					"name" : "input[14]",
+					"strict" : false
+				},
+				{
+					"name" : "input[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

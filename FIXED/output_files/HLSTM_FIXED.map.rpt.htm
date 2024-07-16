@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Analysis & Synthesis report for HLSTM_FIXED</TITLE>
+
+<link rel="stylesheet" type="text/css" href="HLSTM_FIXED.map.rpt.htm_files/css/reset.css">
+<link rel="stylesheet" type="text/css" href="HLSTM_FIXED.map.rpt.htm_files/css/base.css">
+<link rel="stylesheet" type="text/css" href="HLSTM_FIXED.map.rpt.htm_files/jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="HLSTM_FIXED.map.rpt.htm_files/jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="HLSTM_FIXED.map.rpt.htm_files/css/override.css">
+
+<script type="text/javascript" src="HLSTM_FIXED.map.rpt.htm_files/jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="HLSTM_FIXED.map.rpt.htm_files/jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="HLSTM_FIXED.map.rpt.htm_files/jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+<script type="text/javascript">
+
+// jQuery Ready event
+$(document).ready(function () {
+		$("#main_layout").show().layout({
+				west: {
+					size: 300
+				},
+				center: {
+					// This is needed because the center pane contains an iframe.
+					// https://groups.google.com/d/msg/jquery-ui-layout/qT4rnGxnvYA/CH55dRwdWJoJ
+					maskContents: true
+				}
+		});
+		$(".toc_entry").hover(
+			// mouse enter
+			function (event) {
+				$(this).addClass("ui-state-highlight");
+			},
+			// mouse leave
+			function (event) {
+				$(this).removeClass("ui-state-highlight");
+			}
+		);
+		// When the user clicks on a TOC entry, display the content
+		// in the View pane.
+		$(".toc_entry").click(function (event) {
+				var title = $(this).html();
+				var filename = $(this).attr("id").substr(4) + ".htm";
+				var view = $("#view_content");
+				view.attr("src", "HLSTM_FIXED.map.rpt.htm_files/" + filename);
+				$("#view_title").html(title);
+				// Expand/collapse folders.
+				var parent_li = $(this).parent();
+				if (parent_li.hasClass("rdb_closed_folder"))
+				{
+					parent_li.removeClass("rdb_closed_folder");
+					parent_li.addClass("rdb_opened_folder");
+					parent_li.children("div").show();
+				}
+				else if (parent_li.hasClass("rdb_opened_folder"))
+				{
+					parent_li.removeClass("rdb_opened_folder");
+					parent_li.addClass("rdb_closed_folder");
+					parent_li.children("div").hide();
+				}
+		});
+});
+
+</script>
+
+</HEAD>
+
+<BODY>
+<div id="main_layout" style="height:100%;display:none">
+	<div class="ui-layout-north">
+		<h1 class="ui-widget-header" style="padding:10px">Analysis & Synthesis report for HLSTM_FIXED</h1>
+	</div>
+	<div class="ui-layout-center ui-widget-content">
+		<div class="ui-widget-header" id="view_title">Data not available</div>
+		<div class="ui-layout-content ui-widget-content" id="view_container" style="padding:0;overflow:hidden"><iframe id="view_content"></iframe></div>
+	</div>
+
+	<div class="ui-layout-west">
+		<div class="ui-widget-header">Table of Contents</div>
+		<div class="ui-layout-content ui-widget-content" id="toc" style="padding:0"><ul><li class="rdb_text_type"><span class="toc_entry" id="toc_1">Legal Notice</span></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_2">Analysis &amp; Synthesis</span><div style="display:none"><ul><li class="rdb_summary_table_type"><span class="toc_entry" id="toc_3">Analysis &amp; Synthesis Summary</span></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_4">Settings</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_5">Analysis &amp; Synthesis Settings</span></li></ul></div></li><li class="rdb_table_type"><span class="toc_entry" id="toc_6">Parallel Compilation</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_7">Analysis &amp; Synthesis Source Files Read</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_8">Analysis &amp; Synthesis Resource Usage Summary</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_9">Analysis &amp; Synthesis Resource Utilization by Entity</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_10">Analysis &amp; Synthesis RAM Summary</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_11">Analysis &amp; Synthesis DSP Block Usage Summary</span></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_12">Analysis &amp; Synthesis Optimization Results</span><div style="display:none"><ul><li class="rdb_closed_folder"><span class="toc_entry" id="toc_13">Register Statistics</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_14">General Register Statistics</span></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_15">Multiplexer Statistics</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_16">Multiplexer Restructuring Statistics (Restructuring Performed)</span></li></ul></div></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_17">Source Assignments</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_18">Source assignments for LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated</span></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_19">Parameter Settings by Entity Instance</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_20">Parameter Settings for User Entity Instance: counter:c0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_21">Parameter Settings for User Entity Instance: counter:c0|lpm_counter:LPM_COUNTER_component</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_22">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_23">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r1</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_24">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r2</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_25">Parameter Settings for User Entity Instance: LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_26">Parameter Settings for User Entity Instance: LSTM_cell2:u0|flip_flop_chain:f0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_27">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r3</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_28">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r4</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_29">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r5</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_30">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r6</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_31">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r7</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_32">Parameter Settings for User Entity Instance: LSTM_cell2:u0|nReg:r8</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_33">Parameter Settings for User Entity Instance: LSTM_cell2:u0|flip_flop_chain:f1</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_34">Parameter Settings for User Entity Instance: nReg:r0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_35">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1a</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_36">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1b</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_37">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1c</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_38">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r1d</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_39">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r2</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_40">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r3</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_41">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r4</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_42">Parameter Settings for User Entity Instance: output_layer:u1|nReg:r5</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_43">Parameter Settings for User Entity Instance: output_layer:u1|flip_flop_chain:ff0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_44">Parameter Settings for User Entity Instance: flip_flop_chain:ff0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_45">Parameter Settings for User Entity Instance: flip_flop_chain:ff1</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_46">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u5|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_47">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u4|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_48">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1d|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_49">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u3|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_50">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1c|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_51">Parameter Settings for Inferred Entity Instance: LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_52">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u2|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_53">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1b|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_54">Parameter Settings for Inferred Entity Instance: output_layer:u1|mac_pe:u1a|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_55">Parameter Settings for Inferred Entity Instance: LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_56">Parameter Settings for Inferred Entity Instance: LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_57">Parameter Settings for Inferred Entity Instance: LSTM_cell2:u0|mac_pe:u0|lpm_mult:Mult0</span></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_58">LPM Parameter Settings</span><div style="display:none"><ul><li class="rdb_closed_folder"><span class="toc_entry" id="toc_59">RAMs</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_60">altsyncram Parameter Settings by Entity Instance</span></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_61">Multipliers</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_62">lpm_mult Parameter Settings by Entity Instance</span></li></ul></div></li></ul></div></li><li class="rdb_closed_folder"><span class="toc_entry" id="toc_63">Connectivity Checks</span><div style="display:none"><ul><li class="rdb_table_type"><span class="toc_entry" id="toc_64">Port Connectivity Checks: &quot;flip_flop_chain:ff0&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_65">Port Connectivity Checks: &quot;output_layer:u1|flip_flop_chain:ff0&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_66">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u5&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_67">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u4&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_68">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u3&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_69">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u2&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_70">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u1d&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_71">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u1c&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_72">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u1b&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_73">Port Connectivity Checks: &quot;output_layer:u1|mac_pe:u1a&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_74">Port Connectivity Checks: &quot;LSTM_cell2:u0|flip_flop_chain:f1&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_75">Port Connectivity Checks: &quot;LSTM_cell2:u0|flip_flop_chain:f0&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_76">Port Connectivity Checks: &quot;LSTM_cell2:u0|lut:m0&quot;</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_77">Port Connectivity Checks: &quot;shiftReg:l0&quot;</span></li></ul></div></li><li class="rdb_table_type"><span class="toc_entry" id="toc_78">Post-Synthesis Netlist Statistics for Top Partition</span></li><li class="rdb_table_type"><span class="toc_entry" id="toc_79">Elapsed Time Per Partition</span></li><li class="rdb_unknown_type"><span class="toc_entry" id="toc_80">Analysis &amp; Synthesis Equations</span></li><li class="rdb_messages_type"><span class="toc_entry" id="toc_81">Analysis &amp; Synthesis Messages</span></li></ul></div></li></ul></div>
+	</div>
+</div>
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

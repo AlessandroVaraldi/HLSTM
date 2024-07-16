@@ -1,0 +1,67 @@
+{
+	"title" : "Flow Summary",
+	"data" : {
+		"data" : [
+			{
+				"0" : "Quartus Prime Version",
+				"1" : "20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+			},
+			{
+				"0" : "Revision Name",
+				"1" : "HLSTM_FIXED"
+			},
+			{
+				"0" : "Top-level Entity Name",
+				"1" : "network"
+			},
+			{
+				"0" : "Family",
+				"1" : "Cyclone 10 LP"
+			},
+			{
+				"0" : "Total logic elements",
+				"1" : "1,459 / 6,272 ( 23 % )"
+			},
+			{
+				"0" : "    Total combinational functions",
+				"1" : "1,283 / 6,272 ( 20 % )"
+			},
+			{
+				"0" : "    Dedicated logic registers",
+				"1" : "643 / 6,272 ( 10 % )"
+			},
+			{
+				"0" : "Total registers",
+				"1" : "660"
+			},
+			{
+				"0" : "Total pins",
+				"1" : "112 / 177 ( 63 % )"
+			},
+			{
+				"0" : "Total virtual pins",
+				"1" : "0"
+			},
+			{
+				"0" : "Total memory bits",
+				"1" : "8,192 / 276,480 ( 3 % )"
+			},
+			{
+				"0" : "Embedded Multiplier 9-bit elements",
+				"1" : "8 / 30 ( 27 % )"
+			},
+			{
+				"0" : "Total PLLs",
+				"1" : "0 / 2 ( 0 % )"
+			},
+			{
+				"0" : "Device",
+				"1" : "10CL006YU256C6G"
+			},
+			{
+				"0" : "Timing Models",
+				"1" : "Final"
+			}
+		]
+	}
+}

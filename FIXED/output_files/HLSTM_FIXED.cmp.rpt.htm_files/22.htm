@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Multiplexer Restructuring Statistics (Restructuring Performed)</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Multiplexer Inputs</TH>
+<TH>Bus Width</TH>
+<TH>Baseline Area</TH>
+<TH>Area if Restructured</TH>
+<TH>Saving if Restructured</TH>
+<TH>Registered</TH>
+<TH>Example Multiplexer Output</TH>
+</TR>
+</thead><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|output_layer:u1|nReg:r5|Q[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|output_layer:u1|nReg:r4|Q[3]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >64 bits</TD>
+<TD >128 LEs</TD>
+<TD >0 LEs</TD>
+<TD >128 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|output_layer:u1|nReg:r1d|Q[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|output_layer:u1|nReg:r3|Q[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|output_layer:u1|nReg:r2|Q[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r6|Q[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >0 LEs</TD>
+<TD >32 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r5|Q[15]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >32 bits</TD>
+<TD >64 LEs</TD>
+<TD >0 LEs</TD>
+<TD >64 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r0|Q[6]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r4|Q[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r2|Q[11]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|nReg:r0|Q[14]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r7|Q[13]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r8|Q[8]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >3:1</TD>
+<TD >16 bits</TD>
+<TD >32 LEs</TD>
+<TD >16 LEs</TD>
+<TD >16 LEs</TD>
+<TD >Yes</TD>
+<TD >|network|LSTM_cell2:u0|nReg:r3|Q[9]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >4:1</TD>
+<TD >4 bits</TD>
+<TD >8 LEs</TD>
+<TD >8 LEs</TD>
+<TD >0 LEs</TD>
+<TD >No</TD>
+<TD >|network|LSTM_cell2:u0|w_ad[1]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >16:1</TD>
+<TD >16 bits</TD>
+<TD >160 LEs</TD>
+<TD >112 LEs</TD>
+<TD >48 LEs</TD>
+<TD >No</TD>
+<TD >|network|Mux11</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

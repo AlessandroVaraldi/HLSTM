@@ -1,0 +1,456 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+Info: Command: quartus_sh --flow compile HLSTM_FIXED.qsf
+Info: Quartus(args): compile HLSTM_FIXED.qsf
+Info: Project Name = C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/HLSTM_FIXED
+Info: Revision Name = HLSTM_FIXED
+{"object_type": "report_status", "percent" : 0}
+Info: *******************************************************************
+Info: Running Quartus Prime Signal Tap
+Info: Command: quartus_stp HLSTM_FIXED -c HLSTM_FIXED
+Info: Quartus Prime Signal Tap was successful. 0 errors, 0 warnings
+{"object_type": "report_status", "percent" : 16}
+{"object_type": "report_status", "percent" : 16}
+{"object_type": "report_status", "percent" : 17}
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+Info: Command: quartus_map --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+{"object_type": "refresh_report"}
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 1 design units, including 0 entities, in source file src/mytypes.vhd
+Info: Found 2 design units, including 1 entities, in source file src/network.vhd
+Info: Found 2 design units, including 1 entities, in source file src/lstm_cell.vhd
+Info: Found 2 design units, including 1 entities, in source file src/lstm_gate.vhd
+Info: Found 2 design units, including 1 entities, in source file src/mac_pe.vhd
+Info: Found 2 design units, including 1 entities, in source file src/fixed_multiplier.vhd
+Info: Found 2 design units, including 1 entities, in source file src/fixed_adder.vhd
+Info: Found 2 design units, including 1 entities, in source file src/output_layer.vhd
+Info: Found 2 design units, including 1 entities, in source file src/in_ram.vhd
+Info: Found 2 design units, including 1 entities, in source file src/wb_ram.vhd
+Info: Found 2 design units, including 1 entities, in source file src/lut.vhd
+Info: Found 2 design units, including 1 entities, in source file src/nreg.vhd
+Info: Found 2 design units, including 1 entities, in source file src/shiftreg.vhd
+Info: Found 2 design units, including 1 entities, in source file src/counter.vhd
+Info: Found 2 design units, including 1 entities, in source file src/d_flip_flop.vhd
+Info: Found 2 design units, including 1 entities, in source file src/flip_flop_chain.vhd
+Info: Found 2 design units, including 1 entities, in source file src/lstm_cell2.vhd
+{"object_type": "report_status", "percent" : 17}
+{"object_type": "report_status", "percent" : 18}
+{"object_type": "report_status", "percent" : 18}
+Info: Elaborating entity "network" for the top level hierarchy
+Warning: VHDL Process Statement warning at network.vhd(164): signal "x0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(165): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(166): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(167): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(168): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(169): signal "x5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(170): signal "x6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(171): signal "x7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(172): signal "x8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: VHDL Process Statement warning at network.vhd(173): signal "x9" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "counter" for hierarchy "counter:c0"
+Info: Elaborating entity "lpm_counter" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component"
+Info: Elaborated megafunction instantiation "counter:c0|lpm_counter:LPM_COUNTER_component"
+Info: Instantiated megafunction "counter:c0|lpm_counter:LPM_COUNTER_component" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/cntr_gaj.tdf
+Info: Elaborating entity "cntr_gaj" for hierarchy "counter:c0|lpm_counter:LPM_COUNTER_component|cntr_gaj:auto_generated"
+Info: Elaborating entity "shiftReg" for hierarchy "shiftReg:l0"
+Info: Elaborating entity "LSTM_cell2" for hierarchy "LSTM_cell2:u0"
+Warning: Verilog HDL or VHDL warning at LSTM_cell2.vhd(117): object "lut_ce" assigned a value but never read
+Info: Elaborating entity "mac_pe" for hierarchy "LSTM_cell2:u0|mac_pe:u0"
+Info: Elaborating entity "nReg" for hierarchy "LSTM_cell2:u0|nReg:r0"
+Info: Elaborating entity "fixed_adder" for hierarchy "LSTM_cell2:u0|fixed_adder:u2"
+Info: Elaborating entity "lut" for hierarchy "LSTM_cell2:u0|lut:m0"
+Info: Elaborating entity "altsyncram" for hierarchy "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_los3.tdf
+Info: Elaborating entity "altsyncram_los3" for hierarchy "LSTM_cell2:u0|lut:m0|altsyncram:altsyncram_component|altsyncram_los3:auto_generated"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f0"
+Info: Elaborating entity "d_flip_flop" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f0|d_flip_flop:\gen_ff:0:ff"
+Info: Elaborating entity "fixed_multiplier" for hierarchy "LSTM_cell2:u0|fixed_multiplier:u3"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "LSTM_cell2:u0|flip_flop_chain:f1"
+Info: Elaborating entity "output_layer" for hierarchy "output_layer:u1"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "output_layer:u1|flip_flop_chain:ff0"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff0"
+Info: Elaborating entity "flip_flop_chain" for hierarchy "flip_flop_chain:ff1"
+{"object_type": "report_status", "percent" : 23}
+{"object_type": "report_status", "percent" : 23}
+{"object_type": "report_status", "percent" : 24}
+{"object_type": "report_status", "percent" : 23}
+Info: Inferred 12 megafunctions from design logic
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u5|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_ckh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_i9h.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_7kh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u5|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u4|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_6kh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_c9h.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_akh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1d|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1d|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u3|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_g9h.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_5kh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u3|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_bkh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_h9h.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_8kh.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "output_layer:u1|mac_pe:u1c|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0"
+Info: Instantiated megafunction "LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/mult_s5t.tdf
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u2|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u2|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1b|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1b|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "output_layer:u1|mac_pe:u1a|lpm_mult:Mult0"
+Info: Instantiated megafunction "output_layer:u1|mac_pe:u1a|lpm_mult:Mult0" with the following parameter:
+{"object_type": "report_status", "percent" : 23}
+{"object_type": "report_status", "percent" : 23}
+{"object_type": "report_status", "percent" : 23}
+{"object_type": "report_status", "percent" : 24}
+Info: Resynthesizing 0 WYSIWYG logic cells and I/Os using "area" technology mapper which leaves 4 WYSIWYG logic cells and I/Os untouched
+{"object_type": "report_status", "percent" : 27}
+{"object_type": "report_status", "percent" : 27}
+{"object_type": "report_status", "percent" : 27}
+{"object_type": "report_status", "percent" : 27}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 28}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 29}
+{"object_type": "report_status", "percent" : 30}
+Info: Timing-Driven Synthesis is running
+{"object_type": "report_status", "percent" : 30}
+{"object_type": "report_status", "percent" : 31}
+{"object_type": "report_status", "percent" : 32}
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.map.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+{"object_type": "report_status", "percent" : 32}
+{"object_type": "report_status", "percent" : 33}
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+Info: Implemented 1816 device resources after synthesis - the final resource count might be different
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.map.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+{"object_type": "report_status", "percent" : 33}
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 33}
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = HLSTM_FIXED
+Info: Revision = HLSTM_FIXED
+{"object_type": "report_status", "percent" : 34}
+{"object_type": "refresh_report"}
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Automatically selected device 10CL006YU256C6G for design HLSTM_FIXED
+Info: Fitting design with smaller device may be possible, but smaller device must be specified
+Info: High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info: Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Warning: Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
+Info: Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
+Warning: Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+{"object_type": "report_status", "percent" : 35}
+Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+Info: Fitter converted 5 user pins into dedicated programming pins
+{"object_type": "report_status", "percent" : 35}
+Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info: Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Critical Warning: No exact pin location assignment(s) for 112 pins of 112 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+{"object_type": "report_status", "percent" : 38}
+Info: Reading SDC File: 'src/SDC1.sdc'
+Info: Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info: Found 1 clocks
+Info: Automatically promoted node clock~input (placed in PIN E2 (CLK0, DIFFCLK_0p))
+Info: Automatically promoted node reset~input (placed in PIN E1 (CLK1, DIFFCLK_0n))
+{"object_type": "report_status", "percent" : 36}
+{"object_type": "report_status", "percent" : 38}
+Info: Starting register packing
+Extra Info: Performing register packing on registers with non-logic cell location assignments
+Extra Info: Completed register packing on registers with non-logic cell location assignments
+Extra Info: Started Fast Input/Output/OE register processing
+Extra Info: Finished Fast Input/Output/OE register processing
+Extra Info: Moving registers into I/O cells, Multiplier Blocks, and RAM blocks to improve timing and density
+Extra Info: Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
+Info: Finished register packing
+{"object_type": "report_status", "percent" : 36}
+Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+Info: I/O bank details before I/O pin placement
+{"object_type": "report_status", "percent" : 36}
+Info: Fitter preparation operations ending: elapsed time is 00:00:06
+Info: Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+{"object_type": "report_status", "percent" : 36}
+{"object_type": "report_status", "percent" : 38}
+Info: Fitter placement preparation operations beginning
+{"object_type": "report_status", "percent" : 36}
+{"object_type": "report_status", "percent" : 38}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 36}
+{"object_type": "report_status", "percent" : 37}
+{"object_type": "report_status", "percent" : 38}
+{"object_type": "report_status", "percent" : 38}
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info: Fitter placement operations beginning
+{"object_type": "report_status", "percent" : 38}
+{"object_type": "report_status", "percent" : 38}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+Info: Fitter placement was successful
+Info: Fitter placement operations ending: elapsed time is 00:00:31
+{"object_type": "report_status", "percent" : 38}
+Info: Fitter routing operations beginning
+{"object_type": "report_status", "percent" : 45}
+Info: Router estimated average interconnect usage is 3% of the available device resources
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 47}
+Info: Fitter routing operations ending: elapsed time is 00:00:09
+Info: Total time spent on timing analysis during the Fitter is 5.05 seconds.
+{"object_type": "report_status", "percent" : 46}
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+Info: Delay annotation completed successfully
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+Info: Delay annotation completed successfully
+{"object_type": "report_status", "percent" : 47}
+{"object_type": "report_status", "percent" : 49}
+Info: Fitter post-fit operations ending: elapsed time is 00:00:06
+Info: Generated suppressed messages file C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/output_files/HLSTM_FIXED.fit.smsg
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.fit.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+{"object_type": "report_status", "percent" : 50}
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 50}
+{"object_type": "report_status", "percent" : 50}
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+{"object_type": "refresh_report"}
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+{"object_type": "report_status", "percent" : 51}
+{"object_type": "report_status", "percent" : 52}
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 57}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 61}
+{"object_type": "report_status", "percent" : 63}
+Info: Writing out detailed assembly data for power analysis
+Info: Assembler is generating device programming files
+{"object_type": "report_status", "percent" : 65}
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "refresh_report"}
+Info: Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+{"object_type": "report_status", "percent" : 66}
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+Info: Command: quartus_sta HLSTM_FIXED -c HLSTM_FIXED
+Info: qsta_default_script.tcl version: #1
+{"object_type": "report_status", "percent" : 67}
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info: Low junction temperature operating condition is not set. Assuming a default value of '0'.
+{"object_type": "report_status", "percent" : 70}
+Info: Reading SDC File: 'src/SDC1.sdc'
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -4.364
+Info: Worst-case hold slack is 0.371
+Info: Worst-case recovery slack is 3.131
+Info: Worst-case removal slack is 0.413
+Info: Worst-case minimum pulse width slack is 0.550
+Info: Analyzing Slow 1200mV 0C Model
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 75}
+{"object_type": "report_status", "percent" : 75}
+{"object_type": "report_status", "percent" : 75}
+{"object_type": "report_status", "percent" : 75}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 76}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 77}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 79}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 80}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 81}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 82}
+{"object_type": "report_status", "percent" : 83}
+{"object_type": "report_status", "percent" : 83}
+Info: Delay annotation completed successfully
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -3.386
+Info: Worst-case hold slack is 0.337
+Info: Worst-case recovery slack is 3.226
+Info: Worst-case removal slack is 0.411
+Info: Worst-case minimum pulse width slack is 0.550
+Info: Analyzing Fast 1200mV 0C Model
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -0.621
+Info: Worst-case hold slack is 0.193
+Info: Worst-case recovery slack is 3.221
+Info: Worst-case removal slack is 0.456
+Info: Worst-case minimum pulse width slack is 0.550
+Info: Design is fully constrained for setup requirements
+Info: Design is fully constrained for hold requirements
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.sta.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.sta.json_files/
+{"object_type": "report_status", "percent" : 83}
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 83}
+{"object_type": "report_status", "percent" : 84}
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HLSTM_FIXED -c HLSTM_FIXED
+{"object_type": "refresh_report"}
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+{"object_type": "report_status", "percent" : 84}
+{"object_type": "report_status", "percent" : 87}
+{"object_type": "report_status", "percent" : 90}
+{"object_type": "report_status", "percent" : 91}
+Info: Generated file HLSTM_FIXED.vho in folder "C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/simulation/modelsim/" for EDA simulation tool
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 99}
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.eda.json_files/
+Info: Generated JSON formatted report files in C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/dse/dse1/dse1_base/db/HLSTM_FIXED.flow.json_files/
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+{"object_type": "report_status", "percent" : 100}
+{"object_type": "refresh_report"}
+Info: Quartus Prime Full Compilation was successful. 0 errors, 23 warnings
+Info: Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 23 warnings

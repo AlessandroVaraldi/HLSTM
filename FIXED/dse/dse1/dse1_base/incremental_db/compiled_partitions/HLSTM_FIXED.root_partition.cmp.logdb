@@ -1,0 +1,6 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell2:u0|mac_pe:u4|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell2:u0|mac_pe:u1|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,LSTM_cell2:u0|mac_pe:u0|lpm_mult:Mult0|mult_s5t:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,LSTM_cell2:u0|fixed_multiplier:u3|lpm_mult:Mult0|mult_s5t:auto_generated|mac_mult1,
