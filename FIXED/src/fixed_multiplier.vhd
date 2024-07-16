@@ -17,12 +17,16 @@ end fixed_multiplier;
 
 architecture rtl of fixed_multiplier is
 
+signal mul: signed (31 downto 0) := (others => '0');
+
 begin
 
-   process(in_a, in_b)
+   process(clock,mul,in_a,in_b)
 		variable product : signed (31 downto 0);
 		begin
-			product := in_a * in_b;
-			res <= product(28 downto 13);
+			mul <= in_a * in_b;
+			if rising_edge(clock) then
+				res <= signed(mul(28 downto 13));
+			end if;
 		end process;
 end rtl;

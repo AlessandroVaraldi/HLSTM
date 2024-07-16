@@ -12,18 +12,18 @@
 # 
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package myTypes
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/lut.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -31,11 +31,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity lut
 # -- Compiling architecture SYN of lut
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,11 +43,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity nReg
 # -- Compiling architecture rtl of nReg
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/shiftReg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -55,33 +55,33 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shiftReg
 # -- Compiling architecture rtl of shiftReg
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/counter.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity counter
 # -- Compiling architecture SYN of counter
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/d_flip_flop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/d_flip_flop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity d_flip_flop
 # -- Compiling architecture Behavioral of d_flip_flop
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:28 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/flip_flop_chain.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:28 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/flip_flop_chain.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -89,11 +89,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flip_flop_chain
 # -- Compiling architecture rtl of flip_flop_chain
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -104,39 +104,11 @@
 # -- Loading package myTypes
 # -- Compiling entity network
 # -- Compiling architecture rtl of network
-# End time: 11:40:29 on Jun 04,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:29 on Jun 04,2024
-# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package ATTRIBUTES
-# -- Loading package std_logic_misc
-# -- Loading package NUMERIC_STD
-# -- Loading package myTypes
-# -- Compiling entity LSTM_cell
-# -- Compiling architecture rtl of LSTM_cell
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
-# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package myTypes
-# -- Compiling entity LSTM_gate
-# -- Compiling architecture rtl of LSTM_gate
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -147,11 +119,11 @@
 # -- Loading package myTypes
 # -- Compiling entity mac_pe
 # -- Compiling architecture rtl of mac_pe
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -162,11 +134,11 @@
 # -- Loading package myTypes
 # -- Compiling entity fixed_multiplier
 # -- Compiling architecture rtl of fixed_multiplier
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -175,11 +147,11 @@
 # -- Loading package myTypes
 # -- Compiling entity fixed_adder
 # -- Compiling architecture rtl of fixed_adder
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -190,23 +162,38 @@
 # -- Loading package myTypes
 # -- Compiling entity output_layer
 # -- Compiling architecture rtl of output_layer
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:29 on Jun 04,2024
+# vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package NUMERIC_STD
+# -- Loading package myTypes
+# -- Compiling entity LSTM_cell2
+# -- Compiling architecture rtl of LSTM_cell2
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package myTypes
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/in_RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/in_RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -214,11 +201,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity IN_RAM
 # -- Compiling architecture SYN of IN_RAM
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:29 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:29 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/wb_RAM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -226,11 +213,11 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity wb_RAM
 # -- Compiling architecture SYN of wb_ram
-# End time: 11:40:30 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:30 on Jun 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:30 on Jun 04,2024
+# Start time: 15:53:30 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/nReg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -238,11 +225,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity nReg
 # -- Compiling architecture rtl of nReg
-# End time: 11:40:31 on Jun 04,2024, Elapsed time: 0:00:01
+# End time: 15:53:30 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:40:31 on Jun 04,2024
+# Start time: 15:53:30 on Jun 04,2024
 # vcom -reportprogress 300 -2008 -work work C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/tb/network_test.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -252,12 +239,12 @@
 # -- Loading package myTypes
 # -- Compiling entity network_test
 # -- Compiling architecture test of network_test
-# End time: 11:40:31 on Jun 04,2024, Elapsed time: 0:00:00
+# End time: 15:53:30 on Jun 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs="+acc"  network_test
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclone10lp -L rtl_work -L work -voptargs=""+acc"" network_test 
-# Start time: 11:40:31 on Jun 04,2024
+# Start time: 15:53:30 on Jun 04,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -281,31 +268,32 @@
 # Loading lpm.lpm_common_conversion(body)
 # Loading lpm.lpm_counter(lpm_syn)
 # Loading work.shiftreg(rtl)
-# Loading work.lstm_cell(rtl)
-# Loading work.nreg(rtl)
-# Loading work.lstm_gate(rtl)
+# Loading work.lstm_cell2(rtl)
 # Loading work.mac_pe(rtl)
-# Loading work.fixed_multiplier(rtl)
+# Loading work.nreg(rtl)
 # Loading work.fixed_adder(rtl)
+# Loading work.lut(syn)
 # Loading work.flip_flop_chain(rtl)
 # Loading work.d_flip_flop(behavioral)
-# Loading work.lut(syn)
+# Loading work.fixed_multiplier(rtl)
 # Loading work.output_layer(rtl)
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: aleva  Hostname: LAPTOP-OPG22R0F  ProcessID: 24896
-#           Attempting to use alternate WLF file "./wlftj994xn".
+#           Attempting to use alternate WLF file "./wlft76bnbi".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftj994xn
+#           Using alternate file: ./wlft76bnbi
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 500 us
-do C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/simulation/modelsim/wave.do
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run -continue
-# End time: 11:42:54 on Jun 04,2024, Elapsed time: 0:02:23
+do C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/simulation/modelsim/wave.do
+restart -f
+run -continue
+# End time: 16:03:42 on Jun 04,2024, Elapsed time: 0:10:12
 # Errors: 0, Warnings: 0

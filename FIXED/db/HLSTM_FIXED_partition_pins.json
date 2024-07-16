@@ -124,11 +124,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clear",
+					"name" : "start",
 					"strict" : false
 				},
 				{
-					"name" : "start",
+					"name" : "clear",
 					"strict" : false
 				},
 				{

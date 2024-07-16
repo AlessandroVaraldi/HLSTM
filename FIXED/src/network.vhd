@@ -48,7 +48,7 @@ end component;
 signal shf_en,shf_rs: std_logic;
 signal x0,x1,x2,x3,x4,x5,x6,x7,x8,x9: signed (15 downto 0);
 
-component LSTM_cell is
+component LSTM_cell2 is
 	port
 	(
 		clock			: in  std_logic;
@@ -175,7 +175,7 @@ begin
 		end case;
 	end process;
 
-	u0: LSTM_cell
+	u0: LSTM_cell2
 		port map (
 			clock			=> clock		,
 			reset			=> reset		,

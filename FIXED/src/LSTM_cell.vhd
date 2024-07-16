@@ -1,4 +1,4 @@
- library ieee;
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_misc.all;
 use ieee.numeric_std.all;
@@ -22,8 +22,6 @@ entity LSTM_cell is
 end LSTM_cell;
 
 architecture rtl of LSTM_cell is
-
-signal wx,bx,wh,bh: data16x4 := (others => (others => '0'));
 
 component LSTM_gate is
 	port
@@ -98,17 +96,6 @@ signal lut_ce,lut_rd,lut_wr: std_logic := '0';
 signal lut_ad: signed (15 downto 0) := (others => '0');
 signal lut_in,lut_re: std_logic_vector (15 downto 0) := (others => '0');
 
-component mac_pe is
-	port
-	(
-		clock		: in std_logic;
-		in_a		: in signed (15 downto 0);
-		in_b		: in signed (15 downto 0);
-		in_c		: in signed (15 downto 0);
-		res		: out signed (15 downto 0)
-	);
-end component;
-
 component fixed_multiplier is
 	port
 	(
@@ -166,7 +153,7 @@ begin
 				
 	g_hin <= sreg_re when q(13) = '1' else
 				hreg_re;
-				
+	
 	w_ad <= 	b_ad + to_unsigned(1,5) when q(1) else
 				b_ad + to_unsigned(2,5) when q(2) else
 				b_ad + to_unsigned(3,5) when q(3) else

@@ -48,7 +48,7 @@ end component;
 signal shf_en,shf_rs: std_logic;
 signal x0,x1,x2,x3,x4,x5,x6,x7,x8,x9: signed (15 downto 0);
 
-component LSTM_cell is
+component LSTM_cell2 is
 	port
 	(
 		clock			: in  std_logic;
@@ -65,7 +65,7 @@ component LSTM_cell is
 end component;
 
 signal cycle,c_sta,c_clr,cdone: std_logic := '0';
-signal x,h_out: signed(15 downto 0) := (others => '0');
+signal x: signed(15 downto 0) := (others => '0');
 
 component nReg is 
  generic (n: integer := 8);
@@ -99,14 +99,12 @@ end component;
 signal o_sta,o_clr,odone: std_logic := '0';
 
 component counter is
-	generic (n: integer := 8);
 	port
 	(
-		aclr			: in std_logic;
-		clock			: in std_logic;
-		cnt_en		: in std_logic;
-		sclr			: in std_logic;
-		q				: out std_logic_vector (n-1 downto 0)
+		clk		: in std_logic;
+		ce		: in std_logic;
+		sclr	: in std_logic;
+		q		: out std_logic_vector (15 downto 0)
 	);
 end component;
 
@@ -130,13 +128,12 @@ signal p:  std_logic_vector (0 downto 0) := (others => '0');
 
 begin
 
-	c0:counter generic map (n=>4)
+	c0: counter
 		port map (
-			clock		=> clock		,
-			aclr		=> cnt_rs	,
-			sclr		=> cnt_cl	,
-			cnt_en	=> cnt_en	,
-			q			=> cnt
+			clk		=> clock	,
+			sclr	=> cnt_cl	,
+			ce   	=> cnt_en	,
+			q		=> cnt
 		);
 	
 	l0:shiftReg
@@ -175,7 +172,7 @@ begin
 		end case;
 	end process;
 
-	u0: LSTM_cell
+	u0: LSTM_cell2
 		port map (
 			clock			=> clock		,
 			reset			=> reset		,

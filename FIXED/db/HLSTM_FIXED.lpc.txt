@@ -1,132 +1,1279 @@
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Legal Partition Candidates                                                                                                                                                                                                                     ;
-+-------------------------------------------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
-; Hierarchy                                 ; Input ; Constant Input ; Unused Input ; Floating Input ; Output ; Constant Output ; Unused Output ; Floating Output ; Bidir ; Constant Bidir ; Unused Bidir ; Input only Bidir ; Output only Bidir ;
-+-------------------------------------------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
-; ff1|\gen_ff:0:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff1                                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:10:ff                         ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:9:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:8:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:7:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:6:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:5:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:4:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:3:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:2:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:1:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0|\gen_ff:0:ff                          ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; ff0                                       ; 3     ; 10             ; 0            ; 10             ; 11     ; 10              ; 10            ; 10              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:9:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:8:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:7:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:6:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:5:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:4:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:3:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:2:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:1:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0|\gen_ff:0:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|ff0                                    ; 3     ; 4              ; 0            ; 4              ; 10     ; 4               ; 4             ; 4               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r5                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u5|u1                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u5|u0                                  ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u5                                     ; 49    ; 17             ; 0            ; 17             ; 16     ; 17              ; 17            ; 17              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r4                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u4|u1                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u4|u0                                  ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u4                                     ; 49    ; 17             ; 0            ; 17             ; 16     ; 17              ; 17            ; 17              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r3                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u3|u1                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u3|u0                                  ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u3                                     ; 49    ; 17             ; 0            ; 17             ; 16     ; 17              ; 17            ; 17              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r2                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u2|u1                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u2|u0                                  ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u2                                     ; 49    ; 33             ; 0            ; 33             ; 16     ; 33              ; 33            ; 33              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r1d                                    ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1d|u1                                 ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1d|u0                                 ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1d                                    ; 49    ; 32             ; 0            ; 32             ; 16     ; 32              ; 32            ; 32              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r1c                                    ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1c|u1                                 ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1c|u0                                 ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1c                                    ; 49    ; 32             ; 0            ; 32             ; 16     ; 32              ; 32            ; 32              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r1b                                    ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1b|u1                                 ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1b|u0                                 ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1b                                    ; 49    ; 32             ; 0            ; 32             ; 16     ; 32              ; 32            ; 32              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|r1a                                    ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1a|u1                                 ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1a|u0                                 ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1|u1a                                    ; 49    ; 32             ; 0            ; 32             ; 16     ; 32              ; 32            ; 32              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u1                                        ; 20    ; 0              ; 0            ; 0              ; 17     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; r0                                        ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:22:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:21:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:20:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:19:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:18:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:17:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:16:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:15:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:14:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:13:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:12:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:11:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:10:ff                      ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:9:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:8:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:7:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:6:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:5:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:4:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:3:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:2:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:1:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0|\gen_ff:0:ff                       ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|ff0                                    ; 3     ; 9              ; 0            ; 9              ; 23     ; 9               ; 9             ; 9               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u2|u1                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u2|u0                                  ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u2                                     ; 49    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u1                                     ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r5                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r4                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r3                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r2                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|m0|altsyncram_component|auto_generated ; 28    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|m0                                     ; 28    ; 17             ; 0            ; 17             ; 16     ; 17              ; 17            ; 17              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:7:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:6:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:5:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:4:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:3:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:2:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:1:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1|\gen_ff:0:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff1                                 ; 3     ; 2              ; 0            ; 2              ; 8      ; 2               ; 2             ; 2               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|r4                                  ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|r3                                  ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff0|\gen_ff:3:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff0|\gen_ff:2:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff0|\gen_ff:1:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff0|\gen_ff:0:ff                    ; 3     ; 0              ; 0            ; 0              ; 1      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|ff0                                 ; 3     ; 3              ; 0            ; 3              ; 4      ; 3               ; 3             ; 3               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|r2                                  ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u2                                  ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|r1                                  ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u1|u1                               ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u1|u0                               ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u1                                  ; 49    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|r0                                  ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u0|u1                               ; 33    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u0|u0                               ; 33    ; 0              ; 1            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0|u0                                  ; 49    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|u0                                     ; 116   ; 8              ; 0            ; 8              ; 50     ; 8               ; 8             ; 8               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r1                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0|r0                                     ; 20    ; 0              ; 0            ; 0              ; 16     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; u0                                        ; 89    ; 0              ; 0            ; 0              ; 22     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; l0                                        ; 19    ; 16             ; 0            ; 16             ; 176    ; 16              ; 16            ; 16              ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; c0|LPM_COUNTER_component|auto_generated   ; 4     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-; c0                                        ; 4     ; 0              ; 0            ; 0              ; 4      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
-+-------------------------------------------+-------+----------------+--------------+----------------+--------+-----------------+---------------+-----------------+-------+----------------+--------------+------------------+-------------------+
++--------------------------------------------------------------------------------+
+; Legal Partition Candidates                                                     ;
++--------------------------------------------------------------------------------+
+Hierarchy         : ff1|\gen_ff:0:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff1
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:10:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:9:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:8:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:7:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:6:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:5:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:4:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:3:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:2:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:1:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0|\gen_ff:0:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ff0
+Input             : 3
+Constant Input    : 10
+Unused Input      : 0
+Floating Input    : 10
+Output            : 11
+Constant Output   : 10
+Unused Output     : 10
+Floating Output   : 10
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:9:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:8:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:7:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:6:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:5:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:4:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:3:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:2:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:1:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0|\gen_ff:0:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|ff0
+Input             : 3
+Constant Input    : 4
+Unused Input      : 0
+Floating Input    : 4
+Output            : 10
+Constant Output   : 4
+Unused Output     : 4
+Floating Output   : 4
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r5
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u5
+Input             : 49
+Constant Input    : 17
+Unused Input      : 0
+Floating Input    : 17
+Output            : 16
+Constant Output   : 17
+Unused Output     : 17
+Floating Output   : 17
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r4
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u4
+Input             : 49
+Constant Input    : 17
+Unused Input      : 0
+Floating Input    : 17
+Output            : 16
+Constant Output   : 17
+Unused Output     : 17
+Floating Output   : 17
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r3
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u3
+Input             : 49
+Constant Input    : 17
+Unused Input      : 0
+Floating Input    : 17
+Output            : 16
+Constant Output   : 17
+Unused Output     : 17
+Floating Output   : 17
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r2
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u2
+Input             : 49
+Constant Input    : 33
+Unused Input      : 0
+Floating Input    : 33
+Output            : 16
+Constant Output   : 33
+Unused Output     : 33
+Floating Output   : 33
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r1d
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u1d
+Input             : 49
+Constant Input    : 32
+Unused Input      : 0
+Floating Input    : 32
+Output            : 16
+Constant Output   : 32
+Unused Output     : 32
+Floating Output   : 32
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r1c
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u1c
+Input             : 49
+Constant Input    : 32
+Unused Input      : 0
+Floating Input    : 32
+Output            : 16
+Constant Output   : 32
+Unused Output     : 32
+Floating Output   : 32
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r1b
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u1b
+Input             : 49
+Constant Input    : 32
+Unused Input      : 0
+Floating Input    : 32
+Output            : 16
+Constant Output   : 32
+Unused Output     : 32
+Floating Output   : 32
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|r1a
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1|u1a
+Input             : 49
+Constant Input    : 32
+Unused Input      : 0
+Floating Input    : 32
+Output            : 16
+Constant Output   : 32
+Unused Output     : 32
+Floating Output   : 32
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u1
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 17
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : r0
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:17:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:16:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:15:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:14:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:13:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:12:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:11:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:10:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:9:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:8:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:7:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:6:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:5:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:4:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:3:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:2:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:1:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1|\gen_ff:0:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f1
+Input             : 3
+Constant Input    : 2
+Unused Input      : 0
+Floating Input    : 2
+Output            : 18
+Constant Output   : 2
+Unused Output     : 2
+Floating Output   : 2
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r8
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r7
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|u4
+Input             : 49
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|u3
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r6
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r5
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r4
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r3
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f0|\gen_ff:1:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f0|\gen_ff:0:ff
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|f0
+Input             : 3
+Constant Input    : 1
+Unused Input      : 0
+Floating Input    : 1
+Output            : 2
+Constant Output   : 1
+Unused Output     : 1
+Floating Output   : 1
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|m0|altsyncram_component|auto_generated
+Input             : 28
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|m0
+Input             : 28
+Constant Input    : 17
+Unused Input      : 0
+Floating Input    : 17
+Output            : 16
+Constant Output   : 17
+Unused Output     : 17
+Floating Output   : 17
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r2
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|u2
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r1
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|u1
+Input             : 49
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|r0
+Input             : 20
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0|u0
+Input             : 49
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 16
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : u0
+Input             : 89
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 22
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : l0
+Input             : 19
+Constant Input    : 16
+Unused Input      : 0
+Floating Input    : 16
+Output            : 176
+Constant Output   : 16
+Unused Output     : 16
+Floating Output   : 16
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : c0|LPM_COUNTER_component|auto_generated
+Input             : 4
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 4
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : c0
+Input             : 4
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 4
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
++--------------------------------------------------------------------------------+
+

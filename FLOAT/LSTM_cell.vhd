@@ -103,19 +103,16 @@ signal neg,tmp: std_logic := '0';
 signal f2i_in,f2i_re: std_logic_vector (31 downto 0) := (others => '0');
 
 -- ROM-BASED LOOK-UP-TABLE
-component LUT is 
-	generic (INIT_FILE: string);
-	port
-	(
-		address		: in std_logic_vector (7 downto 0);
-		clken			: in std_logic  := '1';
-		clock			: in std_logic  := '1';
-		rden			: in std_logic  := '1';
-		q				: out std_logic_vector (31 downto 0)
-	);
-end component;
+COMPONENT LUT
+  PORT (
+    clka : IN STD_LOGIC;
+    ena : IN STD_LOGIC;
+    addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) 
+  );
+END COMPONENT;
 
-signal lut_ce, lut_rd: std_logic := '0';
+signal lut_rd: std_logic := '0';
 signal lut_ad: std_logic_vector (7 downto 0) := (others => '0');
 signal lut_re: std_logic_vector (31 downto 0) := (others => '0');	
 
@@ -225,7 +222,6 @@ begin
 		reg_rs		<= (others => '0');
 		reg_cl		<= (others => '0');
 		
-		lut_ce		<= '0';
 		lut_rd		<= '0';
 		
 		ceg_rs		<= '0';
@@ -323,21 +319,19 @@ begin
 				NEXT_STATE 		<= S7;
 				
 			when S7 =>
-				fpu_ce 			<= '1'; -- start Wh.d0 * h_old + Bh.d0
-				lut_ce			<= '1'; 
+				fpu_ce 			<= '1'; -- start Wh.d0 * h_old + Bh.d0' 
 				lut_rd			<= '1'; -- read i' = tanh(Wx.d1 * x + Bx.d1 + Wh.d1 * h_old + Bh.d1)
 				reg_en(0) 		<= '1'; -- store Wx.d0 * x + Bx.d0
 				NEXT_STATE 		<= S8;
 				
 			when S8 =>
 				fpu_ce 			<= '1'; -- start Wx.d3 * x + Bx.d3
-				lut_ce			<= '1'; 
+				lut_rd			<= '1'; 
 				reg_en(2) 		<= '1'; -- store norm(Wx.d2 * x + Bx.d2 + Wh.d2 * h_old + Bh.d2)
 				NEXT_STATE 		<= S9;
 				
 			when S9 =>
 				fpu_ce			<= '1'; -- start Wh.d3 *h_old + Bh.d3
-				lut_ce			<= '1'; 
 				lut_rd			<= '1'; -- read C = tanh(Wx.d2 * x + Bx.d2 + Wh.d2 * h_old + Bh.d2)
 				reg_en(1)		<= '1'; -- store i'
 				reg_en(4) 		<= '1'; -- store Wh.d0 * h_old + Bh.d0
@@ -345,7 +339,7 @@ begin
 				
 			when S10 =>
 				fpu_ce			<= '1'; -- start i = 0.5 + 0.5*i'
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(3) 		<= '1'; -- store Wx.d3 * x + Bx.d3
 				NEXT_STATE 		<= S11;
 				
@@ -357,31 +351,30 @@ begin
 				
 			when S12 =>
 				fpu_ce			<= '1';
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(1)		<= '1'; -- store i
 				NEXT_STATE 		<= S13;
 				
 			when S13 =>
 				fpu_ce			<= '1'; -- start i * C
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(0) 		<= '1'; -- store norm(Wx.d0 * x + Bx.d0 + Wh.d0 * h_old + Bh.d0)
 				NEXT_STATE		<= S14;
 				
 			when S14 =>
 				fpu_ce			<= '1';
-				lut_ce			<= '1';
 				lut_rd			<= '1'; -- read f' = tanh(Wx.d0 * x + Bx.d0 + Wh.d0 * h_old + Bh.d0)
 				NEXT_STATE 		<= S15;
 				
 			when S15 =>
 				fpu_ce			<= '1'; -- start Wx.d3 * x + Bx.d3 + Wh.d3 * h_old + Bh.d3
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(1)      <= '1'; -- store i * C
 				NEXT_STATE 		<= S16;
 				
 			when S16 =>
 				fpu_ce			<= '1';
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(0)		<= '1'; -- store f'
 				NEXT_STATE 		<= S17;
 				
@@ -392,19 +385,19 @@ begin
 			
 			when S18 =>
 				fpu_ce			<= '1';
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				lut_rd			<= '1'; -- read o' = tanh(Wx.d3 * x + Bx.d3 + Wh.d3 * h_old + Bh.d3
 				NEXT_STATE		<= S19;
 			
 			when S19 =>
 				fpu_ce			<= '1'; 
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(0)		<= '1'; -- store f
 				NEXT_STATE		<= S20;
 			
 			when S20 =>
 				fpu_ce			<= '1'; -- start c_new = c_old * i + (C * o)
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(3) 		<= '1'; -- store o'
 				NEXT_STATE		<= S21;
 				
@@ -432,16 +425,15 @@ begin
 				NEXT_STATE 		<= S26;
 				
 			when S26 =>
-				lut_ce			<= '1';
 				lut_rd			<= '1'; -- read tanh(c_new)
 				NEXT_STATE 		<= S27;
 				
 			when S27 =>
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				NEXT_STATE 		<= S28;
 				
 			when S28 =>
-				lut_ce			<= '1';
+				lut_rd			<= '1';
 				reg_en(1)      <= '1'; -- store tanh(c_new)
 				NEXT_STATE 		<= S29;
 				
@@ -888,14 +880,13 @@ begin
 					reg_re.d1(7 downto 0) when STATE = S27 else
 					(others => '0'); 
 		
-	LUT1: LUT generic map (init_file=>"./mem_init/tanh_values.mif")
+	LUT1: LUT
 		port map (
-			clock			=> clock		,
-			clken			=> lut_ce	,
-			rden			=> lut_rd	,
-			address		=> lut_ad	,
-			q(30 downto 0)	=> lut_re(30 downto 0),
-			q(31)			=> tmp
+			clka			=> clock	,
+			ena  			=> lut_rd	,
+			addra    		=> lut_ad	,
+			douta(30 downto 0)=> lut_re(30 downto 0),
+			douta(31)		=> tmp
 		);
 		
 	lut_re(31) <= ff2_q;

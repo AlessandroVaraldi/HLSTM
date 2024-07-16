@@ -176,21 +176,6 @@ begin
 			d		=> re3_in,
 			q		=> re3_re
 		);
-		
---	tempa (15) <= re3_re (15);	
---	tempa (14 downto 0) <= re3_re (15 downto 1);
---	
---	tempb (15 downto 12) <= tempa (15 downto 12) + "0001";
---	tempb (11 downto  0) <= tempa (11 downto  0);
---	
---	u4: mac_pe -- da sostituire
---		port map (
---			clock	=> clock,
---			in_a	=>	re3_re,
---			in_b	=>	"0001000000000000",
---			in_c	=>	"0001000000000000",
---			res	=>	sigm
---		);
 	
 	sigm <= signed(((re3_re (15) & re3_re (15 downto 13)) + "0001") & re3_re(12 downto 1));
 		

@@ -13,12 +13,11 @@ vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/P
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/d_flip_flop.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/flip_flop_chain.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/network.vhd}
-vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell.vhd}
-vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_gate.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mac_pe.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_multiplier.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/fixed_adder.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/output_layer.vhd}
+vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/LSTM_cell2.vhd}
 
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/mytypes.vhd}
 vcom -2008 -work work {C:/Users/aleva/OneDrive/Documenti/Politecnico/Dottorato/Progetti/HLSTM/FIXED/src/in_RAM.vhd}
