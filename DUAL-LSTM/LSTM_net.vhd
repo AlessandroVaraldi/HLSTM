@@ -32,9 +32,9 @@ entity LSTM_net is
 		reset     : in  std_logic;
 		start     : in  std_logic;      
 		input     : in  std_logic_vector (31 downto 0);
-		w_ad0     : in  unsigned (4 downto 0);
-		w_ad      : out unsigned (4 downto 0);
-		w_arr     : in  std_logic_vector (127 downto 0);
+		--w_ad0     : in  unsigned (4 downto 0);
+		--w_ad      : out unsigned (4 downto 0);
+		--w_arr     : in  std_logic_vector (127 downto 0);
 		d_out     : out std_logic_vector (31 downto 0);
 		rd_in     : out std_logic;
 		done      : out std_logic
@@ -148,6 +148,19 @@ signal chain_st: std_logic := '0';
 signal q: std_logic_vector (3 downto 0) := (others => '0');
 signal p: std_logic_vector (1 downto 0) := (others => '0');
 
+component weight_lut is
+    Port (
+        clka    : in  std_logic;
+        ena     : in  std_logic;
+        addra   : in  std_logic_vector(4 downto 0); -- 5-bit address
+        douta   : out std_logic_vector(127 downto 0) -- 127-bit data
+    );
+end component;
+
+signal w_ad,w_ad0: std_logic_vector (4 downto 0) := (others => '0');
+signal w_arr: std_logic_vector (127 downto 0) := (others => '0');
+signal wlut_en: std_logic := '0';
+
 begin
     c0: counter
         port map (
@@ -157,7 +170,7 @@ begin
             q       => cnt
         );
         
-    m1: shift_register
+    m0: shift_register
         port map (
             clock   => clock    ,
             aclr    => reset    ,
@@ -186,11 +199,6 @@ begin
                 x8 when cnt = "1000" else
                 x9 when cnt = "1001" else
                 (others => '0');
-                
-    w_ad    <= 	w_ad0 + to_unsigned(1,5) when LSTM_st = '1' else
-				w_ad0 + to_unsigned(2,5) when q(0) = '1' else
-				w_ad0 + to_unsigned(3,5) when q(1) = '1'else
-				w_ad0;
 
     u0: LSTM_layer
 		port map (
@@ -202,6 +210,23 @@ begin
 			weigh    => weight   ,               
 			h_out    => h_out    ,
 			done     => LSTM_do		
+		);
+
+	w_ad0 <= (others=>'0');
+                
+	w_ad    <= 	std_logic_vector(unsigned(w_ad0) + to_unsigned(1,5)) when LSTM_st = '1' else
+				std_logic_vector(unsigned(w_ad0) + to_unsigned(2,5)) when q(0) = '1' else
+				std_logic_vector(unsigned(w_ad0) + to_unsigned(3,5)) when q(1) = '1'else
+				w_ad0;
+	
+	wlut_en <= '1';
+
+	m1: weight_lut
+		port map (
+			clka    => clock,
+			ena     => wlut_en,
+			addra   => w_ad,
+			douta   => w_arr
 		);
 	
 	reg_in <= h_out;

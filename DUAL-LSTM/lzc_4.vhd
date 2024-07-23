@@ -3,8 +3,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-use work.lzc_lib.all;
-
 entity lzc_4 is
 	port(
 		A : in  std_logic_vector(3 downto 0);

@@ -3,8 +3,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-use work.lzc_lib.all;
-
 entity lzc_64 is
 	port(
 		A : in  std_logic_vector(63 downto 0);
@@ -14,6 +12,14 @@ entity lzc_64 is
 end lzc_64;
 
 architecture behavior of lzc_64 is
+
+	component lzc_32
+		port(
+			A : in  std_logic_vector(31 downto 0);
+			Z : out std_logic_vector(4 downto 0);
+			V : out std_logic
+		);
+	end component;
 
 	signal Z0 : std_logic_vector(4 downto 0);
 	signal Z1 : std_logic_vector(4 downto 0);
