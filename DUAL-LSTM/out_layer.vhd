@@ -168,17 +168,6 @@ begin
 	reb_in <= macao when or_reduce(q(15 downto 5)) = '1' or macao (31) = '0' else (others => '0');	
 	rec_in <= macao when or_reduce(q(15 downto 5)) = '1' or macao (31) = '0' else (others => '0');	
 	red_in <= macao when or_reduce(q(15 downto 5)) = '1' or macao (31) = '0' else (others => '0');
-
-	u2: mac_f32
-		port map (
-            reset   =>  reset,
-            clock   =>  clock,
-            clken   =>  '1',
-            data1   =>  macc1,
-            data2   =>  macc2,
-            data3   =>  macc3,
-            d_out   =>  macco
-		);
 		
 	r0: nregister
 		port map (
