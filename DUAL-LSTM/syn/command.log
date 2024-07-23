@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12 for linux64 -- Nov 22, 2022
-#@ # Date:   Tue Jul 23 11:44:57 2024
+#@ # Date:   Tue Jul 23 16:07:52 2024
 #@ # Run by: alessandro.varaldi@vlsi20.vlsilab
 #@ 
 
@@ -9401,7 +9401,6 @@ source /home/phd-students/alessandro.varaldi/Documents/HLSTM/DUAL-LSTM/syn/.syno
 #@ set synthetic_library [list "dw_foundation.sldb" ]
 #@ # -- End source /home/phd-students/alessandro.varaldi/Documents/HLSTM/DUAL-LSTM/syn/.synopsys_dc.setup
 
-report_area
 source syn_script.tcl
 #@ # -- Starting source syn_script.tcl
 
@@ -9469,4 +9468,9 @@ source syn_script.tcl
 #@ write -format ddc -hierarchy -output "design_optimized.ddc"
 #@ # -- End source syn_script.tcl
 
+ungroup -all -flatten
+change_names -hierarchy -rules vhdl
+write_sdf ../netlist/design.sdf
+write -f vhdl -hierarchy -output ../netlist/design.vhd
+write_sdc ../netlist/design.sdc
 quit
