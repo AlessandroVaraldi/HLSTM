@@ -54,6 +54,8 @@ X_test, y_test = normalize_data(X[55000:], y[55000:])
 np.save('./Data/xtest.npy', X_test)
 np.save('./Data/ytest.npy', y_test)
 
+print(X_test[:10,:,0])
+exit()
 # Converti i dati in tensori PyTorch
 def to_tensor(X, y):
     return torch.tensor(X, dtype=torch.float32), torch.tensor(y, dtype=torch.float32)
@@ -155,3 +157,5 @@ plt.plot(test_predictions[:], label='Predicted')
 plt.title(f'LSTM applied to test data\nMSE = {mse}', fontsize=9)
 plt.legend()
 plt.show()
+
+print(test_predictions[:10])
